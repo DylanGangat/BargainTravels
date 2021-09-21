@@ -1,0 +1,17 @@
+{
+  "name": "bargain-travels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel public/home-page.html",
+    "build": "parcel build public/home-page.html",
+    "build-css": "tailwindcss build -i src/style.css -o public/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5",
+    "tailwindcss": "^2.2.15"
+  }
+}
