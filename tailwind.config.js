@@ -8,8 +8,29 @@ module.exports = {
       },
       textColor: {
         primary: "#343a40",
-        secondary: "#f95356",
+        secondary: {
+          200: "#fa7578",
+          300: "#fa6467",
+          400: "#f95356",
+          500: "#e04b4d",
+          600: "#c74245",
+        },
         accent: "#284477",
+      },
+      backgroundColor: {
+        secondary: {
+          200: "#fa7578",
+          300: "#fa6467",
+          400: "#f95356",
+          500: "#e04b4d",
+          600: "#c74245",
+        },
+        accent: "#284477",
+      },
+      gridTemplateColumns: {
+        reviews: "repeat(auto-fit, minmax(17rem, 1fr))",
+        destinations: "repeat(auto-fit, minmax(15.5rem, 1fr))",
+        shop: "repeat(auto-fit, minmax(16.875rem, 1fr))",
       },
     },
   },

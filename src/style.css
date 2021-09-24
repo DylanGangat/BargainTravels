@@ -6,3 +6,100 @@
 .container {
   @apply px-8 max-w-6xl mr-auto ml-auto;
 }
+
+section,
+footer {
+  @apply py-8 md:py-16;
+}
+
+.grid-spacer {
+  @apply grid gap-8;
+}
+
+.flow-content > * + * {
+  @apply mt-4;
+}
+
+.spacer {
+  @apply mt-8 md:mt-12;
+}
+
+.btn {
+  @apply inline-block tracking-wider bg-secondary-400 text-white font-bold text-sm hover:bg-secondary-300 transition duration-300 ease-in-out rounded-full py-3 px-6;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+.hover-default {
+  @apply transition duration-300 ease-in;
+}
+
+/* =============
+   Hero
+   =============*/
+
+.hero {
+  @apply flex flex-col gap-8 md:flex-row md:gap-16 items-center text-center md:text-left;
+}
+
+.hero h1 {
+  @apply text-5xl md:text-6xl lg:text-7xl font-light;
+}
+
+.hero p {
+  @apply text-2xl md:text-3xl text-gray-500 md:mt-8;
+}
+
+.hero form {
+  @apply grid gap-4 sm:grid-cols-4 md:mt-8;
+}
+
+.hero input {
+  @apply flex w-full p-3 bg-gray-100 rounded-full sm:col-span-3;
+}
+
+/* =============
+   Review Card
+   =============*/
+
+.review-card {
+  @apply flow-content flex flex-col rounded-lg p-4;
+}
+
+/* =============
+   Country Card
+   =============*/
+
+.country-card {
+  @apply relative rounded-xl overflow-hidden;
+}
+
+.country-card > img {
+  @apply h-56 w-full object-cover;
+}
+
+.country-card > h3 {
+  @apply font-semibold absolute bottom-0 left-0 p-4 z-10 text-white;
+}
+
+.country-card > div {
+  @apply absolute h-1/2 bottom-0 left-0 w-full bg-gradient-to-t from-black;
+}
+
+/* =============
+   Footer
+   =============*/
+
+.footer-links-transiton {
+  @apply hover:text-secondary-400 transition duration-300;
+}
+
+.footer-row {
+  @apply flex flex-col md:flex-row justify-center gap-4;
+}
+
+.social-icon {
+  @apply inline-flex gap-2 justify-center hover:text-secondary-400 transition duration-300 ease-in;
+}
