@@ -37,15 +37,27 @@ input::placeholder {
 }
 
 /* =============
+   Typography
+   =============*/
+
+h1 {
+  @apply text-5xl md:text-6xl lg:text-7xl font-light;
+}
+
+h2 {
+  @apply text-4xl md:text-6xl;
+}
+
+.h3 {
+  @apply text-4xl font-semibold;
+}
+
+/* =============
    Hero
    =============*/
 
 .hero {
   @apply flex flex-col gap-8 md:flex-row md:gap-16 items-center text-center md:text-left;
-}
-
-.hero h1 {
-  @apply text-5xl md:text-6xl lg:text-7xl font-light;
 }
 
 .hero p {
