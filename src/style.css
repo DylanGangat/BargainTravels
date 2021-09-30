@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply font-primary text-black;
+}
+
 .container {
   @apply px-8 max-w-6xl mr-auto ml-auto;
 }
@@ -25,7 +29,7 @@ footer {
 }
 
 .btn {
-  @apply inline-block tracking-wider bg-secondary-400 text-white font-bold text-sm hover:bg-secondary-300 transition duration-300 ease-in-out rounded-full py-3 px-6;
+  @apply inline-block tracking-wider bg-secondary-400 text-white border-2 border-transparent font-bold text-sm hover:border-red-400 hover:bg-white hover:text-secondary-400 transform hover:-translate-y-1.5 hover-default rounded-lg py-3 px-6;
 }
 
 input::placeholder {
@@ -33,7 +37,29 @@ input::placeholder {
 }
 
 .hover-default {
-  @apply transition duration-300 ease-in;
+  @apply transition duration-300 ease-in-out;
+}
+
+/* To hide content from the page but be visible for screen readers */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
 }
 
 /* =============
@@ -53,6 +79,25 @@ h2 {
 }
 
 /* =============
+   Header
+   =============*/
+header {
+  @apply py-4 fixed top-0 left-0 w-full z-50 bg-white shadow;
+}
+
+.dropdown-menu {
+  @apply absolute z-40 top-full right-0 left-0 w-full py-8 gap-4 flex-col items-center bg-secondary-400 md:flex md:static md:flex-row md:top-auto md:w-auto md:py-0 md:bg-transparent;
+}
+
+.dropdown-menu a {
+  @apply font-bold p-1 hover:text-white md:hover:text-secondary-400 hover-default;
+}
+
+.overlay {
+  @apply absolute z-10 top-full right-0 left-0 h-screen w-screen bg-gray-200 opacity-60 cursor-pointer;
+}
+
+/* =============
    Hero
    =============*/
 
@@ -69,7 +114,7 @@ h2 {
 }
 
 .hero input {
-  @apply flex w-full p-3 bg-gray-100 rounded-full sm:col-span-3;
+  @apply flex w-full p-3 bg-gray-100 rounded-lg sm:col-span-3;
 }
 
 /* =============
@@ -77,7 +122,7 @@ h2 {
    =============*/
 
 .review-card {
-  @apply flow-content flex flex-col rounded-lg p-4;
+  @apply flow-content flex flex-col rounded-lg p-4 shadow;
 }
 
 /* =============
@@ -101,6 +146,22 @@ h2 {
 }
 
 /* =============
+   Shop
+   =============*/
+
+.clothing-card {
+  @apply rounded-lg overflow-hidden;
+}
+
+.clothing-card img {
+  @apply rounded-lg shadow hover:shadow-md;
+}
+
+.clothing-card h3 {
+  @apply font-semibold text-lg hover:text-secondary-400 cursor-pointer hover-default;
+}
+
+/* =============
    Footer
    =============*/
 
@@ -114,4 +175,39 @@ h2 {
 
 .social-icon {
   @apply inline-flex gap-2 justify-center hover:text-secondary-400 transition duration-300 ease-in;
+}
+
+/* =============
+   Product Info Page
+   =============*/
+
+.colours-group {
+  @apply flex gap-4 text-center;
+}
+
+.colours-group > * {
+  @apply px-4 py-2 rounded-lg h-10 flex items-center justify-center cursor-pointer border border-black;
+  min-width: 4.8rem;
+}
+
+.colour-block:hover {
+  border: 2px solid black;
+}
+
+.colour-block.active {
+  border: 2px solid black;
+}
+
+/* You can use your own css declerations and use it in the @apply like a utility class */
+.colour-block > span {
+  @apply font-semibold tracking-wide text-xs visually-hidden;
+}
+
+
+.select-size select {
+  @apply border border-gray-200 rounded-lg pl-4 pr-8 py-4;
+}
+
+.select-size option {
+  @apply bg-white;
 }

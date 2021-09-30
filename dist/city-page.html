@@ -11,48 +11,53 @@
     <script defer="" src="/script.75da7f30.js"></script>
 </head>
 
-<body class="font-primary">
-    <header class="py-4">
+<body class="font-primary text-primary">
+    <header>
         <div class="container">
             <nav class="flex items-center justify-between">
-                <div class="md:hidden">
+                <div class="md:hidden cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path>
                     </svg>
                 </div>
                 <a href="/home-page.html" class="flex items-center"><img class="h-10 md:h-14" src="/pig-xxl.dcd68c9a.png" alt="bargaintravels logo"><span class="font-bold md:text-2xl">BargainTravels</span></a>
-                <div class="flex gap-4 items-center">
-                    <ul class="hidden md:flex gap-4">
-                        <li><a class="flex gap-1 hover:text-secondary-400 hover-default" href="#">
+                <div class="flex gap-6 items-center">
+                    <ul class="flex hidden dropdown-menu">
+                        <li><a class="flex gap-1" href="/city-page.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                                </svg> <span class="font-bold">Trips</span>
+                                </svg> <span class="">Trips</span>
                             </a>
                         </li>
-                        <li><a href="#" class="font-bold hover:text-secondary-400 hover-default">Shop</a></li>
+                        <li><a href="#">About</a></li>
+
+                        <li><a href="/products-page.html">Shop</a></li>
                     </ul>
                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
-                        </svg>
+                        <a href="/shopping-cart-page.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-
+                <div class="hidden overlay"></div>
             </nav>
         </div>
     </header>
     <main>
-        <section>
+        <section class="mt-fixed-sm md:mt-fixed-md">
             <div class="container">
-                <h1 class="text-secondary-400">Explore Japan</h1>
-                <div class="grid grid-cols-5 grid-rows-4 gap-4 spacer">
-                    <img class="col-span-3 row-span-4 h-full object-cover" src="/japan.fbdb8e78.webp" alt="">
-                    <img class="col-span-2 row-span-2" src="/japan.fbdb8e78.webp" alt="">
-                    <img class="col-span-2 row-span-2" src="/japan.fbdb8e78.webp" alt="">
+                <h1><span class="text-secondary-400 font-semibold">Explore</span> Japan</h1>
+                <div class="grid grid-cols-5 grid-rows-4 gap-4 mt-8 md:mt-16">
+                    <img class="col-span-3 row-span-4 h-full object-cover rounded-lg" src="/japan.fbdb8e78.webp" alt="">
+                    <img class="col-span-2 row-span-2 rounded-lg" src="/japan.fbdb8e78.webp" alt="">
+                    <img class="col-span-2 row-span-2 rounded-lg" src="/japan.fbdb8e78.webp" alt="">
                 </div>
                 <div class="flow-content spacer">
                     <h2 class="h3">About Japan</h2>
-                    <p class="text-lg text-gray-500 max-w-prose">In the Land of the Rising Sun, ancient temples sit alongside neon wonderlands and shinto shrines
+                    <p class="text-lg max-w-prose">In the Land of the Rising Sun, ancient temples sit alongside neon
+                        wonderlands and shinto shrines
                         offer pockets of peace amid metropolises. Add tea ceremonies, snow monkeys, sushi, kimonos, and
                         karaoke to the mix, and you’ve got one of the world’s most fascinating countries.
                     </p>
@@ -95,6 +100,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
                                         </svg>
+
                                     </div>
                                     <p class="text-sm text-gray-400 mt-1">Religious Sites, Historic Sites</p>
                                 </div>

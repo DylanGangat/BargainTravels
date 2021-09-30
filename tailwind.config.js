@@ -26,11 +26,21 @@ module.exports = {
           600: "#c74245",
         },
         accent: "#284477",
+        primary: "#343a40",
       },
       gridTemplateColumns: {
         reviews: "repeat(auto-fit, minmax(17rem, 1fr))",
         destinations: "repeat(auto-fit, minmax(15.5rem, 1fr))",
         shop: "repeat(auto-fit, minmax(16.875rem, 1fr))",
+      },
+      spacing: {
+        "fixed-sm": "4.5rem",
+        "fixed-md": "5.5rem",
+      },
+      backgroundImage: {
+        "shop-hero": "url('/img/girl-in-florence.webp')",
+        "shop-hero1": "url('/img/girl-with-view.webp')",
+        "shop-hero2": "url('/img/guy-in-flowers.webp')",
       },
     },
   },

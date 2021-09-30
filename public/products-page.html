@@ -12,116 +12,164 @@
 </head>
 
 <body class="font-primary">
-    <header class="py-4">
+    <header>
         <div class="container">
             <nav class="flex items-center justify-between">
-                <div class="md:hidden">
+                <div class="md:hidden cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h7" />
                     </svg>
                 </div>
-                <!-- <a href="#"><img class="h-10 w-full" src="./img/logo/bargaintravels-logo.png" alt="bargaintravels logo"></a> -->
-                <a href="#" class="flex items-center"><img class="h-10 md:h-14" src="./img/logo/pig-xxl.png"
-                        alt="bargaintravels logo"> <span class="font-bold md:text-2xl">BargainTravels</span></a>
-                <div class="flex gap-4 items-center">
-                    <ul class="hidden md:flex gap-4">
-                        <li><a class="flex gap-1 hover:text-secondary-400 hover-default" href="#">
+                <a href="home-page.html" class="flex items-center"><img class="h-10 md:h-14"
+                        src="./img/logo/pig-xxl.png" alt="bargaintravels logo"><span
+                        class="font-bold md:text-2xl">BargainTravels</span></a>
+                <div class="flex gap-6 items-center">
+                    <ul class="flex hidden dropdown-menu">
+                        <li><a class="flex gap-1" href="city-page.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                                </svg> <span class="font-bold">Trips</span>
+                                </svg> <span class="">Trips</span>
                             </a>
                         </li>
-                        <li><a href="#" class="font-bold hover:text-secondary-400 hover-default">Shop</a></li>
+                        <li><a href="#">About</a></li>
+
+                        <li><a href="products-page.html">Shop</a></li>
                     </ul>
                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                        </svg>
+                        <a href="shopping-cart-page.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
-
+                <div class="hidden overlay"></div>
             </nav>
         </div>
     </header>
     <main>
-        <section>
+        <section class="mt-fixed-sm md:mt-fixed-md">
             <div class="container">
-                <h1>Our Collection</h1>
-                <div>
-                    <div>
-                        <h3>Types</h3>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                          </svg>
-                        </span>
+
+                <div class="grid grid-cols-4 gap-8">
+                    <div
+                        class="relative flex items-end col-span-4 bg-shop-hero2 bg-cover bg-no-repeat bg-center pt-56 pb-8 px-8 rounded-lg overflow-hidden text-white">
+                        <div
+                            class="absolute bottom-0 left-0 right-0 w-full h-3/5 opacity-60 bg-gradient-to-t from-black">
+                        </div>
+                        <div class="flow-content relative z-20">
+                            <h1 class="text-center md:text-left">Our Collection</h1>
+                            <p class="max-w-prose">
+                                Whether it's for you or someone else, we know you'll find something you love in this
+                                collection. Wherever you go in the world, know you can always count on us to keep your
+                                style in check. All products in this collection are constructed from certified
+                                organic fabrics for the best comfortable travelling experience.
+
+                            </p>
+                        </div>
                     </div>
-                    <ul>
-                        <li>T-shirt</li>
-                        <li>Long sleeve</li>
-                        <li>Crewneck</li>
-                        <li>Hoody</li>
-                        <li>Sweatpant</li>
-                    </ul>
+                    <!-- <div class="col-span-1 hidden">
+                        <div class="type-filter flex flex-col rounded-lg overflow-hidden shadow">
+                            <div class="flex justify-between items-center py-4 px-8 border-b border-gray-400 cursor-pointer">
+                                <h3 class="font-bold ">Types</h3>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </span> 
+                            </div>
+                            <ul class="font-medium flex flex-col">
+                                <li
+                                    class="py-4 px-8 border-b border-gray-400 hover:text-secondary-400 hover-default cursor-pointer">
+                                    T-shirt</li>
+                                <li
+                                    class="py-4 px-8 border-b border-gray-400 hover:text-secondary-400 hover-default cursor-pointer">
+                                    Long sleeve</li>
+                                <li
+                                    class="py-4 px-8 border-b border-gray-400 hover:text-secondary-400 hover-default cursor-pointer">
+                                    Crewneck</li>
+                                <li
+                                    class="py-4 px-8 border-b border-gray-400 hover:text-secondary-400 hover-default cursor-pointer">
+                                    Hoody</li>
+                                <li class="py-4 px-8 border-gray-100 hover:text-secondary-400 hover-default cursor-pointer">
+                                    Sweatpant</li>
+                            </ul>
+                        </div>
+                    </div> -->
                 </div>
+
                 <div>
-                    <div>
-                        <div>
-                            <a href="#">
-                                <img src="./img/clothing/hoodie.png" alt="bargaintravels hoody">
+                    <div class="grid-spacer mt-12 md:mt-16 grid-cols-shop">
+                        <div class="clothing-card">
+                            <a href="product-info-page.html">
+                                <img src="./img/clothing/t-shirt1.png" alt="bargaintravels t-shirt">
+                                <div class="p-4 text-left">
+                                    <h3>T-shirt</h3>
+                                    <p class="text-gray-500">R200</p>
+                                </div>
                             </a>
-                            <div>
+                        </div>
+
+                        <div class="clothing-card">
+                            <a href="product-info-page.html">
+                                <img src="./img/clothing/longsleeve1.png" alt="bargaintravels longsleeve">
+                                <div class="p-4 text-left">
+                                    <h3>Long Sleeve</h3>
+                                    <p class="text-gray-500">R250</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="clothing-card">
+                            <a href="product-info-page.html">
+                                <img src="./img/clothing/pullover3.png" alt="bargaintravels pullover">
+                                <div class="p-4 text-left">
+                                    <h3>Pullover</h3>
+                                    <p class="text-gray-500">R350</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="clothing-card">
+                            <a href="product-info-page.html">
+                                <img src="./img/clothing/hoody2.png" alt="bargaintravels hoody">
+                            </a>
+                            <div class="p-4 text-left">
                                 <h3>Hoody</h3>
-                                <p>R450</p>
+                                <p class="text-gray-500">R450</p>
                             </div>
 
                         </div>
 
-                        <div>
-                            <a href="#">
-                                <img src="./img/clothing/pullover.png" alt="bargaintravels pullover">
-                                <div>
-                                    <h3>Pullover</h3>
-                                    <p>R350</p>
+
+                        <div class="clothing-card">
+                            <a href="product-info-page.html">
+                                <img src="./img/clothing/jacket2.png" alt="bargaintravels jacket">
+                                <div class="p-4 text-left">
+                                    <h3>Jacket</h3>
+                                    <p class="text-gray-500">R500</p>
                                 </div>
                             </a>
                         </div>
 
-                        <div>
-                            <a href="#">
-                                <img src="./img/clothing/t-shirt.png" alt="bargaintravels t-shirt">
-                                <div>
-                                    <h3>T-shirt</h3>
-                                    <p>R200</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="#">
-                                <img src="./img/clothing/longsleeve.png" alt="bargaintravels long sleeve">
-                                <div>
-                                    <h3>Long sleeve</h3>
-                                    <p>R250</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="#">
-                                <img src="./img/clothing/sweatpants.png" alt="bargaintravels sweatpant">
-                                <div>
+                        <div class="clothing-card">
+                            <a href="product-info-page.html">
+                                <img src="./img/clothing/sweatpants1.png" alt="bargaintravels sweatpants">
+                                <div class="p-4 text-left">
                                     <h3>Sweatpants</h3>
-                                    <p>R450</p>
+                                    <p class="text-gray-500">R450</p>
                                 </div>
                             </a>
                         </div>
+
                     </div>
                 </div>
             </div>

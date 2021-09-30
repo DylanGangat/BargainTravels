@@ -12,48 +12,51 @@
 </head>
 
 
-<body class="font-primary text-black">
-    <header class="py-4">
+<body>
+    <header>
         <div class="container">
             <nav class="flex items-center justify-between">
-                <div class="md:hidden">
+                <div class="md:hidden cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h7" />
                     </svg>
                 </div>
-                <!-- <a href="#"><img class="h-10 w-full" src="./img/logo/bargaintravels-logo.png" alt="bargaintravels logo"></a> -->
                 <a href="home-page.html" class="flex items-center"><img class="h-10 md:h-14"
-                        src="./img/logo/pig-xxl.png" alt="bargaintravels logo"> <span
+                        src="./img/logo/pig-xxl.png" alt="bargaintravels logo"><span
                         class="font-bold md:text-2xl">BargainTravels</span></a>
-                <div class="flex gap-4 items-center">
-                    <ul class="hidden md:flex gap-4">
-                        <li><a class="flex gap-1 hover:text-secondary-400 hover-default" href="city-page.html">
+                <div class="flex gap-6 items-center">
+                    <ul class="flex hidden dropdown-menu">
+                        <li><a class="flex gap-1" href="city-page.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                                </svg> <span class="font-bold">Trips</span>
+                                </svg> <span class="">Trips</span>
                             </a>
                         </li>
-                        <li><a href="#" class="font-bold hover:text-secondary-400 hover-default">Shop</a></li>
+                        <li><a href="#">About</a></li>
+
+                        <li><a href="products-page.html">Shop</a></li>
                     </ul>
                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                        </svg>
+                        <a href="shopping-cart-page.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
-
+                <div class="hidden overlay"></div>
             </nav>
         </div>
     </header>
     <main>
         <!-- Hero -->
-        <section>
+        <section class="mt-fixed-sm md:mt-fixed-md">
             <div class="container hero">
                 <div class="flow-content md:w-7/12">
                     <h1>Find all you need to know about your <span class="text-secondary-500">next travel
@@ -61,8 +64,9 @@
                     <p>Search through thousands of different attractions, restaurants and hotels to help plan your best
                         trip ever.</p>
                     <form action="#">
-                        <input type="text" name="destination" id="destination" placeholder="Your Destination?">
-                        <button class="btn sm:col-span-1" type="submit">Search</button>
+                        <input class="shadow" type="text" name="destination" id="destination"
+                            placeholder="Your Destination?">
+                        <button class="btn sm:col-span-1 shadow" type="submit">Search</button>
                     </form>
                 </div>
 
@@ -75,8 +79,8 @@
         <!-- Reviews -->
         <section>
             <div class="container">
-                <div class="grid gap-8 grid-cols-reviews">
-                    <div class="review-card border border-blue-900">
+                <div class="grid-spacer grid-cols-reviews">
+                    <div class="review-card border-2 border-blue-900">
                         <img class="self-start" src="./img/icons/lonely-planet-icon.svg" alt="lonely planets logo">
                         <p class="mb-auto">This is one of the best places to find budget friendly options for your next
                             trip.</p>
@@ -90,7 +94,7 @@
                         </div>
                     </div>
 
-                    <div class="review-card border border-black">
+                    <div class="review-card border-2 border-black">
                         <img class="self-start" src="./img/icons/nytimes-icon.svg" alt="new york times logo">
                         <p>By far the best customer service I have ever received. My go to website for when I'm looking
                             to travel.</p>
@@ -104,7 +108,7 @@
                         </div>
                     </div>
 
-                    <div class="review-card border border-red-500">
+                    <div class="review-card border-2 border-red-500">
                         <img class="self-start" src="./img/icons/google-icon.svg" alt="lonely planets logo">
 
                         <p>The amount of cheap deals on this site is crazy! I sometimes spend more time looking for
@@ -183,59 +187,57 @@
                     <p class="text-gray-500 md:text-2xl">Travel in style with our essentials line.</p>
                 </div>
 
-                <div class="grid-spacer spacer grid-cols-destinations">
-                    <div class="rounded-lg hover:shadow overflow-hidden">
+                <div class="grid-spacer spacer grid-cols-shop">
+                    <div class="clothing-card">
                         <a href="#">
-                            <img class="w-full rounded-lg" src="./img/clothing/hoodie-grey.png"
-                                alt="bargaintravels hoody">
+                            <img src="./img/clothing/hoody-model.png" alt="bargaintravels hoody">
                         </a>
                         <div class="p-4 text-left">
-                            <h3 class="font-semibold">Hoody</h3>
+                            <h3>Hoody</h3>
                             <p class="text-gray-500">R450</p>
                         </div>
 
                     </div>
 
-                    <div class="rounded-lg hover:shadow overflow-hidden">
+                    <div class="clothing-card">
                         <a href="#">
-                            <img class="w-full rounded-lg" src="./img/clothing/pullover-grey.png"
-                                alt="bargaintravels pullover">
+                            <img src="./img/clothing/pullover-model.png" alt="bargaintravels pullover">
                             <div class="p-4 text-left">
-                                <h3 class="font-semibold">Pullover</h3>
+                                <h3>Pullover</h3>
                                 <p class="text-gray-500">R350</p>
                             </div>
                         </a>
                     </div>
 
-                    <div class="rounded-lg hover:shadow overflow-hidden">
+                    <div class="clothing-card">
                         <a href="#">
-                            <img class="w-full rounded-lg" src="./img/clothing/t-shirt-grey.png"
-                                alt="bargaintravels t-shirt">
+                            <img src="./img/clothing/t-shirt-model.png" alt="bargaintravels t-shirt">
                             <div class="p-4 text-left">
-                                <h3 class="font-semibold">T-shirt</h3>
+                                <h3>T-shirt</h3>
                                 <p class="text-gray-500">R200</p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <a class="btn w-full sm:w-auto spacer" href="#">All Products</a>
+                <a class="btn w-full sm:w-auto spacer transform hover:-translate-y-1.5" href="products-page.html">All Products</a>
             </div>
         </section>
         <!-- Newsletter -->
         <section>
             <div class="container grid-spacer md:grid-cols-2 md:items-center">
                 <div class="">
-                    <h2 class="md:text-left">Subscribe to our newsletter and get 25%
-                        off our clothing collection
+                    <h2 class="md:text-left text-4xl">Subscribe to our newsletter and get<span
+                            class="text-secondary-400"> 25%
+                            off</span> our clothing collection
                     </h2>
-                    <form action="#" class="grid gap-4 spacer sm:grid-cols-4">
-                        <input class="flex p-3 bg-gray-100 rounded-full sm:col-span-3" type="email" name="email"
+                    <form action="#" class="grid gap-4 spacer lg:grid-cols-4">
+                        <input class="flex p-3 bg-gray-100 rounded-lg lg:col-span-3 shadow" type="email" name="email"
                             id="email" placeholder="hello@gmail.com">
-                        <button class="btn sm:col-span-1" type="submit">Sign up</button>
+                        <button class="btn  lg:col-span-1 shadow-md" type="submit">Sign up</button>
                     </form>
                 </div>
-                <div>
-                    <img class="w-full object-cover" src="./img/merchandise.png" alt="bargaintravel clothing range">
+                <div class="rounded-lg overflow-hidden w-full">
+                    <img class="object-cover" src="./img/merchandise.png" alt="bargaintravel clothing range">
                 </div>
             </div>
         </section>
