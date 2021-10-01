@@ -32,6 +32,7 @@ module.exports = {
         reviews: "repeat(auto-fit, minmax(17rem, 1fr))",
         destinations: "repeat(auto-fit, minmax(15.5rem, 1fr))",
         shop: "repeat(auto-fit, minmax(16.875rem, 1fr))",
+        profile: "max-content repeat(2, 1fr)",
       },
       spacing: {
         "fixed-sm": "4.5rem",

@@ -226,10 +226,53 @@ header {
 .cart-item .more-info {
   @apply flex flex-col justify-between items-start sm:flex-row sm:items-center mt-auto;
 }
+
+.cart-item label {
+  @apply font-medium text-sm md:text-base;
+}
+
 .cart-item input {
   @apply border border-gray-200 rounded-lg px-2 py-2 w-16;
 }
 
 .cart-item button {
   @apply text-secondary-400 text-sm border-b border-transparent hover:border-red-400 hover-default;
+}
+
+/* =============
+   About Page
+   =============*/
+
+.about-item {
+  @apply grid-spacer md:grid-cols-2 lg:gap-16 items-center;
+}
+
+.about-item img {
+  @apply rounded-lg object-cover h-full shadow;
+}
+
+.about-item p {
+  @apply text-base lg:text-xl text-gray-500 mt-4 lg:mt-8;
+}
+
+/* Profile */
+
+.profile {
+  @apply grid grid-cols-profile md:grid-cols-none lg:grid-cols-profile gap-4 lg:gap-6 items-center max-w-xs;
+}
+
+.profile > :first-child {
+  @apply order-last;
+}
+
+.profile h3 {
+  @apply text-xl font-bold;
+}
+
+.profile p {
+  @apply text-gray-400 text-sm font-semibold mt-1;
+}
+
+.profile img {
+  @apply h-20 w-20 object-cover rounded-full;
 }

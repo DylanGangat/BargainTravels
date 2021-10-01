@@ -10628,6 +10628,11 @@ video {
   grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
 }
 
+.grid-cols-profile{
+  grid-template-columns: -webkit-max-content repeat(2, 1fr);
+  grid-template-columns: max-content repeat(2, 1fr);
+}
+
 .grid-rows-1{
   grid-template-rows: repeat(1, minmax(0, 1fr));
 }
@@ -33757,13 +33762,26 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 @media (min-width: 640px){
   .cart-item .more-info{
     flex-direction: row;
     align-items: center;
+  }
+}
+
+.cart-item label {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+
+@media (min-width: 768px){
+  .cart-item label{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -33801,6 +33819,105 @@ header {
   transition-duration: 150ms;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* =============
+   About Page
+   =============*/
+
+.about-item {
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px){
+  .about-item{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px){
+  .about-item{
+    gap: 4rem;
+  }
+}
+
+.about-item img {
+  height: 100%;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.about-item p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px){
+  .about-item p{
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+/* Profile */
+
+.profile {
+  display: grid;
+  max-width: 20rem;
+  grid-template-columns: -webkit-max-content repeat(2, 1fr);
+  grid-template-columns: max-content repeat(2, 1fr);
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px){
+  .profile{
+    grid-template-columns: none;
+  }
+}
+
+@media (min-width: 1024px){
+  .profile{
+    grid-template-columns: -webkit-max-content repeat(2, 1fr);
+    grid-template-columns: max-content repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.profile > :first-child {
+  order: 9999;
+}
+
+.profile h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.profile p {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.profile img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 9999px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 640px){
@@ -43762,6 +43879,11 @@ header {
 
   .sm\:grid-cols-shop{
     grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
+  }
+
+  .sm\:grid-cols-profile{
+    grid-template-columns: -webkit-max-content repeat(2, 1fr);
+    grid-template-columns: max-content repeat(2, 1fr);
   }
 
   .sm\:grid-rows-1{
@@ -75875,6 +75997,11 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
   }
 
+  .md\:grid-cols-profile{
+    grid-template-columns: -webkit-max-content repeat(2, 1fr);
+    grid-template-columns: max-content repeat(2, 1fr);
+  }
+
   .md\:grid-rows-1{
     grid-template-rows: repeat(1, minmax(0, 1fr));
   }
@@ -107984,6 +108111,11 @@ header {
 
   .lg\:grid-cols-shop{
     grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
+  }
+
+  .lg\:grid-cols-profile{
+    grid-template-columns: -webkit-max-content repeat(2, 1fr);
+    grid-template-columns: max-content repeat(2, 1fr);
   }
 
   .lg\:grid-rows-1{
@@ -140097,6 +140229,11 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
   }
 
+  .xl\:grid-cols-profile{
+    grid-template-columns: -webkit-max-content repeat(2, 1fr);
+    grid-template-columns: max-content repeat(2, 1fr);
+  }
+
   .xl\:grid-rows-1{
     grid-template-rows: repeat(1, minmax(0, 1fr));
   }
@@ -172206,6 +172343,11 @@ header {
 
   .\32xl\:grid-cols-shop{
     grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
+  }
+
+  .\32xl\:grid-cols-profile{
+    grid-template-columns: -webkit-max-content repeat(2, 1fr);
+    grid-template-columns: max-content repeat(2, 1fr);
   }
 
   .\32xl\:grid-rows-1{
