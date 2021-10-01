@@ -203,11 +203,33 @@ header {
   @apply font-semibold tracking-wide text-xs visually-hidden;
 }
 
-
 .select-size select {
   @apply border border-gray-200 rounded-lg pl-4 pr-8 py-4;
 }
 
 .select-size option {
   @apply bg-white;
+}
+
+/* =============
+   Shopping Cart Page
+   =============*/
+
+.cart-item {
+  @apply grid gap-4 sm:gap-8 grid-cols-3 rounded-lg p-6 sm:p-8 shadow max-w-xl md:max-w-none;
+}
+
+.cart-item img {
+  @apply rounded-lg h-full object-cover;
+}
+
+.cart-item .more-info {
+  @apply flex flex-col justify-between items-start sm:flex-row sm:items-center mt-auto;
+}
+.cart-item input {
+  @apply border border-gray-200 rounded-lg px-2 py-2 w-16;
+}
+
+.cart-item button {
+  @apply text-secondary-400 text-sm border-b border-transparent hover:border-red-400 hover-default;
 }

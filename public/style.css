@@ -33701,10 +33701,6 @@ header {
   position: static;
 }
 
-/* .colour-block:hover > span {
-  @apply font-bold;
-} */
-
 .select-size select {
   border-radius: 0.5rem;
   border-width: 1px;
@@ -33719,6 +33715,92 @@ header {
 .select-size option {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+/* =============
+   Shopping Cart Page
+   =============*/
+
+.cart-item {
+  display: grid;
+  max-width: 36rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 640px){
+  .cart-item{
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 768px){
+  .cart-item{
+    max-width: none;
+  }
+}
+
+.cart-item img {
+  height: 100%;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cart-item .more-info {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between
+}
+
+@media (min-width: 640px){
+  .cart-item .more-info{
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.cart-item input {
+  width: 4rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.cart-item button {
+  border-bottom-width: 1px;
+  border-color: transparent;
+}
+
+.cart-item button:hover{
+  --tw-border-opacity: 1;
+  border-color: rgba(248, 113, 113, var(--tw-border-opacity));
+}
+
+.cart-item button{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgba(249, 83, 86, var(--tw-text-opacity));
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (min-width: 640px){
