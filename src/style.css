@@ -3,6 +3,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@supports (scrollbar-color: #d1d5db #f3f4f6) {
+  html {
+    scrollbar-color: #d1d5db #f3f4f6;
+  }
+}
+
+html::-webkit-scrollbar {
+  width: 16px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #d1d5db;
+  box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%),
+    inset -2px -2px 2px rgb(0 0 0 / 25%);
+}
+
 body {
   @apply font-primary text-black;
 }
@@ -275,4 +297,66 @@ header {
 
 .profile img {
   @apply h-20 w-20 object-cover rounded-full;
+}
+
+/* =============
+   City Page
+   =============*/
+.destination-hero {
+  @apply sm:max-h-96 grid sm:grid-cols-5 sm:grid-rows-4 gap-4 mt-8 md:mt-16;
+}
+
+.destination-hero .hero-image {
+  @apply h-full w-full object-cover rounded-lg;
+}
+.destination-hero .hero-image-1 {
+  @apply sm:col-span-3 sm:row-span-4;
+}
+
+.destination-hero .hero-image-2 {
+  @apply sm:col-span-2 sm:row-span-2;
+}
+
+.destination-hero .hero-image-3 {
+  @apply sm:col-span-2 sm:row-span-2;
+}
+
+/* Carousel */
+
+/* Needed to add this so I could customize scrollbar */
+.carousel::-webkit-scrollbar {
+  width: 16px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #d1d5db;
+  box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%),
+    inset -2px -2px 2px rgb(0 0 0 / 25%);
+}
+
+.carousel-card {
+  min-width: 15.5rem;
+  @apply relative;
+}
+
+.carousel-card .image {
+  @apply h-48 bg-white rounded-lg overflow-hidden;
+}
+
+.carousel-card img {
+  @apply h-full w-full object-cover hover:opacity-90 hover-default;
+}
+
+.carousel-card p {
+  @apply text-sm text-gray-400 mt-1;
+}
+
+.carousel-card .heart {
+  @apply bg-white p-1 inline-block absolute top-2 right-2 rounded-full;
 }

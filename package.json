@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel public/home-page.html public/about-page.html  public/city-page.html public/products-page.html public/product-info-page.html public/shopping-cart-page.html",
-    "build": "parcel build public/home-page.html public/about-page.html public/city-page.html public/products-page.html public/product-info-page.html public/shopping-cart-page.html",
+    "start": "parcel public/home-page.html public/about-page.html  public/city-page.html public/shop-page.html public/product-info-page.html public/shopping-cart-page.html public/trips-page.html",
+    "build": "parcel build public/home-page.html public/about-page.html public/city-page.html public/shop-page.html public/product-info-page.html public/shopping-cart-page.html public/trips-page.html",
     "build-css": "tailwindcss build -i src/style.css -o public/style.css"
   },
   "author": "",
@@ -13,5 +13,8 @@
   "dependencies": {
     "parcel-bundler": "^1.12.5",
     "tailwindcss": "^2.2.15"
-  }
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
 }

@@ -12,47 +12,51 @@
 </head>
 
 <body>
-    <header class="py-4">
+    <header>
         <div class="container">
             <nav class="flex items-center justify-between">
-                <div class="md:hidden">
+                <div class="md:hidden cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h7" />
                     </svg>
                 </div>
-                <!-- <a href="#"><img class="h-10 w-full" src="./img/logo/bargaintravels-logo.png" alt="bargaintravels logo"></a> -->
-                <a href="#" class="flex items-center"><img class="h-10 md:h-14" src="./img/logo/pig-xxl.png"
-                        alt="bargaintravels logo"> <span class="font-bold md:text-2xl">BargainTravels</span></a>
-                <div class="flex gap-4 items-center">
-                    <ul class="hidden md:flex gap-4">
-                        <li><a class="flex gap-1 hover:text-secondary-400 hover-default" href="#">
+                <a href="home-page.html" class="flex items-center"><img class="h-10 md:h-14"
+                        src="./img/logo/pig-xxl.png" alt="bargaintravels logo"><span
+                        class="font-bold md:text-2xl">BargainTravels</span></a>
+                <div class="flex gap-6 items-center">
+                    <ul class="flex hidden dropdown-menu">
+                        <li><a class="flex gap-1" href="city-page.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                                </svg> <span class="font-bold">Trips</span>
+                                </svg> <span>Trips</span>
                             </a>
                         </li>
-                        <li><a href="#" class="font-bold hover:text-secondary-400 hover-default">Shop</a></li>
+                        <li><a href="about-page.html">About</a></li>
+
+                        <li><a href="shop-page.html">Shop</a></li>
                     </ul>
                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                        </svg>
+                        <a href="shopping-cart-page.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
-
+                <div class="hidden overlay"></div>
             </nav>
         </div>
     </header>
     <main>
         <section class="mt-fixed-sm md:mt-fixed-md">
             <div class="container flow-content">
-                <a href="products-page.html" class="flex font-medium hover:text-secondary-400 hover-default">
+                <a href="shop-page.html" class="flex font-medium hover:text-secondary-400 hover-default">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -60,7 +64,7 @@
                 </a>
                 <div class="grid-spacer md:gap-12 md:grid-cols-2">
                     <div class="rounded-lg overflow-hidden">
-                        <img class="h-full object-cover" src="./img/clothing/hoody-model.png"
+                        <img class="h-full object-cover" src="./img/clothing/hoodys/hoody-white.png"
                             alt="A model wearing our clothing">
                     </div>
                     <div>
@@ -107,10 +111,9 @@
     </main>
     <footer class="bg-accent text-white text-center">
         <div class="container grid-spacer">
-            <!-- <img src="./img/logo/bargaintravels-logo.png" alt="bargaintravels logo"> -->
-
+         
             <ul class="footer-row">
-                <li><a href="#" class="footer-links-transiton">About us</a></li>
+                <li><a href="about-page.html" class="footer-links-transiton">About us</a></li>
                 <li><a href="#" class="footer-links-transiton">Work for us</a></li>
                 <li><a href="#" class="footer-links-transiton">Contact us</a></li>
                 <li><a href="#" class="footer-links-transiton">Terms & conditons</a></li>
@@ -120,7 +123,7 @@
                 <li>
                     <a href="#" class="social-icon">
                         Facebook
-                        <svg class="h-6 w-6" aria-hidden="true" focusable="false" data-prefix="fab"
+                        <svg class="h-6 w-6" height="24" width="24" aria-hidden="true" focusable="false" data-prefix="fab"
                             data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                             <path fill="currentColor"
@@ -132,7 +135,7 @@
                 <li>
                     <a href="#" class="social-icon">
                         Instagram
-                        <svg class="h-6 w-6" aria-hidden="true" focusable="false" data-prefix="fab"
+                        <svg class="h-6 w-6" height="24" width="24" aria-hidden="true" focusable="false" data-prefix="fab"
                             data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <path fill="currentColor"
@@ -144,7 +147,7 @@
                 <li>
                     <a href="#" class="social-icon">
                         Twitter
-                        <svg class="h-6 w-6" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
+                        <svg class="h-6 w-6" height="24" width="24" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
                             class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512">
                             <path fill="currentColor"
@@ -156,7 +159,7 @@
                 <li>
                     <a href="#" class="social-icon">
                         Youtube
-                        <svg class="h-6 w-6" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube"
+                        <svg class="h-6 w-6" height="24" width="24" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube"
                             class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 576 512">
                             <path fill="currentColor"

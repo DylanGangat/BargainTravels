@@ -36,9 +36,9 @@
                                 </svg> <span class="">Trips</span>
                             </a>
                         </li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="about-page.html">About</a></li>
 
-                        <li><a href="products-page.html">Shop</a></li>
+                        <li><a href="shop-page.html">Shop</a></li>
                     </ul>
                     <div>
                         <a href="shopping-cart-page.html">
@@ -63,9 +63,9 @@
                             destination.</span></h1>
                     <p>Search through thousands of different attractions, restaurants and hotels to help plan your best
                         trip ever.</p>
-                    <form action="#">
+                    <form action="#" class="search">
                         <input class="shadow" type="text" name="destination" id="destination"
-                            placeholder="Your Destination?">
+                            placeholder="Your Destination?" required>
                         <button class="btn sm:col-span-1 shadow" type="submit">Search</button>
                     </form>
                 </div>
@@ -147,25 +147,25 @@
 
                     <div class="grid-spacer grid-cols-destinations">
                         <div class="flow-content country-card">
-                            <img src="./img/croatia.webp" alt="City of Dubrovnik">
+                            <img src="./img/croatia.webp" alt="City of Dubrovnik" loading="lazy">
                             <h3>Croatia</h3>
                             <div></div>
                         </div>
 
                         <div class="flow-content country-card">
-                            <img src="./img/brazil.webp" alt="Birds eye view of Rio de Janeiro">
+                            <img src="./img/brazil.webp" alt="Birds eye view of Rio de Janeiro" loading="lazy">
                             <h3>Brazil</h3>
                             <div></div>
                         </div>
 
                         <div class="flow-content country-card">
-                            <img src="./img/egypt.webp" alt="A pyramid in Egypt">
+                            <img src="./img/egypt.webp" alt="A pyramid in Egypt" loading="lazy">
                             <h3>Egypt</h3>
                             <div></div>
                         </div>
 
                         <div class="flow-content country-card">
-                            <img src="./img/japan.webp" alt="City center of Shibuya in Japan">
+                            <img src="./img/japan.webp" alt="City center of Shibuya in Japan" loading="lazy">
                             <h3>Japan</h3>
                             <div></div>
                         </div>
@@ -190,7 +190,7 @@
                 <div class="grid-spacer spacer grid-cols-shop">
                     <div class="clothing-card">
                         <a href="#">
-                            <img src="./img/clothing/hoody-model.png" alt="bargaintravels hoody">
+                            <img src="./img/clothing/hoodys/hoody-white.png" alt="bargaintravels hoody" loading="lazy">
                         </a>
                         <div class="p-4 text-left">
                             <h3>Hoody</h3>
@@ -201,7 +201,7 @@
 
                     <div class="clothing-card">
                         <a href="#">
-                            <img src="./img/clothing/pullover-model.png" alt="bargaintravels pullover">
+                            <img src="./img/clothing/pullovers/pullover-white.png" alt="bargaintravels pullover" loading="lazy">
                             <div class="p-4 text-left">
                                 <h3>Pullover</h3>
                                 <p class="text-gray-500">R350</p>
@@ -211,7 +211,7 @@
 
                     <div class="clothing-card">
                         <a href="#">
-                            <img src="./img/clothing/t-shirt-model.png" alt="bargaintravels t-shirt">
+                            <img src="./img/clothing/t-shirts/t-shirt-white.png" alt="bargaintravels t-shirt" loading="lazy">
                             <div class="p-4 text-left">
                                 <h3>T-shirt</h3>
                                 <p class="text-gray-500">R200</p>
@@ -219,7 +219,8 @@
                         </a>
                     </div>
                 </div>
-                <a class="btn w-full sm:w-auto spacer transform hover:-translate-y-1.5" href="products-page.html">All Products</a>
+                <a class="btn w-full sm:w-auto spacer transform hover:-translate-y-1.5" href="shop-page.html">All
+                    Products</a>
             </div>
         </section>
         <!-- Newsletter -->
@@ -237,17 +238,16 @@
                     </form>
                 </div>
                 <div class="rounded-lg overflow-hidden w-full">
-                    <img class="object-cover" src="./img/merchandise.png" alt="bargaintravel clothing range">
+                    <img class="object-cover" src="./img/merchandise.png" alt="bargaintravel clothing range" loading="lazy">
                 </div>
             </div>
         </section>
     </main>
     <footer class="bg-accent text-white text-center">
         <div class="container grid-spacer">
-            <!-- <img src="./img/logo/bargaintravels-logo.png" alt="bargaintravels logo"> -->
-
+         
             <ul class="footer-row">
-                <li><a href="#" class="footer-links-transiton">About us</a></li>
+                <li><a href="about-page.html" class="footer-links-transiton">About us</a></li>
                 <li><a href="#" class="footer-links-transiton">Work for us</a></li>
                 <li><a href="#" class="footer-links-transiton">Contact us</a></li>
                 <li><a href="#" class="footer-links-transiton">Terms & conditons</a></li>
@@ -257,7 +257,7 @@
                 <li>
                     <a href="#" class="social-icon">
                         Facebook
-                        <svg class="h-6 w-6" aria-hidden="true" focusable="false" data-prefix="fab"
+                        <svg class="h-6 w-6" height="24" width="24" aria-hidden="true" focusable="false" data-prefix="fab"
                             data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                             <path fill="currentColor"
@@ -269,7 +269,7 @@
                 <li>
                     <a href="#" class="social-icon">
                         Instagram
-                        <svg class="h-6 w-6" aria-hidden="true" focusable="false" data-prefix="fab"
+                        <svg class="h-6 w-6" height="24" width="24" aria-hidden="true" focusable="false" data-prefix="fab"
                             data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <path fill="currentColor"
@@ -281,7 +281,7 @@
                 <li>
                     <a href="#" class="social-icon">
                         Twitter
-                        <svg class="h-6 w-6" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
+                        <svg class="h-6 w-6" height="24" width="24" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
                             class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512">
                             <path fill="currentColor"
@@ -293,7 +293,7 @@
                 <li>
                     <a href="#" class="social-icon">
                         Youtube
-                        <svg class="h-6 w-6" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube"
+                        <svg class="h-6 w-6" height="24" width="24" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube"
                             class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 576 512">
                             <path fill="currentColor"

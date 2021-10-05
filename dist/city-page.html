@@ -8,7 +8,7 @@
     <title>City info page</title>
     <meta name="description" content="Tailwindcss startup files for a new project">
     <link rel="stylesheet" href="/style.e308ff8e.css">
-    <script defer="" src="/script.75da7f30.js"></script>
+    <script defer="" src="/city.fc9ac5f7.js"></script>
 </head>
 
 <body class="font-primary text-primary">
@@ -29,9 +29,9 @@
                                 </svg> <span class="">Trips</span>
                             </a>
                         </li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="/about-page.html">About</a></li>
 
-                        <li><a href="/products-page.html">Shop</a></li>
+                        <li><a href="/shop-page.html">Shop</a></li>
                     </ul>
                     <div>
                         <a href="/shopping-cart-page.html">
@@ -48,41 +48,49 @@
     <main>
         <section class="mt-fixed-sm md:mt-fixed-md">
             <div class="container">
-                <h1><span class="text-secondary-400 font-semibold">Explore</span> Japan</h1>
-                <div class="grid grid-cols-5 grid-rows-4 gap-4 mt-8 md:mt-16">
-                    <img class="col-span-3 row-span-4 h-full object-cover rounded-lg" src="/japan.fbdb8e78.webp" alt="">
-                    <img class="col-span-2 row-span-2 rounded-lg" src="/japan.fbdb8e78.webp" alt="">
-                    <img class="col-span-2 row-span-2 rounded-lg" src="/japan.fbdb8e78.webp" alt="">
+                <h1 data-heading=""><span class="text-secondary-400 font-semibold">Explore</span> Cape Town</h1>
+                <div class="destination-hero" data-destination="">
+                    <img class="hero-image hero-image-1" src="/panaramic-table-mountain.7157e76e.webp" alt="table mountain">
+                    <img class="hero-image hero-image-2" src="/table-mountain.fd71d4df.webp" alt="table mountain">
+                    <img class="hero-image hero-image-3" src="/camps-bay-beach.87aab0d5.webp" alt="camps bay beach">
                 </div>
                 <div class="flow-content spacer">
-                    <h2 class="h3">About Japan</h2>
-                    <p class="text-lg max-w-prose">In the Land of the Rising Sun, ancient temples sit alongside neon
-                        wonderlands and shinto shrines
-                        offer pockets of peace amid metropolises. Add tea ceremonies, snow monkeys, sushi, kimonos, and
-                        karaoke to the mix, and you’ve got one of the world’s most fascinating countries.
+                    <h2 class="h3" data-sub-heading="">About Cape Town</h2>
+                    <p class="text-lg max-w-prose" data-description="">Cape Town glistens at the southern toe of the
+                        African continent. Tourist brochure-views at Blaauwberg Beach and Kirstenbosch National
+                        Botanical Gardens are within easy driving distance of "The Mother City." The Cape of Good Hope
+                        Nature Reserve provides sweeping sea vistas, hiking trails and wildlife encounters. On a more
+                        somber note, travellers can visit Robben Island, the prison where Nelson Mandela was held for 27
+                        years.
                     </p>
                 </div>
             </div>
         </section>
         <section>
             <div class="container">
-                <h2 class="h3">Essential Japan</h2>
+                <h2 class="h3">Essential Cape Town</h2>
                 <!-- do -->
                 <div class="spacer flow-content">
                     <h3 class="text-4xl">Do</h3>
                     <div class="relative">
-                        <button class="bg-white p-1 inline-block absolute top-1/3 -left-4  border-2 border-black rounded-full z-10 hover:border-red-400 hover-default">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        <!-- <button
+                            class="bg-white p-1 inline-block absolute top-1/3 -left-4  border-2 border-black rounded-full z-10 hover:border-red-400 hover-default">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 hover:text-secondary-400 hover-default" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7" />
                             </svg>
-                        </button>
-                        <div class="grid-spacer grid-cols-4">
+                        </button> -->
 
+                        <div class="carousel flex gap-8 overflow-auto pb-4">
+                            <!-- <div class="absolute top-0 right-0 bottom-0 w-12 h-full bg-black z-10 opacity-75  "></div> -->
                             <!-- Card 1 -->
-                            <div class="relative">
-                                <div class="h-48 bg-white rounded-lg overflow-hidden"><img class="h-full object-cover hover:opacity-90 hover-default" src="/japan.fbdb8e78.webp" alt=""></div>
+                            <div class="carousel-card">
+                                <div class="image"><img src="/cable-car.f8f3eaf1.webp" alt="table mountain cable car" loading="lazy">
+                                </div>
                                 <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Japan</h3>
+                                    <h3 class="text-lg font-semibold">Table Mountain Cable Car</h3>
                                     <div class="flex gap-1 mt-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
@@ -102,9 +110,9 @@
                                         </svg>
 
                                     </div>
-                                    <p class="text-sm text-gray-400 mt-1">Religious Sites, Historic Sites</p>
+                                    <p>Religious Sites, Historic Sites</p>
                                 </div>
-                                <div class="bg-white p-1 inline-block absolute top-2 right-2 rounded-full">
+                                <div class="heart">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                     </svg>
@@ -112,10 +120,12 @@
                             </div>
 
                             <!-- Card 2 -->
-                            <div class="relative">
-                                <div class="h-48 bg-white rounded-lg overflow-hidden"><img class="h-full object-cover hover:opacity-90 hover-default" src="/japan.fbdb8e78.webp" alt=""></div>
+
+                            <div class="carousel-card">
+                                <div class="image"><img src="/lions-head.9cfeb5b5.webp" alt="lions head" loading="lazy">
+                                </div>
                                 <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Japan</h3>
+                                    <h3 class="text-lg font-semibold">Lions Head</h3>
                                     <div class="flex gap-1 mt-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
@@ -133,10 +143,11 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
                                         </svg>
+
                                     </div>
-                                    <p class="text-sm text-gray-400 mt-1">Religious Sites, Historic Sites</p>
+                                    <p>Religious Sites, Historic Sites</p>
                                 </div>
-                                <div class="bg-white p-1 inline-block absolute top-2 right-2 rounded-full">
+                                <div class="heart">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                     </svg>
@@ -144,10 +155,11 @@
                             </div>
 
                             <!-- Card 3 -->
-                            <div class="relative">
-                                <div class="h-48 bg-white rounded-lg overflow-hidden"><img class="h-full object-cover hover:opacity-90 hover-default" src="/japan.fbdb8e78.webp" alt=""></div>
+                            <div class="carousel-card">
+                                <div class="image"><img src="/bo-kaap.b25a570b.webp" alt="Bo-Kaap" loading="lazy">
+                                </div>
                                 <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Japan</h3>
+                                    <h3 class="text-lg font-semibold">Bo-Kaap</h3>
                                     <div class="flex gap-1 mt-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
@@ -165,10 +177,11 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
                                         </svg>
+
                                     </div>
-                                    <p class="text-sm text-gray-400 mt-1">Religious Sites, Historic Sites</p>
+                                    <p>Religious Sites, Historic Sites</p>
                                 </div>
-                                <div class="bg-white p-1 inline-block absolute top-2 right-2 rounded-full">
+                                <div class="heart">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                     </svg>
@@ -176,10 +189,11 @@
                             </div>
 
                             <!-- Card 4 -->
-                            <div class="relative">
-                                <div class="h-48 bg-white rounded-lg overflow-hidden"><img class="h-full object-cover hover:opacity-90 hover-default" src="/japan.fbdb8e78.webp" alt=""></div>
+                            <div class="carousel-card">
+                                <div class="image"><img src="/llandudno-beach.9cb02dc3.webp" alt="Llandudno Beach" loading="lazy">
+                                </div>
                                 <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Japan</h3>
+                                    <h3 class="text-lg font-semibold">Llandudno Beach</h3>
                                     <div class="flex gap-1 mt-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
@@ -197,21 +211,340 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
                                         </svg>
+
                                     </div>
-                                    <p class="text-sm text-gray-400 mt-1">Religious Sites, Historic Sites</p>
+                                    <p>Religious Sites, Historic Sites</p>
                                 </div>
-                                <div class="bg-white p-1 inline-block absolute top-2 right-2 rounded-full">
+                                <div class="heart">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                     </svg>
                                 </div>
                             </div>
+
+
+                            <!-- Card 5 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/cape-point.9040947e.webp" alt="cape point beacon" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Cape Point</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 6 -->
+
+                            <div class="carousel-card">
+                                <div class="image"><img src="/aquarium.7e21906a.webp" alt="waterfront aquarium" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Waterfronts Aquarium</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 7 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/boulders-beach.4c4db7b0.webp" alt="boulders beach" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Boulders Beach</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 8 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/kirstenbosch.c16c7c5a.webp" alt="kirstenbosch gardens" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Kirstenbosch Gardens</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+
+                            <!-- Card 8 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/muizenberg-colourful-house.4693adf9.webp" alt="Muizenberg Beach" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Muizenberg Beach</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+
+                            <!-- Card 9 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/mount-nelson.cf061bc1.webp" alt="Mount Nelson" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Mount Nelson</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 10 -->
+
+                            <div class="carousel-card">
+                                <div class="image"><img src="/safari.0fd37c82.webp" alt="Elephants in the wild" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Safari</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 11 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/hout-bay.3f916cfc.webp" alt="Hout Bay" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Hout Bay</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 12 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/camps-bay-beach.87aab0d5.webp" alt="Camps Bay Beach" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Camps Bay Beach</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+
                         </div>
-                        <button class="bg-white p-1 inline-block absolute top-1/3 -right-4  border-2 border-black rounded-full z-10 hover:border-red-400 hover-default">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+
+                        <!-- <button
+                            class="bg-white p-1 inline-block absolute top-1/3 -right-4  border-2 border-black rounded-full z-10 hover:border-red-400 hover-default">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 hover:text-secondary-400 hover-default" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
                             </svg>
-                        </button>
+                        </button> -->
                     </div>
                 </div>
 
@@ -219,16 +552,15 @@
                 <div class="spacer flow-content">
                     <h3 class="text-4xl">Eat</h3>
                     <div class="relative">
-                        <button class="bg-white p-1 inline-block absolute top-1/3 -left-4  border-2 border-black rounded-full z-10 hover:border-red-400 hover-default">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                            </svg>
-                        </button>
-                        <div class="grid-spacer grid-cols-4">
-                            <div class="relative">
-                                <div class="h-48 bg-white rounded-lg overflow-hidden"><img class="h-full object-cover hover:opacity-90 hover-default" src="/food.2b4552e9.webp" alt=""></div>
+
+                        <div class="carousel flex gap-8 overflow-auto pb-4">
+                            <!-- <div class="absolute top-0 right-0 bottom-0 w-12 h-full bg-black z-10 opacity-75  "></div> -->
+                            <!-- Card 1 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/cable-car.f8f3eaf1.webp" alt="table mountain cable car" loading="lazy">
+                                </div>
                                 <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Nanzenji Junsei</h3>
+                                    <h3 class="text-lg font-semibold">Table Mountain Cable Car</h3>
                                     <div class="flex gap-1 mt-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
@@ -246,20 +578,24 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
                                         </svg>
+
                                     </div>
-                                    <p class="text-sm text-gray-400 mt-1">Japanese, Asian, Kaiseki</p>
+                                    <p>Religious Sites, Historic Sites</p>
                                 </div>
-                                <div class="bg-white p-1 inline-block absolute top-2 right-2 rounded-full">
+                                <div class="heart">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                     </svg>
                                 </div>
                             </div>
 
-                            <div class="relative">
-                                <div class="h-48 bg-white rounded-lg overflow-hidden"><img class="h-full object-cover hover:opacity-90 hover-default" src="/food.2b4552e9.webp" alt=""></div>
+                            <!-- Card 2 -->
+
+                            <div class="carousel-card">
+                                <div class="image"><img src="/lions-head.9cfeb5b5.webp" alt="lions head" loading="lazy">
+                                </div>
                                 <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Nanzenji Junsei</h3>
+                                    <h3 class="text-lg font-semibold">Lions Head</h3>
                                     <div class="flex gap-1 mt-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
@@ -277,21 +613,23 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
                                         </svg>
+
                                     </div>
-                                    <p class="text-sm text-gray-400 mt-1">Japanese, Asian, Kaiseki</p>
+                                    <p>Religious Sites, Historic Sites</p>
                                 </div>
-                                <div class="bg-white p-1 inline-block absolute top-2 right-2 rounded-full">
+                                <div class="heart">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                     </svg>
                                 </div>
                             </div>
 
-
-                            <div class="relative">
-                                <div class="h-48 bg-white rounded-lg overflow-hidden"><img class="h-full object-cover hover:opacity-90 hover-default" src="/food.2b4552e9.webp" alt=""></div>
+                            <!-- Card 3 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/bo-kaap.b25a570b.webp" alt="Bo-Kaap" loading="lazy">
+                                </div>
                                 <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Nanzenji Junsei</h3>
+                                    <h3 class="text-lg font-semibold">Bo-Kaap</h3>
                                     <div class="flex gap-1 mt-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
@@ -309,20 +647,23 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
                                         </svg>
+
                                     </div>
-                                    <p class="text-sm text-gray-400 mt-1">Japanese, Asian, Kaiseki</p>
+                                    <p>Religious Sites, Historic Sites</p>
                                 </div>
-                                <div class="bg-white p-1 inline-block absolute top-2 right-2 rounded-full">
+                                <div class="heart">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                     </svg>
                                 </div>
                             </div>
 
-                            <div class="relative">
-                                <div class="h-48 bg-white rounded-lg overflow-hidden"><img class="h-full object-cover hover:opacity-90 hover-default" src="/food.2b4552e9.webp" alt=""></div>
+                            <!-- Card 4 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/llandudno-beach.9cb02dc3.webp" alt="Llandudno Beach" loading="lazy">
+                                </div>
                                 <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Nanzenji Junsei</h3>
+                                    <h3 class="text-lg font-semibold">Llandudno Beach</h3>
                                     <div class="flex gap-1 mt-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
@@ -340,22 +681,332 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
                                         </svg>
+
                                     </div>
-                                    <p class="text-sm text-gray-400 mt-1">Japanese, Asian, Kaiseki</p>
+                                    <p>Religious Sites, Historic Sites</p>
                                 </div>
-                                <div class="bg-white p-1 inline-block absolute top-2 right-2 rounded-full">
+                                <div class="heart">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                     </svg>
                                 </div>
                             </div>
+
+
+                            <!-- Card 5 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/cape-point.9040947e.webp" alt="cape point beacon" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Cape Point</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 6 -->
+
+                            <div class="carousel-card">
+                                <div class="image"><img src="/aquarium.7e21906a.webp" alt="waterfront aquarium" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Waterfronts Aquarium</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 7 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/boulders-beach.4c4db7b0.webp" alt="boulders beach" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Boulders Beach</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 8 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/kirstenbosch.c16c7c5a.webp" alt="kirstenbosch gardens" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Kirstenbosch Gardens</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+
+                            <!-- Card 8 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/muizenberg-colourful-house.4693adf9.webp" alt="Muizenberg Beach" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Muizenberg Beach</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+
+                            <!-- Card 9 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/mount-nelson.cf061bc1.webp" alt="Mount Nelson" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Mount Nelson</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 10 -->
+
+                            <div class="carousel-card">
+                                <div class="image"><img src="/safari.0fd37c82.webp" alt="Elephants in the wild" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Safari</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 11 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/hout-bay.3f916cfc.webp" alt="Hout Bay" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Hout Bay</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 12 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/camps-bay-beach.87aab0d5.webp" alt="Camps Bay Beach" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Camps Bay Beach</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
 
                         </div>
-                        <button class="bg-white p-1 inline-block absolute top-1/3 -right-4  border-2 border-black rounded-full z-10 hover:border-red-400 hover-default">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                            </svg>
-                        </button>
+
+
                     </div>
                 </div>
 
@@ -363,18 +1014,23 @@
                 <div class="spacer flow-content">
                     <h3 class="text-4xl">Stay</h3>
                     <div class="relative">
-                        <button class="bg-white p-1 inline-block absolute top-1/3 -left-4  border-2 border-black rounded-full z-10 hover:border-red-400 hover-default">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        <!-- <button
+                            class="bg-white p-1 inline-block absolute top-1/3 -left-4  border-2 border-black rounded-full z-10 hover:border-red-400 hover-default">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 hover:text-secondary-400 hover-default" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7" />
                             </svg>
-                        </button>
-                        <div class="grid-spacer grid-cols-4">
-
-                            <!-- Hotel 1 -->
-                            <div class="relative">
-                                <div class="h-48 bg-white rounded-lg overflow-hidden"><img class="h-full object-cover hover:opacity-90 hover-default" src="/hotel.48aa28ac.webp" alt=""></div>
+                        </button> -->
+                        <div class="carousel flex gap-8 overflow-auto pb-4">
+                            <!-- <div class="absolute top-0 right-0 bottom-0 w-12 h-full bg-black z-10 opacity-75  "></div> -->
+                            <!-- Card 1 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/cable-car.f8f3eaf1.webp" alt="table mountain cable car" loading="lazy">
+                                </div>
                                 <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Hotel Kanra</h3>
+                                    <h3 class="text-lg font-semibold">Table Mountain Cable Car</h3>
                                     <div class="flex gap-1 mt-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
@@ -392,20 +1048,24 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
                                         </svg>
+
                                     </div>
+                                    <p>Religious Sites, Historic Sites</p>
                                 </div>
-                                <div class="bg-white p-1 inline-block absolute top-2 right-2 rounded-full">
+                                <div class="heart">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                     </svg>
                                 </div>
                             </div>
 
-                            <!-- Hotel 2 -->
-                            <div class="relative">
-                                <div class="h-48 bg-white rounded-lg overflow-hidden"><img class="h-full object-cover hover:opacity-90 hover-default" src="/hotel.48aa28ac.webp" alt=""></div>
+                            <!-- Card 2 -->
+
+                            <div class="carousel-card">
+                                <div class="image"><img src="/lions-head.9cfeb5b5.webp" alt="lions head" loading="lazy">
+                                </div>
                                 <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Hotel Kanra</h3>
+                                    <h3 class="text-lg font-semibold">Lions Head</h3>
                                     <div class="flex gap-1 mt-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
@@ -423,20 +1083,23 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
                                         </svg>
+
                                     </div>
+                                    <p>Religious Sites, Historic Sites</p>
                                 </div>
-                                <div class="bg-white p-1 inline-block absolute top-2 right-2 rounded-full">
+                                <div class="heart">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                     </svg>
                                 </div>
                             </div>
 
-                            <!-- Hotel 3 -->
-                            <div class="relative">
-                                <div class="h-48 bg-white rounded-lg overflow-hidden"><img class="h-full object-cover hover:opacity-90 hover-default" src="/hotel.48aa28ac.webp" alt=""></div>
+                            <!-- Card 3 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/bo-kaap.b25a570b.webp" alt="Bo-Kaap" loading="lazy">
+                                </div>
                                 <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Hotel Kanra</h3>
+                                    <h3 class="text-lg font-semibold">Bo-Kaap</h3>
                                     <div class="flex gap-1 mt-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
@@ -454,20 +1117,23 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
                                         </svg>
+
                                     </div>
+                                    <p>Religious Sites, Historic Sites</p>
                                 </div>
-                                <div class="bg-white p-1 inline-block absolute top-2 right-2 rounded-full">
+                                <div class="heart">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                     </svg>
                                 </div>
                             </div>
 
-                            <!-- Hotel 4 -->
-                            <div class="relative">
-                                <div class="h-48 bg-white rounded-lg overflow-hidden"><img class="h-full object-cover hover:opacity-90 hover-default" src="/hotel.48aa28ac.webp" alt=""></div>
+                            <!-- Card 4 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/llandudno-beach.9cb02dc3.webp" alt="Llandudno Beach" loading="lazy">
+                                </div>
                                 <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Hotel Kanra</h3>
+                                    <h3 class="text-lg font-semibold">Llandudno Beach</h3>
                                     <div class="flex gap-1 mt-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
@@ -485,21 +1151,340 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
                                         </svg>
+
                                     </div>
+                                    <p>Religious Sites, Historic Sites</p>
                                 </div>
-                                <div class="bg-white p-1 inline-block absolute top-2 right-2 rounded-full">
+                                <div class="heart">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                     </svg>
                                 </div>
                             </div>
+
+
+                            <!-- Card 5 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/cape-point.9040947e.webp" alt="cape point beacon" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Cape Point</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 6 -->
+
+                            <div class="carousel-card">
+                                <div class="image"><img src="/aquarium.7e21906a.webp" alt="waterfront aquarium" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Waterfronts Aquarium</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 7 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/boulders-beach.4c4db7b0.webp" alt="boulders beach" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Boulders Beach</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 8 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/kirstenbosch.c16c7c5a.webp" alt="kirstenbosch gardens" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Kirstenbosch Gardens</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+
+                            <!-- Card 8 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/muizenberg-colourful-house.4693adf9.webp" alt="Muizenberg Beach" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Muizenberg Beach</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+
+                            <!-- Card 9 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/mount-nelson.cf061bc1.webp" alt="Mount Nelson" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Mount Nelson</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 10 -->
+
+                            <div class="carousel-card">
+                                <div class="image"><img src="/safari.0fd37c82.webp" alt="Elephants in the wild" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Safari</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 11 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/hout-bay.3f916cfc.webp" alt="Hout Bay" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Hout Bay</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 12 -->
+                            <div class="carousel-card">
+                                <div class="image"><img src="/camps-bay-beach.87aab0d5.webp" alt="Camps Bay Beach" loading="lazy">
+                                </div>
+                                <div class="mt-2">
+                                    <h3 class="text-lg font-semibold">Camps Bay Beach</h3>
+                                    <div class="flex gap-1 mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                        </svg>
+
+                                    </div>
+                                    <p>Religious Sites, Historic Sites</p>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
 
                         </div>
-                        <button class="bg-white p-1 inline-block absolute top-1/3 -right-4  border-2 border-black rounded-full z-10 hover:border-red-400 hover-default">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+
+                        <!-- <button
+                            class="bg-white p-1 inline-block absolute top-1/3 -right-4  border-2 border-black rounded-full z-10 hover:border-red-400 hover-default">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6 hover:text-secondary-400 hover-default" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
                             </svg>
-                        </button>
+                        </button> -->
                     </div>
                 </div>
 
@@ -510,7 +1495,7 @@
         <div class="container grid-spacer">
 
             <ul class="footer-row">
-                <li><a href="#" class="footer-links-transiton">About us</a></li>
+                <li><a href="/about-page.html" class="footer-links-transiton">About us</a></li>
                 <li><a href="#" class="footer-links-transiton">Work for us</a></li>
                 <li><a href="#" class="footer-links-transiton">Contact us</a></li>
                 <li><a href="#" class="footer-links-transiton">Terms & conditons</a></li>
@@ -520,7 +1505,7 @@
                 <li>
                     <a href="#" class="social-icon">
                         Facebook
-                        <svg class="h-6 w-6" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <svg class="h-6 w-6" height="24" width="24" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                             <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
                             </path>
                         </svg>
@@ -529,7 +1514,7 @@
                 <li>
                     <a href="#" class="social-icon">
                         Instagram
-                        <svg class="h-6 w-6" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <svg class="h-6 w-6" height="24" width="24" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
                             </path>
                         </svg>
@@ -538,7 +1523,7 @@
                 <li>
                     <a href="#" class="social-icon">
                         Twitter
-                        <svg class="h-6 w-6" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <svg class="h-6 w-6" height="24" width="24" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
                             </path>
                         </svg>
@@ -547,7 +1532,7 @@
                 <li>
                     <a href="#" class="social-icon">
                         Youtube
-                        <svg class="h-6 w-6" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <svg class="h-6 w-6" height="24" width="24" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                             <path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
                             </path>
                         </svg>
