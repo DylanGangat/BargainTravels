@@ -1,3 +1,4 @@
+import "./script.js";
 // const destination = JSON.parse(sessionStorage.getItem("Destination"));
 // const placeInfo = document.querySelector("[data-destination]");
 // const placeName = document.querySelector("[data-heading]");

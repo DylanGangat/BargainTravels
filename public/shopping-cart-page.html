@@ -8,14 +8,14 @@
     <title>Shopping Cart Page</title>
     <meta name="description" content="Tailwindcss startup files for a new project">
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <script defer src="./scripts/script.js"></script>
 </head>
 
 <body>
     <header>
         <div class="container">
             <nav class="flex items-center justify-between">
-                <div class="md:hidden cursor-pointer">
+                <div class="md:hidden cursor-pointer" data-nav-toggle>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -26,7 +26,7 @@
                         src="./img/logo/pig-xxl.png" alt="bargaintravels logo"><span
                         class="font-bold md:text-2xl">BargainTravels</span></a>
                 <div class="flex gap-6 items-center">
-                    <ul class="flex hidden dropdown-menu">
+                    <ul class="flex hidden dropdown-menu" data-nav>
                         <li><a class="flex gap-1" href="city-page.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -40,7 +40,7 @@
                         <li><a href="shop-page.html">Shop</a></li>
                     </ul>
                     <div>
-                        <a href="#">
+                        <a href="shopping-cart-page.html">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -49,7 +49,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="hidden overlay"></div>
+                <div class="hidden overlay" data-overlay></div>
             </nav>
         </div>
     </header>
@@ -63,7 +63,7 @@
 
                         <div class="cart-item">
                             <div class="col-span-1">
-                                <img src="./img/clothing/hoodys/hoody-mockup.png" alt="" loading="lazy">
+                                <img src="./img/clothing/hoodys/hoody-mockup.webp" alt="" loading="lazy">
                             </div>
                             <div class="col-span-2 flex flex-col">
                                 <div>
@@ -83,7 +83,7 @@
                         <!-- card -->
                         <div class="cart-item">
                             <div class="col-span-1">
-                                <img src="./img/clothing/longsleeves/long-sleeve-mockup.png" alt="" loading="lazy">
+                                <img src="./img/clothing/longsleeves/long-sleeve-mockup.webp" alt="" loading="lazy">
                             </div>
                             <div class="col-span-2 flex flex-col">
                                 <div>
@@ -103,7 +103,7 @@
                         <!-- card -->
                         <div class="cart-item">
                             <div class="col-span-1">
-                                <img src="./img/clothing/pullovers/pullover-mockup.png" alt="" loading="lazy">
+                                <img src="./img/clothing/pullovers/pullover-mockup.webp" alt="" loading="lazy">
                             </div>
                             <div class="col-span-2 flex flex-col">
                                 <div>
@@ -123,7 +123,7 @@
                         <!-- card -->
                         <div class="cart-item">
                             <div class="col-span-1">
-                                <img src="./img/clothing/t-shirts/t-shirt-mockup.png" alt="" loading="lazy">
+                                <img src="./img/clothing/t-shirts/t-shirt-mockup.webp" alt="" loading="lazy">
                             </div>
                             <div class="col-span-2 flex flex-col">
                                 <div>
@@ -143,7 +143,7 @@
                         <!-- card -->
                         <div class="cart-item">
                             <div class="col-span-1">
-                                <img src="./img/clothing/jackets/jacket-mockup.png" alt="" loading="lazy">
+                                <img src="./img/clothing/jackets/jacket-mockup.webp" alt="" loading="lazy">
                             </div>
                             <div class="col-span-2 flex flex-col">
                                 <div>
@@ -182,7 +182,7 @@
             </div>
         </section>
     </main>
-    <footer class="bg-accent text-white text-center">
+    <footer class="bg-accent text-white md:text-center">
         <div class="container grid-spacer">
 
             <ul class="footer-row">

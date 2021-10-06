@@ -31085,6 +31085,7 @@ video {
 @supports (scrollbar-color: #d1d5db #f3f4f6) {
   html {
     scrollbar-color: #d1d5db #f3f4f6;
+    scrollbar-width: auto;
   }
 }
 
@@ -31107,7 +31108,7 @@ html::-webkit-scrollbar-thumb {
 body {
   font-family: Open Sans, sans-serif;
   --tw-text-opacity: 1;
-  color: rgba(0, 0, 0, var(--tw-text-opacity));
+  color: rgba(52, 58, 64, var(--tw-text-opacity));
 }
 
 .container {

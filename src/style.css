@@ -6,6 +6,7 @@
 @supports (scrollbar-color: #d1d5db #f3f4f6) {
   html {
     scrollbar-color: #d1d5db #f3f4f6;
+    scrollbar-width: auto;
   }
 }
 
@@ -26,7 +27,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  @apply font-primary text-black;
+  @apply font-primary text-primary;
 }
 
 .container {

@@ -8,28 +8,28 @@
     <title>About info page</title>
     <meta name="description" content="">
     <link rel="stylesheet" href="/style.e308ff8e.css">
-    <script defer="" src="/script.75da7f30.js"></script>
+    <script defer="" src="/script.a6e1fada.js"></script>
 </head>
 
 <body>
     <header>
         <div class="container">
             <nav class="flex items-center justify-between">
-                <div class="md:hidden cursor-pointer">
+                <div class="md:hidden cursor-pointer" data-nav-toggle="">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path>
                     </svg>
                 </div>
                 <a href="/home-page.html" class="flex items-center"><img class="h-10 md:h-14" src="/pig-xxl.dcd68c9a.png" alt="bargaintravels logo"><span class="font-bold md:text-2xl">BargainTravels</span></a>
                 <div class="flex gap-6 items-center">
-                    <ul class="flex hidden dropdown-menu">
+                    <ul class="flex hidden dropdown-menu" data-nav="">
                         <li><a class="flex gap-1" href="/city-page.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                 </svg> <span class="">Trips</span>
                             </a>
                         </li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="/about-page.html">About</a></li>
 
                         <li><a href="/shop-page.html">Shop</a></li>
                     </ul>
@@ -41,17 +41,17 @@
                         </a>
                     </div>
                 </div>
-                <div class="hidden overlay"></div>
+                <div class="hidden overlay" data-overlay=""></div>
             </nav>
         </div>
     </header>
     <main>
         <section class="mt-fixed-sm md:mt-fixed-md">
-            <div class="container text-center">
+            <div class="container md:text-center">
                 <div>
                     <div>
                         <h1 class="max-w-prose text-secondary-400">We're here to make planning your next trip easy.</h1>
-                        <p class="spacer max-w-prose ml-auto mr-auto text-base lg:text-xl text-gray-500">BargainTravels,
+                        <p class="spacer max-w-prose md:ml-auto md:mr-auto text-base lg:text-xl text-gray-500">BargainTravels,
                             the world's largest travel guidance
                             platform, helps hundreds of millions of people
                             each month become better travelers, from planning to booking to taking a trip. Travelers
@@ -183,7 +183,7 @@
             </div>
         </section>
     </main>
-    <footer class="bg-accent text-white text-center">
+    <footer class="bg-accent text-white md:text-center">
         <div class="container grid-spacer">
          
             <ul class="footer-row">

@@ -8,21 +8,21 @@
     <title>Products page</title>
     <meta name="description" content="Tailwindcss startup files for a new project">
     <link rel="stylesheet" href="/style.e308ff8e.css">
-    <script defer="" src="/script.75da7f30.js"></script>
+    <script defer="" src="/script.a6e1fada.js"></script>
 </head>
 
-<body class="font-primary">
+<body>
     <header>
         <div class="container">
             <nav class="flex items-center justify-between">
-                <div class="md:hidden cursor-pointer">
+                <div class="md:hidden cursor-pointer" data-nav-toggle="">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path>
                     </svg>
                 </div>
                 <a href="/home-page.html" class="flex items-center"><img class="h-10 md:h-14" src="/pig-xxl.dcd68c9a.png" alt="bargaintravels logo"><span class="font-bold md:text-2xl">BargainTravels</span></a>
                 <div class="flex gap-6 items-center">
-                    <ul class="flex hidden dropdown-menu">
+                    <ul class="flex hidden dropdown-menu" data-nav="">
                         <li><a class="flex gap-1" href="/city-page.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
@@ -31,7 +31,7 @@
                         </li>
                         <li><a href="/about-page.html">About</a></li>
 
-                        <li><a href="#">Shop</a></li>
+                        <li><a href="/shop-page.html">Shop</a></li>
                     </ul>
                     <div>
                         <a href="/shopping-cart-page.html">
@@ -41,7 +41,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="hidden overlay"></div>
+                <div class="hidden overlay" data-overlay=""></div>
             </nav>
         </div>
     </header>
@@ -100,7 +100,7 @@
                     <div class="grid-spacer mt-12 md:mt-16 grid-cols-shop">
                         <div class="clothing-card">
                             <a href="/product-info-page.html">
-                                <img src="/t-shirt-mockup.9ca5297a.png" alt="bargaintravels t-shirt" loading="lazy">
+                                <img src="/t-shirt-mockup.a7d4de00.webp" alt="bargaintravels t-shirt" loading="lazy">
                                 <div class="p-4 text-left">
                                     <h3>T-shirt</h3>
                                     <p class="text-gray-500">R200</p>
@@ -110,7 +110,7 @@
 
                         <div class="clothing-card">
                             <a href="/product-info-page.html">
-                                <img src="/long-sleeve-mockup.5acc8d55.png" alt="bargaintravels longsleeve" loading="lazy">
+                                <img src="/long-sleeve-mockup.1641a664.webp" alt="bargaintravels longsleeve" loading="lazy">
                                 <div class="p-4 text-left">
                                     <h3>Long Sleeve</h3>
                                     <p class="text-gray-500">R250</p>
@@ -120,7 +120,7 @@
 
                         <div class="clothing-card">
                             <a href="/product-info-page.html">
-                                <img src="/pullover-mockup.f2eb92f4.png" alt="bargaintravels pullover" loading="lazy">
+                                <img src="/pullover-mockup.a9aaad84.webp" alt="bargaintravels pullover" loading="lazy">
                                 <div class="p-4 text-left">
                                     <h3>Pullover</h3>
                                     <p class="text-gray-500">R350</p>
@@ -130,7 +130,7 @@
 
                         <div class="clothing-card">
                             <a href="/product-info-page.html">
-                                <img src="/hoody-mockup.8f976bc4.png" alt="bargaintravels hoody" loading="lazy">
+                                <img src="/hoody-mockup.f9bf517e.webp" alt="bargaintravels hoody" loading="lazy">
                             </a>
                             <div class="p-4 text-left">
                                 <h3>Hoody</h3>
@@ -142,7 +142,7 @@
 
                         <div class="clothing-card">
                             <a href="/product-info-page.html">
-                                <img src="/jacket-mockup.fcccf5a4.png" alt="bargaintravels jacket" loading="lazy">
+                                <img src="/jacket-mockup.660207c2.webp" alt="bargaintravels jacket" loading="lazy">
                                 <div class="p-4 text-left">
                                     <h3>Jacket</h3>
                                     <p class="text-gray-500">R500</p>
@@ -152,7 +152,7 @@
 
                         <div class="clothing-card">
                             <a href="/product-info-page.html">
-                                <img src="/sweatpants-mockup.df418111.png" alt="bargaintravels sweatpants" loading="lazy">
+                                <img src="/sweatpants-mockup.ec89a6dc.webp" alt="bargaintravels sweatpants" loading="lazy">
                                 <div class="p-4 text-left">
                                     <h3>Sweatpants</h3>
                                     <p class="text-gray-500">R450</p>
@@ -166,7 +166,7 @@
         </section>
 
     </main>
-    <footer class="bg-accent text-white text-center">
+    <footer class="bg-accent text-white md:text-center">
         <div class="container grid-spacer">
          
             <ul class="footer-row">

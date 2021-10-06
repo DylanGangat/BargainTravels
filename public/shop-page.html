@@ -8,14 +8,14 @@
     <title>Products page</title>
     <meta name="description" content="Tailwindcss startup files for a new project">
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <script defer src="./scripts/script.js"></script>
 </head>
 
-<body class="font-primary">
+<body>
     <header>
         <div class="container">
             <nav class="flex items-center justify-between">
-                <div class="md:hidden cursor-pointer">
+                <div class="md:hidden cursor-pointer" data-nav-toggle>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -26,7 +26,7 @@
                         src="./img/logo/pig-xxl.png" alt="bargaintravels logo"><span
                         class="font-bold md:text-2xl">BargainTravels</span></a>
                 <div class="flex gap-6 items-center">
-                    <ul class="flex hidden dropdown-menu">
+                    <ul class="flex hidden dropdown-menu" data-nav>
                         <li><a class="flex gap-1" href="city-page.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -37,7 +37,7 @@
                         </li>
                         <li><a href="about-page.html">About</a></li>
 
-                        <li><a href="#">Shop</a></li>
+                        <li><a href="shop-page.html">Shop</a></li>
                     </ul>
                     <div>
                         <a href="shopping-cart-page.html">
@@ -49,7 +49,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="hidden overlay"></div>
+                <div class="hidden overlay" data-overlay></div>
             </nav>
         </div>
     </header>
@@ -110,7 +110,7 @@
                     <div class="grid-spacer mt-12 md:mt-16 grid-cols-shop">
                         <div class="clothing-card">
                             <a href="product-info-page.html">
-                                <img src="./img/clothing/t-shirts/t-shirt-mockup.png" alt="bargaintravels t-shirt" loading="lazy">
+                                <img src="./img/clothing/t-shirts/t-shirt-mockup.webp" alt="bargaintravels t-shirt" loading="lazy">
                                 <div class="p-4 text-left">
                                     <h3>T-shirt</h3>
                                     <p class="text-gray-500">R200</p>
@@ -120,7 +120,7 @@
 
                         <div class="clothing-card">
                             <a href="product-info-page.html">
-                                <img src="./img/clothing/longsleeves/long-sleeve-mockup.png"
+                                <img src="./img/clothing/longsleeves/long-sleeve-mockup.webp"
                                     alt="bargaintravels longsleeve" loading="lazy">
                                 <div class="p-4 text-left">
                                     <h3>Long Sleeve</h3>
@@ -131,7 +131,7 @@
 
                         <div class="clothing-card">
                             <a href="product-info-page.html">
-                                <img src="./img/clothing/pullovers/pullover-mockup.png" alt="bargaintravels pullover" loading="lazy">
+                                <img src="./img/clothing/pullovers/pullover-mockup.webp" alt="bargaintravels pullover" loading="lazy">
                                 <div class="p-4 text-left">
                                     <h3>Pullover</h3>
                                     <p class="text-gray-500">R350</p>
@@ -141,7 +141,7 @@
 
                         <div class="clothing-card">
                             <a href="product-info-page.html">
-                                <img src="./img/clothing/hoodys/hoody-mockup.png" alt="bargaintravels hoody" loading="lazy">
+                                <img src="./img/clothing/hoodys/hoody-mockup.webp" alt="bargaintravels hoody" loading="lazy">
                             </a>
                             <div class="p-4 text-left">
                                 <h3>Hoody</h3>
@@ -153,7 +153,7 @@
 
                         <div class="clothing-card">
                             <a href="product-info-page.html">
-                                <img src="./img/clothing/jackets/jacket-mockup.png" alt="bargaintravels jacket" loading="lazy">
+                                <img src="./img/clothing/jackets/jacket-mockup.webp" alt="bargaintravels jacket" loading="lazy">
                                 <div class="p-4 text-left">
                                     <h3>Jacket</h3>
                                     <p class="text-gray-500">R500</p>
@@ -163,7 +163,7 @@
 
                         <div class="clothing-card">
                             <a href="product-info-page.html">
-                                <img src="./img/clothing/sweatpants/sweatpants-mockup.png"
+                                <img src="./img/clothing/sweatpants/sweatpants-mockup.webp"
                                     alt="bargaintravels sweatpants" loading="lazy">
                                 <div class="p-4 text-left">
                                     <h3>Sweatpants</h3>
@@ -178,7 +178,7 @@
         </section>
 
     </main>
-    <footer class="bg-accent text-white text-center">
+    <footer class="bg-accent text-white md:text-center">
         <div class="container grid-spacer">
          
             <ul class="footer-row">

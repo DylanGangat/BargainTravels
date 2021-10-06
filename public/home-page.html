@@ -8,7 +8,7 @@
     <title>Home Page</title>
     <meta name="description" content="Tailwindcss startup files for a new project">
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <script defer src="./scripts/script.js"></script>
 </head>
 
 
@@ -16,7 +16,7 @@
     <header>
         <div class="container">
             <nav class="flex items-center justify-between">
-                <div class="md:hidden cursor-pointer">
+                <div class="md:hidden cursor-pointer" data-nav-toggle>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -27,7 +27,7 @@
                         src="./img/logo/pig-xxl.png" alt="bargaintravels logo"><span
                         class="font-bold md:text-2xl">BargainTravels</span></a>
                 <div class="flex gap-6 items-center">
-                    <ul class="flex hidden dropdown-menu">
+                    <ul class="flex hidden dropdown-menu" data-nav>
                         <li><a class="flex gap-1" href="city-page.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -50,7 +50,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="hidden overlay"></div>
+                <div class="hidden overlay" data-overlay></div>
             </nav>
         </div>
     </header>
@@ -190,7 +190,7 @@
                 <div class="grid-spacer spacer grid-cols-shop">
                     <div class="clothing-card">
                         <a href="#">
-                            <img src="./img/clothing/hoodys/hoody-white.png" alt="bargaintravels hoody" loading="lazy">
+                            <img src="./img/clothing/hoodys/hoody-white.webp" alt="bargaintravels hoody" loading="lazy">
                         </a>
                         <div class="p-4 text-left">
                             <h3>Hoody</h3>
@@ -201,7 +201,7 @@
 
                     <div class="clothing-card">
                         <a href="#">
-                            <img src="./img/clothing/pullovers/pullover-white.png" alt="bargaintravels pullover" loading="lazy">
+                            <img src="./img/clothing/pullovers/pullover-white.webp" alt="bargaintravels pullover" loading="lazy">
                             <div class="p-4 text-left">
                                 <h3>Pullover</h3>
                                 <p class="text-gray-500">R350</p>
@@ -211,7 +211,7 @@
 
                     <div class="clothing-card">
                         <a href="#">
-                            <img src="./img/clothing/t-shirts/t-shirt-white.png" alt="bargaintravels t-shirt" loading="lazy">
+                            <img src="./img/clothing/t-shirts/t-shirt-white.webp" alt="bargaintravels t-shirt" loading="lazy">
                             <div class="p-4 text-left">
                                 <h3>T-shirt</h3>
                                 <p class="text-gray-500">R200</p>
@@ -238,12 +238,12 @@
                     </form>
                 </div>
                 <div class="rounded-lg overflow-hidden w-full">
-                    <img class="object-cover" src="./img/merchandise.png" alt="bargaintravel clothing range" loading="lazy">
+                    <img class="object-cover" src="./img/merchandise.webp" alt="bargaintravel clothing range" loading="lazy">
                 </div>
             </div>
         </section>
     </main>
-    <footer class="bg-accent text-white text-center">
+    <footer class="bg-accent text-white md:text-center">
         <div class="container grid-spacer">
          
             <ul class="footer-row">
