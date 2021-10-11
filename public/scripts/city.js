@@ -201,3 +201,67 @@ import "./script.js";
 //     console.error(e);
 //   }
 // };
+
+const activities = document.querySelector(".destination-activities");
+// To store all the activities you loved.
+let trips = [];
+const places = JSON.parse(localStorage.getItem("LOVED_PLACES"));
+// Added this because if we leave the trips page it doesn't keep the previous saved trips but now it does because if there is local stoarage saved then we updated the empty trips array with those objects.
+if (places) {
+  trips = places;
+}
+
+activities.addEventListener("click", e => {
+  if (!e.target.hasAttribute("data-heart")) return;
+
+  // To change the heart on click
+  if (e.target.classList.contains("heart-empty")) {
+    e.target.classList.toggle("hidden");
+    const sibling2 = e.target.parentElement.querySelector(".heart-filled");
+    sibling2.classList.toggle("hidden");
+  } else {
+    e.target.classList.toggle("hidden");
+    const sibling1 = e.target.parentElement.querySelector(".heart-empty");
+    sibling1.classList.toggle("hidden");
+  }
+
+  // Get the carousel card so it will be easier to manipulate the DOM.
+
+  const carouselCard = e.target.closest(".carousel-card");
+  const image = carouselCard.querySelector("img").src;
+  const name = carouselCard.querySelector("h3").textContent;
+  const info = carouselCard.querySelector("p").textContent;
+
+  let card = {};
+  card.image = image;
+  card.name = name;
+  card.info = info;
+
+  trips.push(card);
+
+  // To see if there are any duplicate and will filter those out of array that is passed to loacal storage
+  const uniqueTrips = trips.filter(
+    (item, index, array) =>
+      array.findIndex(t => t.name === item.name && t.info === item.info) ===
+      index
+  );
+
+  // console.log("CARD:", card, "TRIPS:", trips, "NODUPLICATES:", uniqueTrips);
+
+  localStorage.setItem("LOVED_PLACES", JSON.stringify(uniqueTrips));
+});
+
+// let arr = [
+//   { label: "All", value: "All" },
+//   { label: "All", value: "All" },
+//   { label: "Alex", value: "Ninja" },
+//   { label: "Bill", value: "Op" },
+//   { label: "Cill", value: "iopop" },
+// ];
+
+// const answer = arr.filter(
+//   (v, i, a) =>
+//     a.findIndex(t => t.label === v.label && t.value === v.value) === i
+// );
+
+// console.log(arr, answer);

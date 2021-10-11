@@ -27,6 +27,8 @@ module.exports = {
         },
         accent: "#284477",
         primary: "#343a40",
+        pink: "#D59294",
+        maroon: "#25121A",
       },
       gridTemplateColumns: {
         reviews: "repeat(auto-fit, minmax(17rem, 1fr))",

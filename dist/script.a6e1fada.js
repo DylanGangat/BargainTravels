@@ -124,7 +124,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 //   const destination = searchForm.destination.value.trim();
 //   if (!destination.length) return;
 //   console.log(destination);
-//   sessionStorage.setItem("Destination", JSON.stringify(destination));
+//   sessionStorage.setItem("DESTINATION", JSON.stringify(destination));
 //   window.location.href = "./city-page.html";
 //   searchForm.reset();
 // });
@@ -169,7 +169,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53280" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65506" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

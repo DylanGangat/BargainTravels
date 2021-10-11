@@ -10,6 +10,18 @@
   }
 }
 
+input {
+  @apply border-b-2 border-transparent;
+}
+
+input:not(:placeholder-shown):invalid {
+  @apply border-b-2 border-red-500 text-red-500;
+}
+
+input:not(:placeholder-shown):valid {
+  @apply border-b-2 border-green-500 text-green-500;
+}
+
 html::-webkit-scrollbar {
   width: 16px;
 }

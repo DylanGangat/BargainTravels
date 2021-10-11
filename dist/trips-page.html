@@ -8,10 +8,10 @@
     <title>Trips Page</title>
     <meta name="description" content="Tailwindcss startup files for a new project">
     <link rel="stylesheet" href="/style.e308ff8e.css">
-    <script defer="" src="/script.a6e1fada.js"></script>
+    <script defer="" src="/trips.34785b53.js"></script>
 </head>
 
-<body>
+<body class="flex flex-col h-screen">
     <header>
         <div class="container">
             <nav class="flex items-center justify-between">
@@ -50,11 +50,11 @@
             <div class="container">
                 <div>
                     <h1 class="text-secondary-400">Saved Trips</h1>
-                    <p class="pt-4 md:pt-8 border-t-2 border-gray-200 text-base lg:text-xl text-gray-500 mt-4 lg:mt-12">
+                    <p class="pt-4 md:pt-8 border-t-2 border-gray-200 text-base lg:text-xl text-gray-500 mt-4 lg:mt-12" data-unsaved-message="">
                         There's nothing you have saved yet.</p>
                 </div>
 
-                <div class="mt-12 md:mt-16 grid-spacer grid-cols-destinations">
+                <div class="mt-12 md:mt-16 grid-spacer grid-cols-destinations" data-destinations-grid="">
                     <!-- trip 1 -->
                     <div class="relative">
                         <div class="h-48 bg-white rounded-lg overflow-hidden"><img class="h-full w-full object-cover hover:opacity-90 hover-default" src="/japan.fbdb8e78.webp" alt="" loading="lazy"></div>
@@ -81,9 +81,7 @@
                             <p class="text-sm text-gray-400 mt-1">Religious Sites, Historic Sites</p>
                         </div>
                         <div class="bg-white p-1 inline-block absolute top-2 right-2 rounded-full">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-secondary-400 hover-default cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                            </svg>
+                            <img class="h-6 w-6 cursor-pointer close" src="/close.afbeb5bd.svg" alt="close icon">
                         </div>
                     </div>
 
@@ -316,7 +314,7 @@
             </div>
         </section>
     </main>
-    <footer class="bg-accent text-white md:text-center">
+    <footer class="bg-accent text-white md:text-center mt-auto">
         <div class="container grid-spacer">
 
             <ul class="footer-row">
