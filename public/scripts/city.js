@@ -231,15 +231,18 @@ activities.addEventListener("click", e => {
   const image = carouselCard.querySelector("img").src;
   const name = carouselCard.querySelector("h3").textContent;
   const info = carouselCard.querySelector("p").textContent;
+  const rating = carouselCard.querySelector("[data-stars]").dataset.stars;
+  console.log(rating);
 
   let card = {};
   card.image = image;
   card.name = name;
   card.info = info;
+  card.stars = rating;
 
   trips.push(card);
 
-  // To see if there are any duplicate and will filter those out of array that is passed to loacal storage
+  // To see if there are any duplicate and will filter those out of array that is passed to local storage
   const uniqueTrips = trips.filter(
     (item, index, array) =>
       array.findIndex(t => t.name === item.name && t.info === item.info) ===

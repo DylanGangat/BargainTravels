@@ -30894,7 +30894,7 @@ input {
   border-color: transparent;
 }
 
-input:not(:placeholder-shown):invalid {
+input:not([type="number"]):not(:placeholder-shown):invalid {
   border-bottom-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgba(239, 68, 68, var(--tw-border-opacity));
@@ -30902,7 +30902,7 @@ input:not(:placeholder-shown):invalid {
   color: rgba(239, 68, 68, var(--tw-text-opacity));
 }
 
-input:not(:placeholder-shown):valid {
+input:not([type="number"]):not(:placeholder-shown):valid {
   border-bottom-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgba(16, 185, 129, var(--tw-border-opacity));

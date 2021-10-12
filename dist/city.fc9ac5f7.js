@@ -346,11 +346,14 @@ activities.addEventListener("click", e => {
   const image = carouselCard.querySelector("img").src;
   const name = carouselCard.querySelector("h3").textContent;
   const info = carouselCard.querySelector("p").textContent;
+  const rating = carouselCard.querySelector("[data-stars]").dataset.stars;
+  console.log(rating);
   let card = {};
   card.image = image;
   card.name = name;
   card.info = info;
-  trips.push(card); // To see if there are any duplicate and will filter those out of array that is passed to loacal storage
+  card.stars = rating;
+  trips.push(card); // To see if there are any duplicate and will filter those out of array that is passed to local storage
 
   const uniqueTrips = trips.filter((item, index, array) => array.findIndex(t => t.name === item.name && t.info === item.info) === index); // console.log("CARD:", card, "TRIPS:", trips, "NODUPLICATES:", uniqueTrips);
 
@@ -395,7 +398,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65506" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57728" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
