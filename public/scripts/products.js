@@ -6,17 +6,22 @@ const addToCart = document.querySelector(".btn");
 const colorGroup = document.querySelector(".colours-group");
 const colors = document.querySelectorAll(".colour-block");
 const changingImages = document.querySelectorAll("[data-changing-image]");
-
+const savedCart = JSON.parse(localStorage.getItem("SHOPPING_CART"));
+console.log(savedCart);
 // Array where we put all add to cart items
 let shoppingCart = [];
+
+if (savedCart) {
+  shoppingCart = savedCart;
+}
 // console.log(shoppingCart);
 
 addToCart.addEventListener("click", () => {
   const name = parent.querySelector("[data-name]").textContent;
   const price = parseInt(parent.querySelector("[data-price]").dataset.price);
   const size = parent.querySelector("[data-size]").value;
-  const color = parent.querySelector("[data-color]");
-  const activeColor = color.querySelector(".active").textContent;
+  const colorGroup = parent.querySelector("[data-color-group]");
+  const activeColor = colorGroup.querySelector(".active").textContent;
   const quantity = parseInt(parent.querySelector("[data-quantity]").value);
   const mockup = document.querySelector("[data-mockup]").dataset.mockup;
   console.log(name, price, size, activeColor, quantity, mockup);
@@ -29,15 +34,20 @@ addToCart.addEventListener("click", () => {
   item.color = activeColor;
   item.image = mockup;
 
+  // So the user has to add a size to continue
+  if (item.size === "") return;
+
   shoppingCart.push(item);
 
-  // It checks to see if you added the same sized item and then filters and removes your previous item and replaces it with an new item.
+  // It checks to see if you added the same sized item and same names and then filters and removes your previous item and replaces it with an new item.
   const cart = shoppingCart
     .slice()
     .reverse()
     .filter(
       (item, index, array) =>
-        array.findIndex(t => t.size === item.size) === index
+        array.findIndex(
+          t => (t.size === item.size) & (t.name === item.name)
+        ) === index
     )
     .reverse();
 
@@ -45,8 +55,6 @@ addToCart.addEventListener("click", () => {
 
   console.log("Item:", item, "Shopping Cart:", shoppingCart, "Cart:", cart);
 });
-
-
 
 colorGroup.addEventListener("click", e => {
   if (e.target.classList.contains("colour-block")) {

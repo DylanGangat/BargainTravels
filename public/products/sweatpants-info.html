@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweatpants Info Page</title>
-    <meta name="description" content="This is the product info page where you find out more about a product and will be able to add to cart">
+    <meta name="description"
+        content="This is the product info page where you find out more about a product and will be able to add to cart">
     <link rel="stylesheet" href="../style.css">
-    <script defer src="../scripts/script.js"></script>
+    <script defer src="../scripts/products.js"></script>
 </head>
 
 <body>
@@ -63,14 +64,24 @@
                     </svg> Back
                 </a>
                 <div class="grid-spacer md:gap-12 md:grid-cols-2">
-                    <div class="rounded-lg overflow-hidden">
-                        <img class="h-full object-cover" src="../img/clothing/sweatpants/sweatpants-grey.webp"
-                            alt="A model wearing our sweatpants">
+                    <div class="rounded-lg overflow-hidden"
+                        data-mockup="../img/clothing/sweatpants/sweatpants-mockup.webp">
+                        <img class="h-full object-cover" id="grey" src="../img/clothing/sweatpants/sweatpants-grey.webp"
+                            alt="A model wearing our sweatpants" data-changing-image>
+                        <img class="h-full object-cover visually-hidden" id="black"
+                            src="../img/clothing/sweatpants/sweatpants-black.webp" alt="A model wearing our sweatpants"
+                            data-changing-image>
+                        <img class="h-full object-cover visually-hidden" id="white"
+                            src="../img/clothing/sweatpants/sweatpants-white.webp" alt="A model wearing our sweatpants"
+                            data-changing-image>
+                        <img class="h-full object-cover visually-hidden" id="charcoal"
+                            src="../img/clothing/sweatpants/sweatpants-charcoal.webp"
+                            alt="A model wearing our sweatpants" data-changing-image>
                     </div>
-                    <div>
+                    <div data-product-info>
                         <div class="flex justify-between items-end">
-                            <h1 class="font-normal">Sweatpants</h1>
-                            <p class="text-gray-400 text-xl font-medium">R450</p>
+                            <h1 class="font-normal" data-name>Sweatpants</h1>
+                            <p class="text-gray-400 text-xl font-medium" data-price="450">R450</p>
                         </div>
                         <p class="spacer max-w-prose">
                             Score a wardrobe win with the brand new Sweatpants. And we only use organic natural fibres
@@ -82,7 +93,7 @@
                         <div class="spacer">
                             <div class="select-size grid gap-2">
                                 <label for="size-select" class="font-bold">Choose a size:</label>
-                                <select name="size" id="size-select" required>
+                                <select name="size" id="size-select" required data-size>
                                     <option value="">Choose a size</option>
                                     <option value="XS">XS</option>
                                     <option value="S">S</option>
@@ -91,16 +102,17 @@
                                     <option value="XL">XL</option>
                                 </select>
                             </div>
-                            <div class="colours-group flex-wrap mt-5">
-                                <div class="colour-block bg-black text-white"><span>Black</span></div>
-                                <div class="colour-block bg-white"><span>White</span></div>
-                                <div class="colour-block bg-gray-300 active"><span>Grey</span></div>
-                                <div class="colour-block bg-gray-600"><span>Charcoal</span></div>
+                            <div class="colours-group flex-wrap mt-5" data-color-group>
+                                <div class="colour-block bg-black text-white" data-color="#black"><span>Black</span>
+                                </div>
+                                <div class="colour-block bg-white" data-color="#white"><span>White</span></div>
+                                <div class="colour-block bg-gray-300 active" data-color="#grey"><span>Grey</span></div>
+                                <div class="colour-block bg-gray-600" data-color="#charcoal"><span>Charcoal</span></div>
                             </div>
                             <div class="grid gap-2 mt-5">
                                 <label for="number" class="font-bold">Quantity:</label>
                                 <input type="number" name="clothing" id="clothing"
-                                    class="border border-gray-200 rounded-lg px-4 py-4 w-20" min="0" required value="1">
+                                    class="border border-gray-200 rounded-lg px-4 py-4 w-20" min="0" required value="1" data-quantity>
                             </div>
                         </div>
                         <button class="btn w-full spacer">Add to cart</button>
@@ -121,8 +133,8 @@
                         </div>
                         <div class="clothing-card">
                             <a href="../products/longsleeve-info.html">
-                                <img src="../img/clothing/longsleeves/long-sleeve-mockup.webp" alt="bargaintravels longsleeve"
-                                    loading="lazy">
+                                <img src="../img/clothing/longsleeves/long-sleeve-mockup.webp"
+                                    alt="bargaintravels longsleeve" loading="lazy">
                                 <div class="p-4 text-left">
                                     <h3>Long Sleeve</h3>
                                     <p class="text-gray-500">R250</p>
@@ -141,7 +153,8 @@
                         </div>
                         <div class="clothing-card">
                             <a href="../products/hoody-info.html">
-                                <img src="../img/clothing/hoodys/hoody-mockup.webp" alt="bargaintravels hoody" loading="lazy">
+                                <img src="../img/clothing/hoodys/hoody-mockup.webp" alt="bargaintravels hoody"
+                                    loading="lazy">
                                 <div class="p-4 text-left">
                                     <h3>Hoody</h3>
                                     <p class="text-gray-500">R450</p>

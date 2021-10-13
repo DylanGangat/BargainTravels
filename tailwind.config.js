@@ -27,7 +27,10 @@ module.exports = {
         },
         accent: "#284477",
         primary: "#343a40",
-        pink: "#D59294",
+        pink: {
+          300: "#F1D9E1",
+          500: "#D59294",
+        },
         maroon: "#25121A",
       },
       gridTemplateColumns: {

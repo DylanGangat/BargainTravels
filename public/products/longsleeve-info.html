@@ -9,7 +9,7 @@
     <meta name="description"
         content="This is the product info page where you find out more about a product and will be able to add to cart">
     <link rel="stylesheet" href="../style.css">
-    <script defer src="../scripts/script.js"></script>
+    <script defer src="../scripts/products.js"></script>
 </head>
 
 <body>
@@ -64,14 +64,20 @@
                     </svg> Back
                 </a>
                 <div class="grid-spacer md:gap-12 md:grid-cols-2">
-                    <div class="rounded-lg overflow-hidden">
-                        <img class="h-full object-cover" src="../img/clothing/longsleeves/long-sleeve-shirt-white.webp"
-                            alt="A model wearing our clothing">
+                    <div class="rounded-lg overflow-hidden"
+                        data-mockup="../img/clothing/longsleeves/long-sleeve-mockup.webp">
+
+                        <img class="h-full object-cover" id="white"
+                            src="../img/clothing/longsleeves/long-sleeve-shirt-white.webp"
+                            alt="A model wearing our longsleeve" data-changing-image>
+                        <img class="h-full object-cover visually-hidden" id="black"
+                            src="../img/clothing/longsleeves/long-sleeve-shirt-black.webp"
+                            alt="A model wearing our longsleeve" data-changing-image>
                     </div>
-                    <div>
+                    <div data-product-info>
                         <div class="flex justify-between items-end">
-                            <h1 class="font-normal">Longsleeve</h1>
-                            <p class="text-gray-400 text-xl font-medium">R250</p>
+                            <h1 class="font-normal" data-name>Longsleeve</h1>
+                            <p class="text-gray-400 text-xl font-medium" data-price="250">R250</p>
                         </div>
                         <p class="spacer max-w-prose">
                             Score a wardrobe win with the brand new Longsleeve. And we only use organic natural fibres
@@ -83,7 +89,7 @@
                         <div class="spacer">
                             <div class="select-size grid gap-2">
                                 <label for="size-select" class="font-bold">Choose a size:</label>
-                                <select name="size" id="size-select" required>
+                                <select name="size" id="size-select" required data-size>
                                     <option value="">Choose a size</option>
                                     <option value="XS">XS</option>
                                     <option value="S">S</option>
@@ -92,14 +98,16 @@
                                     <option value="XL">XL</option>
                                 </select>
                             </div>
-                            <div class="colours-group flex-wrap mt-5">
-                                <div class="colour-block bg-black text-white"><span>Black</span></div>
-                                <div class="colour-block bg-white active"><span>White</span></div>
+                            <div class="colours-group flex-wrap mt-5" data-color-group>
+                                <div class="colour-block bg-black text-white" data-color="#black"><span>Black</span>
+                                </div>
+                                <div class="colour-block bg-white active" data-color="#white"><span>White</span></div>
                             </div>
                             <div class="grid gap-2 mt-5">
                                 <label for="number" class="font-bold">Quantity:</label>
                                 <input type="number" name="clothing" id="clothing"
-                                    class="border border-gray-200 rounded-lg px-4 py-4 w-20" min="0" required value="1">
+                                    class="border border-gray-200 rounded-lg px-4 py-4 w-20" min="0" required value="1"
+                                    data-quantity>
                             </div>
                         </div>
                         <button class="btn w-full spacer">Add to cart</button>
