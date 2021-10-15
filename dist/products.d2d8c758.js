@@ -168,15 +168,17 @@ if (savedCart) {
 } // console.log(shoppingCart);
 
 
-addToCart.addEventListener("click", () => {
+const getProductDetails = () => {
   const name = parent.querySelector("[data-name]").textContent;
   const price = parseInt(parent.querySelector("[data-price]").dataset.price);
   const size = parent.querySelector("[data-size]").value;
   const colorGroup = parent.querySelector("[data-color-group]");
   const activeColor = colorGroup.querySelector(".active").textContent;
-  const quantity = parseInt(parent.querySelector("[data-quantity]").value);
-  const mockup = document.querySelector("[data-mockup]").dataset.mockup;
-  console.log(name, price, size, activeColor, quantity, mockup, "TYPEOF:", typeof mockup);
+  const quantity = parseInt(parent.querySelector("[data-quantity]").value); // const mockup = document.querySelector("[data-mockup]").dataset.mockup;
+
+  const mockupImage = document.querySelector(".active").dataset.mockup;
+  console.log("mockupImage:", mockupImage);
+  console.log(name, price, size, activeColor, quantity, mockupImage, "TYPEOF:", typeof mockup);
   const randomNumber = Math.floor(Math.random() * 1000 + 1);
   const item = {};
   item.name = name;
@@ -184,17 +186,22 @@ addToCart.addEventListener("click", () => {
   item.quantity = quantity;
   item.size = size;
   item.color = activeColor;
-  item.image = mockup;
+  item.image = mockupImage;
   item.id = randomNumber; // So the user has to add a size to continue
 
   if (item.size === "") return;
   shoppingCart.push(item); // It checks to see if you added the same sized item and same names and then filters and removes your previous item and replaces it with an new item.
 
-  const cart = shoppingCart.slice().reverse().filter((item, index, array) => array.findIndex(t => t.size === item.size & t.name === item.name) === index).reverse();
+  const cart = shoppingCart.slice().reverse().filter((item, index, array) => array.findIndex(t => t.size === item.size && t.name === item.name && t.color === item.color) === index).reverse();
   localStorage.setItem("SHOPPING_CART", JSON.stringify(cart));
   console.log("Item:", item, "Shopping Cart:", shoppingCart, "Cart:", cart);
+};
+
+addToCart.addEventListener("click", () => {
+  getProductDetails();
 });
-colorGroup.addEventListener("click", e => {
+
+const updateMockupColor = e => {
   if (e.target.classList.contains("colour-block")) {
     console.log(e.target); // To reset the color groups by removing all active states
 
@@ -212,6 +219,10 @@ colorGroup.addEventListener("click", e => {
 
     image.classList.remove("visually-hidden");
   }
+};
+
+colorGroup.addEventListener("click", e => {
+  updateMockupColor(e);
 });
 },{"./script.js":"scripts/script.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -241,7 +252,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49630" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50963" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

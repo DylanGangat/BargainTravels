@@ -8,6 +8,17 @@
     <title>Longsleeve Info Page</title>
     <meta name="description"
         content="This is the product info page where you find out more about a product and will be able to add to cart">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon-package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-package/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon-package/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon-package/safari-pinned-tab.svg" color="#f95356">
+    <link rel="shortcut icon" href="/img/favicon-package/favicon.ico">
+    <meta name="msapplication-TileColor" content="#284477">
+    <meta name="msapplication-config" content="/img/favicon-package/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="../style.css">
     <script defer src="../scripts/products.js"></script>
 </head>
@@ -64,8 +75,7 @@
                     </svg> Back
                 </a>
                 <div class="grid-spacer md:gap-12 md:grid-cols-2">
-                    <div class="rounded-lg overflow-hidden"
-                        data-mockup="/long-sleeve-mockup.1641a664.webp">
+                    <div class="rounded-lg overflow-hidden">
 
                         <img class="h-full object-cover" id="white"
                             src="../img/clothing/longsleeves/long-sleeve-shirt-white.webp"
@@ -73,6 +83,11 @@
                         <img class="h-full object-cover visually-hidden" id="black"
                             src="../img/clothing/longsleeves/long-sleeve-shirt-black.webp"
                             alt="A model wearing our longsleeve" data-changing-image>
+
+                        <img class="h-full object-cover visually-hidden" id="grey"
+                            src="../img/clothing/longsleeves/long-sleeve-shirt-grey.webp"
+                            alt="A model wearing our longsleeve" data-changing-image>
+
                     </div>
                     <div data-product-info>
                         <div class="flex justify-between items-end">
@@ -99,9 +114,13 @@
                                 </select>
                             </div>
                             <div class="colours-group flex-wrap mt-5" data-color-group>
-                                <div class="colour-block bg-black text-white" data-color="#black"><span>Black</span>
+                                <div class="colour-block bg-black text-white" data-color="#black"
+                                    data-mockup="/long-sleeve-mockup-black.0372489c.webp"><span>Black</span>
                                 </div>
-                                <div class="colour-block bg-white active" data-color="#white"><span>White</span></div>
+                                <div class="colour-block bg-white active" data-color="#white"
+                                    data-mockup="/long-sleeve-mockup.1641a664.webp"><span>White</span></div>
+                                <div class="colour-block bg-gray-600 active" data-color="#grey"
+                                    data-mockup="/long-sleeve-mockup-grey.87240824.webp"><span>Grey</span></div>
                             </div>
                             <div class="grid gap-2 mt-5">
                                 <label for="number" class="font-bold">Quantity:</label>

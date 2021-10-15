@@ -32,6 +32,7 @@ module.exports = {
           500: "#D59294",
         },
         maroon: "#25121A",
+        sky: "#7DAAD8",
       },
       gridTemplateColumns: {
         reviews: "repeat(auto-fit, minmax(17rem, 1fr))",

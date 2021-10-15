@@ -8,6 +8,17 @@
     <title>Hoody Info Page</title>
     <meta name="description"
         content="This is the product info page where you find out more about a product and will be able to add to cart">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon-package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-package/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon-package/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon-package/safari-pinned-tab.svg" color="#f95356">
+    <link rel="shortcut icon" href="/img/favicon-package/favicon.ico">
+    <meta name="msapplication-TileColor" content="#284477">
+    <meta name="msapplication-config" content="/img/favicon-package/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="../style.css">
     <script defer src="../scripts/products.js"></script>
 </head>
@@ -64,7 +75,7 @@
                     </svg> Back
                 </a>
                 <div class="grid-spacer md:gap-12 md:grid-cols-2">
-                    <div class="rounded-lg overflow-hidden" data-mockup="/hoody-mockup.f9bf517e.webp">
+                    <div class="rounded-lg overflow-hidden">
 
                         <img class="h-full object-cover" id="white" src="../img/clothing/hoodys/hoody-white.webp"
                             alt="A model wearing our hoody" data-changing-image>
@@ -77,6 +88,7 @@
                         <img class="h-full object-cover visually-hidden" id="pink"
                             src="../img/clothing/hoodys/hoody-pink.webp" alt="A model wearing our hoody"
                             data-changing-image>
+
                     </div>
                     <div data-product-info>
                         <div class="flex justify-between items-end">
@@ -103,11 +115,15 @@
                                 </select>
                             </div>
                             <div class="colours-group flex-wrap mt-5" data-color-group>
-                                <div class="colour-block bg-black text-white" data-color="#black"><span>Black</span>
+                                <div class="colour-block bg-black text-white" data-color="#black"
+                                    data-mockup="/hoody-mockup-black.61ab3fa0.webp"><span>Black</span>
                                 </div>
-                                <div class="colour-block bg-white active" data-color="#white"><span>White</span></div>
-                                <div class="colour-block bg-accent" data-color="#blue"><span>Blue</span></div>
-                                <div class="colour-block bg-pink-300" data-color="#pink"><span>Pink</span></div>
+                                <div class="colour-block bg-white active" data-color="#white"
+                                    data-mockup="/hoody-mockup.f9bf517e.webp"><span>White</span></div>
+                                <div class="colour-block bg-sky" data-color="#blue"
+                                    data-mockup="/hoody-mockup-lightblue.52323861.webp"><span>Light Blue</span></div>
+                                <div class="colour-block bg-pink-300" data-color="#pink"
+                                    data-mockup="/hoody-mockup-pink.8264ce99.webp"><span>Pink</span></div>
 
                             </div>
                             <div class="grid gap-2 mt-5">

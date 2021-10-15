@@ -7,6 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacket Info Page</title>
     <meta name="description" content="This is the product info page where you find out more about a product and will be able to add to cart">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.7faca7ad.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.eb8d41e2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.ab939591.png">
+    <link rel="manifest" href="/img\favicon-package\site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.0be592bd.svg" color="#f95356">
+    <link rel="shortcut icon" href="/favicon.163aa428.ico">
+    <meta name="msapplication-TileColor" content="#284477">
+    <meta name="msapplication-config" content="/browserconfig.f6e7bf7b.xml">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="/style.e308ff8e.css">
     <script defer="" src="/products.d2d8c758.js"></script>
 </head>
@@ -54,10 +65,12 @@
                     </svg> Back
                 </a>
                 <div class="grid-spacer md:gap-12 md:grid-cols-2">
-                    <div class="rounded-lg overflow-hidden" data-mockup="/jacket-mockup.660207c2.webp">
+                    <div class="rounded-lg overflow-hidden">
                         <img class="h-full object-cover " id="grey" src="/jacket-grey.660cd442.webp" alt="A model wearing our jacket" data-changing-image="">
                         <img class="h-full object-cover visually-hidden" id="black" src="/jacket-black.d39b5312.webp" alt="A model wearing ourjackett" data-changing-image="">
                         <img class="h-full object-cover visually-hidden" id="navy" src="/jacket-navy.0022c696.webp" alt="A model wearing our jacket" data-changing-image="">
+
+                        <img class="h-full object-cover visually-hidden" id="sky" src="/jacket-light-blue.960e44df.webp" alt="A model wearing our jacket" data-changing-image="">
                     </div>
                     <div data-product-info="">
                         <div class="flex justify-between items-end">
@@ -84,10 +97,12 @@
                                 </select>
                             </div>
                             <div class="colours-group flex-wrap mt-5" data-color-group="">
-                                <div class="colour-block bg-black text-white" data-color="#black"><span>Black</span>
+                                <div class="colour-block bg-black text-white" data-color="#black" data-mockup="/jacket-mockup-black.bd5ad066.webp"><span>Black</span>
                                 </div>
-                                <div class="colour-block  bg-accent" data-color="#navy"><span>Navy</span></div>
-                                <div class="colour-block bg-gray-300 active" data-color="#grey"><span>Grey</span></div>
+                                <div class="colour-block  bg-accent" data-color="#navy" data-mockup="/jacket-mockup-blue.f2e99802.webp"><span>Navy</span></div>
+                                <div class="colour-block bg-sky" data-color="#sky" data-mockup="/jacket-mockup-lightblue.1c41b0ed.webp"><span>Light Blue</span></div>
+                                <div class="colour-block bg-gray-300 active" data-color="#grey" data-mockup="/jacket-mockup.660207c2.webp"><span>Grey</span></div>
+
 
                             </div>
                             <div class="grid gap-2 mt-5">

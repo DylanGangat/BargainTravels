@@ -17,21 +17,23 @@ if (savedCart) {
 }
 // console.log(shoppingCart);
 
-addToCart.addEventListener("click", () => {
+const getProductDetails = () => {
   const name = parent.querySelector("[data-name]").textContent;
   const price = parseInt(parent.querySelector("[data-price]").dataset.price);
   const size = parent.querySelector("[data-size]").value;
   const colorGroup = parent.querySelector("[data-color-group]");
   const activeColor = colorGroup.querySelector(".active").textContent;
   const quantity = parseInt(parent.querySelector("[data-quantity]").value);
-  const mockup = document.querySelector("[data-mockup]").dataset.mockup;
+  // const mockup = document.querySelector("[data-mockup]").dataset.mockup;
+  const mockupImage = document.querySelector(".active").dataset.mockup;
+  console.log("mockupImage:", mockupImage);
   console.log(
     name,
     price,
     size,
     activeColor,
     quantity,
-    mockup,
+    mockupImage,
     "TYPEOF:",
     typeof mockup
   );
@@ -43,7 +45,7 @@ addToCart.addEventListener("click", () => {
   item.quantity = quantity;
   item.size = size;
   item.color = activeColor;
-  item.image = mockup;
+  item.image = mockupImage;
   item.id = randomNumber;
 
   // So the user has to add a size to continue
@@ -58,7 +60,10 @@ addToCart.addEventListener("click", () => {
     .filter(
       (item, index, array) =>
         array.findIndex(
-          t => (t.size === item.size) & (t.name === item.name)
+          t =>
+            t.size === item.size &&
+            t.name === item.name &&
+            t.color === item.color
         ) === index
     )
     .reverse();
@@ -66,9 +71,13 @@ addToCart.addEventListener("click", () => {
   localStorage.setItem("SHOPPING_CART", JSON.stringify(cart));
 
   console.log("Item:", item, "Shopping Cart:", shoppingCart, "Cart:", cart);
+};
+
+addToCart.addEventListener("click", () => {
+  getProductDetails();
 });
 
-colorGroup.addEventListener("click", e => {
+const updateMockupColor = e => {
   if (e.target.classList.contains("colour-block")) {
     console.log(e.target);
     // To reset the color groups by removing all active states
@@ -86,4 +95,8 @@ colorGroup.addEventListener("click", e => {
     // To remove the hidden on the image i want to display
     image.classList.remove("visually-hidden");
   }
+};
+
+colorGroup.addEventListener("click", e => {
+  updateMockupColor(e);
 });
