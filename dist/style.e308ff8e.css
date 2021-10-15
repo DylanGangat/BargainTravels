@@ -31766,6 +31766,25 @@ header {
   }
 }
 
+.cart-item .size {
+  display: inline-block;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(248, 113, 113, var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(250, 100, 103, var(--tw-text-opacity));
+}
+
 .cart-item label {
   font-size: 0.875rem;
   line-height: 1.25rem;

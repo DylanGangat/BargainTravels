@@ -2,11 +2,12 @@ import "./script.js";
 
 const parent = document.querySelector("[data-product-info]");
 const addToCart = document.querySelector(".btn");
+
 // For changing image and active color
 const colorGroup = document.querySelector(".colours-group");
 const colors = document.querySelectorAll(".colour-block");
 const changingImages = document.querySelectorAll("[data-changing-image]");
-const savedCart = JSON.parse(localStorage.getItem("SHOPPING_CART"));
+export const savedCart = JSON.parse(localStorage.getItem("SHOPPING_CART"));
 console.log(savedCart);
 // Array where we put all add to cart items
 let shoppingCart = [];
@@ -24,7 +25,17 @@ addToCart.addEventListener("click", () => {
   const activeColor = colorGroup.querySelector(".active").textContent;
   const quantity = parseInt(parent.querySelector("[data-quantity]").value);
   const mockup = document.querySelector("[data-mockup]").dataset.mockup;
-  console.log(name, price, size, activeColor, quantity, mockup);
+  console.log(
+    name,
+    price,
+    size,
+    activeColor,
+    quantity,
+    mockup,
+    "TYPEOF:",
+    typeof mockup
+  );
+  const randomNumber = Math.floor(Math.random() * 1000 + 1);
 
   const item = {};
   item.name = name;
@@ -33,6 +44,7 @@ addToCart.addEventListener("click", () => {
   item.size = size;
   item.color = activeColor;
   item.image = mockup;
+  item.id = randomNumber;
 
   // So the user has to add a size to continue
   if (item.size === "") return;

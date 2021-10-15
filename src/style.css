@@ -262,6 +262,10 @@ header {
   @apply flex flex-col justify-between items-start sm:flex-row sm:items-center mt-auto;
 }
 
+.cart-item .size {
+  @apply bg-white text-secondary-300 font-bold text-sm rounded-lg py-1 px-3 border-2 border-red-400 inline-block;
+}
+
 .cart-item label {
   @apply font-medium text-sm md:text-base;
 }

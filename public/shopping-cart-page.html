@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart Page</title>
+    <link rel="preload" href="./img/clothing/hoodys/hoody-mockup.webp" as="image">
     <meta name="description" content="Tailwindcss startup files for a new project">
     <link rel="stylesheet" href="style.css">
-    <script defer src="./scripts/script.js"></script>
+    <script defer src="./scripts/shoppingCart.js"></script>
 </head>
 
-<body>
+<body class="flex flex-col h-screen">
     <header>
         <div class="container">
             <nav class="flex items-center justify-between">
@@ -56,12 +57,17 @@
     <main>
         <section class="mt-fixed-sm md:mt-fixed-md">
             <div class="container">
-                <h1>Shopping Cart</h1>
+                <div>
+                    <h1>Shopping Cart</h1>
+                    <p class="pt-4 md:pt-8 border-t-2 border-gray-200 text-base lg:text-xl text-gray-500 mt-4 lg:mt-12"
+                        data-unsaved-message>
+                        There's no items in your cart.</p>
+                </div>
                 <div class="spacer grid-spacer md:grid-cols-3 lg:gap-16">
-                    <div class="md:col-span-2 grid-spacer">
-                        <!-- card -->
+                    <div class="md:col-span-2 grid-spacer" data-shopping-cart>
+                     
 
-                        <div class="cart-item">
+                        <!-- <div class="cart-item">
                             <div class="col-span-1">
                                 <img src="./img/clothing/hoodys/hoody-mockup.webp" alt="" loading="lazy">
                             </div>
@@ -80,7 +86,7 @@
                             </div>
                         </div>
 
-                        <!-- card -->
+                       
                         <div class="cart-item">
                             <div class="col-span-1">
                                 <img src="./img/clothing/longsleeves/long-sleeve-mockup.webp" alt="" loading="lazy">
@@ -100,7 +106,7 @@
                             </div>
                         </div>
 
-                        <!-- card -->
+                        
                         <div class="cart-item">
                             <div class="col-span-1">
                                 <img src="./img/clothing/pullovers/pullover-mockup.webp" alt="" loading="lazy">
@@ -120,7 +126,7 @@
                             </div>
                         </div>
 
-                        <!-- card -->
+                       
                         <div class="cart-item">
                             <div class="col-span-1">
                                 <img src="./img/clothing/t-shirts/t-shirt-mockup.webp" alt="" loading="lazy">
@@ -139,17 +145,21 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- card -->
+                        -->
+                        
                         <div class="cart-item">
                             <div class="col-span-1">
                                 <img src="./img/clothing/jackets/jacket-mockup.webp" alt="" loading="lazy">
                             </div>
                             <div class="col-span-2 flex flex-col">
                                 <div>
-                                    <h3 class="font-semibold text-lg md:text-2xl">Jacket</h3>
+                                    <div class="flex items-center justify-between">
+                                        <h3 class="font-semibold text-lg md:text-2xl">Jacket</h3>
+                                        <p class="size">M</p>
+                                    </div>
                                     <p class="text-gray-500 font-medium mt-2">R450</p>
                                 </div>
+                                    
                                 <div class="more-info">
                                     <div class="flex gap-4 items-center">
                                         <label for="number">Quantity:</label>
@@ -158,14 +168,15 @@
                                     <button>Remove</button>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
+
                     </div>
-                    <div class="md:col-span-1">
+                    <div class="md:col-span-1" data-order-summary>
                         <h2 class="h3">Order Summary</h2>
                         <div class="spacer flow-content font-bold">
                             <div class="flex justify-between">
                                 <p>Subtotal</p>
-                                <span class="text-gray-500">R200</span>
+                                <span class="text-gray-500" data-order-subtotal>R0</span>
                             </div>
                             <div class="flex justify-between">
                                 <p>Shipping Cost</p>
@@ -173,7 +184,7 @@
                             </div>
                             <div class="flex justify-between">
                                 <p>Order Total</p>
-                                <span class="text-gray-500">R950</span>
+                                <span class="text-gray-500" data-order-total>R0</span>
                             </div>
                         </div>
                         <button class="spacer btn w-full">Checkout</button>
@@ -182,7 +193,7 @@
             </div>
         </section>
     </main>
-    <footer class="bg-accent text-white md:text-center">
+    <footer class="bg-accent text-white md:text-center mt-auto">
         <div class="container grid-spacer">
 
             <ul class="footer-row">
@@ -246,6 +257,7 @@
 
         </div>
     </footer>
+
 </body>
 
 </html>
