@@ -370,6 +370,10 @@ header {
   @apply h-full w-full object-cover hover:opacity-90 hover-default;
 }
 
+.carousel-card h3 {
+  @apply text-lg font-semibold cursor-pointer hover:text-secondary-400 hover-default;
+}
+
 .carousel-card p {
   @apply text-sm text-gray-400 mt-1;
 }

@@ -32055,6 +32055,26 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.carousel-card h3 {
+  cursor: pointer;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.carousel-card h3:hover{
+  --tw-text-opacity: 1;
+  color: rgba(249, 83, 86, var(--tw-text-opacity));
+}
+
+.carousel-card h3 {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .carousel-card p {
   margin-top: 0.25rem;
   font-size: 0.875rem;

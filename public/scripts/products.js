@@ -24,7 +24,6 @@ const getProductDetails = () => {
   const colorGroup = parent.querySelector("[data-color-group]");
   const activeColor = colorGroup.querySelector(".active").textContent;
   const quantity = parseInt(parent.querySelector("[data-quantity]").value);
-  // const mockup = document.querySelector("[data-mockup]").dataset.mockup;
   const mockupImage = document.querySelector(".active").dataset.mockup;
   console.log("mockupImage:", mockupImage);
   console.log(

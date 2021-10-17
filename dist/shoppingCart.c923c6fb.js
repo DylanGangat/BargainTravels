@@ -118,16 +118,6 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"scripts/script.js":[function(require,module,exports) {
-// const searchForm = document.querySelector(".search");
-// searchForm.addEventListener("submit", e => {
-//   e.preventDefault();
-//   const destination = searchForm.destination.value.trim();
-//   if (!destination.length) return;
-//   console.log(destination);
-//   sessionStorage.setItem("DESTINATION", JSON.stringify(destination));
-//   window.location.href = "./city-page.html";
-//   searchForm.reset();
-// });
 const navToggle = document.querySelector("[data-nav-toggle]");
 const overlay = document.querySelector("[data-overlay]");
 const nav = document.querySelector("[data-nav]");
@@ -166,8 +156,16 @@ const removeItem = e => {
     const parent = e.target.closest(".cart-item"); // Had to convert id from string to number
 
     const id = parseInt(parent.dataset.id);
-    const filteredCart = shoppingCart.filter(item => item.id !== id);
-    console.log("Old Cart:", shoppingCart, parent, "ID:", id, "New Cart:", filteredCart);
+    const filteredCart = shoppingCart.filter(item => item.id !== id); // console.log(
+    //   "Old Cart:",
+    //   shoppingCart,
+    //   parent,
+    //   "ID:",
+    //   id,
+    //   "New Cart:",
+    //   filteredCart
+    // );
+
     updateCart(filteredCart);
   }
 }; // For Update total when changing quantity
@@ -185,8 +183,12 @@ const quantityUpdated = e => {
     findCartItem.quantity = quantity;
     let quantityChanged = shoppingCart;
     updateCart(quantityChanged); // console.log(findCartItem, id, size, quantity);
-
-    console.log("CART AFTER:", shoppingCart, "quantityUpdated:", quantityChanged);
+    // console.log(
+    //   "CART AFTER:",
+    //   shoppingCart,
+    //   "quantityUpdated:",
+    //   quantityChanged
+    // );
   }
 }; // To put the information of the products into card items
 
@@ -251,7 +253,7 @@ const updatePrice = shoppingCart => {
     return acc + item.price * item.quantity;
   }, 0);
   subTotal.textContent = `R${totalPrice}`;
-  orderTotal.textContent = `R${totalPrice}`; // console.log(totalPrice);
+  orderTotal.textContent = `R${totalPrice}`;
 }; // If there are items in local storage then we can get the info and display it
 
 
@@ -305,7 +307,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50963" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51018" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

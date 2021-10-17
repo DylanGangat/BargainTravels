@@ -24,15 +24,15 @@ const removeItem = e => {
     // Had to convert id from string to number
     const id = parseInt(parent.dataset.id);
     const filteredCart = shoppingCart.filter(item => item.id !== id);
-    console.log(
-      "Old Cart:",
-      shoppingCart,
-      parent,
-      "ID:",
-      id,
-      "New Cart:",
-      filteredCart
-    );
+    // console.log(
+    //   "Old Cart:",
+    //   shoppingCart,
+    //   parent,
+    //   "ID:",
+    //   id,
+    //   "New Cart:",
+    //   filteredCart
+    // );
 
     updateCart(filteredCart);
   }
@@ -54,12 +54,12 @@ const quantityUpdated = e => {
     let quantityChanged = shoppingCart;
     updateCart(quantityChanged);
     // console.log(findCartItem, id, size, quantity);
-    console.log(
-      "CART AFTER:",
-      shoppingCart,
-      "quantityUpdated:",
-      quantityChanged
-    );
+    // console.log(
+    //   "CART AFTER:",
+    //   shoppingCart,
+    //   "quantityUpdated:",
+    //   quantityChanged
+    // );
   }
 };
 
@@ -121,7 +121,6 @@ const updatePrice = shoppingCart => {
   }, 0);
   subTotal.textContent = `R${totalPrice}`;
   orderTotal.textContent = `R${totalPrice}`;
-  // console.log(totalPrice);
 };
 
 // If there are items in local storage then we can get the info and display it
