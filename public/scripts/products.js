@@ -1,5 +1,5 @@
 import "./script.js";
-
+import { shoppingCartTotalIcon, cartItems, cartTotal } from "./script.js";
 const parent = document.querySelector("[data-product-info]");
 const addToCart = document.querySelector(".btn");
 
@@ -8,14 +8,14 @@ const colorGroup = document.querySelector(".colours-group");
 const colors = document.querySelectorAll(".colour-block");
 const changingImages = document.querySelectorAll("[data-changing-image]");
 export const savedCart = JSON.parse(localStorage.getItem("SHOPPING_CART"));
-console.log(savedCart);
+console.log("savedCart:", savedCart);
 // Array where we put all add to cart items
 let shoppingCart = [];
 
 if (savedCart) {
   shoppingCart = savedCart;
+  cartTotal(shoppingCart);
 }
-// console.log(shoppingCart);
 
 const getProductDetails = () => {
   const name = parent.querySelector("[data-name]").textContent;
@@ -67,9 +67,19 @@ const getProductDetails = () => {
     )
     .reverse();
 
+  cartTotal(cart);
+
   localStorage.setItem("SHOPPING_CART", JSON.stringify(cart));
 
-  console.log("Item:", item, "Shopping Cart:", shoppingCart, "Cart:", cart);
+  console.log(
+    "Item:",
+    item,
+    "Shopping Cart:",
+    shoppingCart,
+    "Cart:",
+    cart,
+    cart.length
+  );
 };
 
 addToCart.addEventListener("click", () => {

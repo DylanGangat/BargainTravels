@@ -132,6 +132,10 @@ header {
   @apply absolute z-10 top-full right-0 left-0 h-screen w-screen bg-gray-200 opacity-60 cursor-pointer;
 }
 
+.shopping-cart-total {
+  @apply h-4 w-4 py-1.5 px-1.5 rounded-full bg-secondary-400 text-white text-xs  absolute -top-1.5 -right-1 flex items-center justify-center;
+}
+
 /* =============
    Hero
    =============*/

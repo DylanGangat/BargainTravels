@@ -118,9 +118,40 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"scripts/script.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.cartTotal = exports.cartItems = exports.shoppingCartTotalIcon = void 0;
 const navToggle = document.querySelector("[data-nav-toggle]");
 const overlay = document.querySelector("[data-overlay]");
 const nav = document.querySelector("[data-nav]");
+const shoppingCart = JSON.parse(localStorage.getItem("SHOPPING_CART"));
+const shoppingCartTotalIcon = document.querySelector("[data-shoppingcart-icon]");
+exports.shoppingCartTotalIcon = shoppingCartTotalIcon;
+const cartItems = shoppingCartTotalIcon.querySelector(".shopping-cart-total"); // Function for updating the items total thats above the shopping icon
+
+exports.cartItems = cartItems;
+
+const cartTotal = cart => {
+  if (cart.length) {
+    cartItems.textContent = cart.length;
+    cartItems.classList.remove("visually-hidden");
+  } else {
+    cartItems.classList.add("visually-hidden");
+  }
+}; // tTo hide items total when
+
+
+exports.cartTotal = cartTotal;
+
+if (shoppingCart != null && shoppingCart.length !== 0) {
+  cartTotal(shoppingCart);
+} else {
+  cartItems.classList.add("visually-hidden");
+}
+
 navToggle.addEventListener("click", e => {
   if (!e.currentTarget.hasAttribute("data-nav-toggle")) return;
   nav.classList.toggle("hidden");
@@ -502,7 +533,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49639" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58895" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

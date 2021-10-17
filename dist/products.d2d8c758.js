@@ -118,9 +118,40 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"scripts/script.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.cartTotal = exports.cartItems = exports.shoppingCartTotalIcon = void 0;
 const navToggle = document.querySelector("[data-nav-toggle]");
 const overlay = document.querySelector("[data-overlay]");
 const nav = document.querySelector("[data-nav]");
+const shoppingCart = JSON.parse(localStorage.getItem("SHOPPING_CART"));
+const shoppingCartTotalIcon = document.querySelector("[data-shoppingcart-icon]");
+exports.shoppingCartTotalIcon = shoppingCartTotalIcon;
+const cartItems = shoppingCartTotalIcon.querySelector(".shopping-cart-total"); // Function for updating the items total thats above the shopping icon
+
+exports.cartItems = cartItems;
+
+const cartTotal = cart => {
+  if (cart.length) {
+    cartItems.textContent = cart.length;
+    cartItems.classList.remove("visually-hidden");
+  } else {
+    cartItems.classList.add("visually-hidden");
+  }
+}; // tTo hide items total when
+
+
+exports.cartTotal = cartTotal;
+
+if (shoppingCart != null && shoppingCart.length !== 0) {
+  cartTotal(shoppingCart);
+} else {
+  cartItems.classList.add("visually-hidden");
+}
+
 navToggle.addEventListener("click", e => {
   if (!e.currentTarget.hasAttribute("data-nav-toggle")) return;
   nav.classList.toggle("hidden");
@@ -139,7 +170,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.savedCart = void 0;
 
-require("./script.js");
+var _script = require("./script.js");
 
 const parent = document.querySelector("[data-product-info]");
 const addToCart = document.querySelector(".btn"); // For changing image and active color
@@ -149,14 +180,14 @@ const colors = document.querySelectorAll(".colour-block");
 const changingImages = document.querySelectorAll("[data-changing-image]");
 const savedCart = JSON.parse(localStorage.getItem("SHOPPING_CART"));
 exports.savedCart = savedCart;
-console.log(savedCart); // Array where we put all add to cart items
+console.log("savedCart:", savedCart); // Array where we put all add to cart items
 
 let shoppingCart = [];
 
 if (savedCart) {
   shoppingCart = savedCart;
-} // console.log(shoppingCart);
-
+  (0, _script.cartTotal)(shoppingCart);
+}
 
 const getProductDetails = () => {
   const name = parent.querySelector("[data-name]").textContent;
@@ -182,8 +213,9 @@ const getProductDetails = () => {
   shoppingCart.push(item); // It checks to see if you added the same sized item and same names and then filters and removes your previous item and replaces it with an new item.
 
   const cart = shoppingCart.slice().reverse().filter((item, index, array) => array.findIndex(t => t.size === item.size && t.name === item.name && t.color === item.color) === index).reverse();
+  (0, _script.cartTotal)(cart);
   localStorage.setItem("SHOPPING_CART", JSON.stringify(cart));
-  console.log("Item:", item, "Shopping Cart:", shoppingCart, "Cart:", cart);
+  console.log("Item:", item, "Shopping Cart:", shoppingCart, "Cart:", cart, cart.length);
 };
 
 addToCart.addEventListener("click", () => {
@@ -241,7 +273,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49639" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58895" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

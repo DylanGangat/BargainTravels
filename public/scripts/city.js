@@ -42,7 +42,7 @@ const destinationCoordinates = async destination => {
     const name = placeDetails.name;
     const locationId = placeDetails.location_id;
     const description = placeDetails.description;
-
+    
     destinationPhotos(locationId, name, description);
     destinationAttractions(locationId);
     destinationRestaurants(locationId);

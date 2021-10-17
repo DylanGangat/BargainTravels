@@ -1,4 +1,6 @@
 import "./script.js";
+import { shoppingCartTotalIcon, cartItems, cartTotal } from "./script.js";
+
 let shoppingCart = [];
 
 const emptyCartMessage = document.querySelector("[data-unsaved-message]");
@@ -24,16 +26,6 @@ const removeItem = e => {
     // Had to convert id from string to number
     const id = parseInt(parent.dataset.id);
     const filteredCart = shoppingCart.filter(item => item.id !== id);
-    // console.log(
-    //   "Old Cart:",
-    //   shoppingCart,
-    //   parent,
-    //   "ID:",
-    //   id,
-    //   "New Cart:",
-    //   filteredCart
-    // );
-
     updateCart(filteredCart);
   }
 };
@@ -49,17 +41,9 @@ const quantityUpdated = e => {
     const findCartItem = shoppingCart.find(
       item => item.id === id && item.size === size
     );
-    // console.log('CART BEFORE:', shoppingCart);
     findCartItem.quantity = quantity;
     let quantityChanged = shoppingCart;
     updateCart(quantityChanged);
-    // console.log(findCartItem, id, size, quantity);
-    // console.log(
-    //   "CART AFTER:",
-    //   shoppingCart,
-    //   "quantityUpdated:",
-    //   quantityChanged
-    // );
   }
 };
 
@@ -109,6 +93,7 @@ const updateCart = filteredCart => {
   // Uses new array to form new template
   generateShoppingCart(shoppingCart);
   updatePrice(shoppingCart);
+  cartTotal(shoppingCart);
 
   // Checks whether it should display or hide message due to the updated array
   cartMessage(shoppingCart);
@@ -127,9 +112,10 @@ const updatePrice = shoppingCart => {
 const loadShoppingCart = () => {
   if (localStorage.getItem("SHOPPING_CART")) {
     shoppingCart = JSON.parse(localStorage.getItem("SHOPPING_CART"));
-    console.log("SHOPPING CART:", shoppingCart);
+    // console.log("SHOPPING CART:", shoppingCart);
     generateShoppingCart(shoppingCart);
     updatePrice(shoppingCart);
+    cartTotal(shoppingCart);
   }
 };
 

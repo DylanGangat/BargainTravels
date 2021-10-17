@@ -17,7 +17,7 @@
     <meta name="msapplication-TileColor" content="#284477">
     <meta name="msapplication-config" content="/browserconfig.f6e7bf7b.xml">
     <meta name="theme-color" content="#ffffff">
-    
+
     <link rel="stylesheet" href="/style.e308ff8e.css">
     <script defer="" src="/script.a6e1fada.js"></script>
 </head>
@@ -44,11 +44,12 @@
 
                         <li><a href="/shop-page.html">Shop</a></li>
                     </ul>
-                    <div>
-                        <a href="/shopping-cart-page.html">
+                    <div data-shoppingcart-icon="">
+                        <a class="inline-block relative" href="/shopping-cart-page.html">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
                             </svg>
+                            <span class="shopping-cart-total">0</span>
                         </a>
                     </div>
                 </div>
@@ -62,7 +63,8 @@
                 <div>
                     <div>
                         <h1 class="max-w-prose text-secondary-400">We're here to make planning your next trip easy.</h1>
-                        <p class="spacer max-w-prose md:ml-auto md:mr-auto text-base lg:text-xl text-gray-500">BargainTravels,
+                        <p class="spacer max-w-prose md:ml-auto md:mr-auto text-base lg:text-xl text-gray-500">
+                            BargainTravels,
                             the world's largest travel guidance
                             platform, helps hundreds of millions of people
                             each month become better travelers, from planning to booking to taking a trip. Travelers
@@ -196,7 +198,7 @@
     </main>
     <footer class="bg-accent text-white md:text-center">
         <div class="container grid-spacer">
-         
+
             <ul class="footer-row">
                 <li><a href="/about-page.html" class="footer-links-transiton">About us</a></li>
                 <li><a href="#" class="footer-links-transiton">Work for us</a></li>

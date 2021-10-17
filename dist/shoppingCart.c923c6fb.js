@@ -118,9 +118,40 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"scripts/script.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.cartTotal = exports.cartItems = exports.shoppingCartTotalIcon = void 0;
 const navToggle = document.querySelector("[data-nav-toggle]");
 const overlay = document.querySelector("[data-overlay]");
 const nav = document.querySelector("[data-nav]");
+const shoppingCart = JSON.parse(localStorage.getItem("SHOPPING_CART"));
+const shoppingCartTotalIcon = document.querySelector("[data-shoppingcart-icon]");
+exports.shoppingCartTotalIcon = shoppingCartTotalIcon;
+const cartItems = shoppingCartTotalIcon.querySelector(".shopping-cart-total"); // Function for updating the items total thats above the shopping icon
+
+exports.cartItems = cartItems;
+
+const cartTotal = cart => {
+  if (cart.length) {
+    cartItems.textContent = cart.length;
+    cartItems.classList.remove("visually-hidden");
+  } else {
+    cartItems.classList.add("visually-hidden");
+  }
+}; // tTo hide items total when
+
+
+exports.cartTotal = cartTotal;
+
+if (shoppingCart != null && shoppingCart.length !== 0) {
+  cartTotal(shoppingCart);
+} else {
+  cartItems.classList.add("visually-hidden");
+}
+
 navToggle.addEventListener("click", e => {
   if (!e.currentTarget.hasAttribute("data-nav-toggle")) return;
   nav.classList.toggle("hidden");
@@ -134,7 +165,7 @@ overlay.addEventListener("click", e => {
 },{}],"scripts/shoppingCart.js":[function(require,module,exports) {
 "use strict";
 
-require("./script.js");
+var _script = require("./script.js");
 
 let shoppingCart = [];
 const emptyCartMessage = document.querySelector("[data-unsaved-message]");
@@ -156,16 +187,7 @@ const removeItem = e => {
     const parent = e.target.closest(".cart-item"); // Had to convert id from string to number
 
     const id = parseInt(parent.dataset.id);
-    const filteredCart = shoppingCart.filter(item => item.id !== id); // console.log(
-    //   "Old Cart:",
-    //   shoppingCart,
-    //   parent,
-    //   "ID:",
-    //   id,
-    //   "New Cart:",
-    //   filteredCart
-    // );
-
+    const filteredCart = shoppingCart.filter(item => item.id !== id);
     updateCart(filteredCart);
   }
 }; // For Update total when changing quantity
@@ -178,17 +200,10 @@ const quantityUpdated = e => {
     const id = parseInt(parent.dataset.id);
     const size = parent.querySelector("[data-size]").dataset.size;
     const quantity = parseInt(e.target.value);
-    const findCartItem = shoppingCart.find(item => item.id === id && item.size === size); // console.log('CART BEFORE:', shoppingCart);
-
+    const findCartItem = shoppingCart.find(item => item.id === id && item.size === size);
     findCartItem.quantity = quantity;
     let quantityChanged = shoppingCart;
-    updateCart(quantityChanged); // console.log(findCartItem, id, size, quantity);
-    // console.log(
-    //   "CART AFTER:",
-    //   shoppingCart,
-    //   "quantityUpdated:",
-    //   quantityChanged
-    // );
+    updateCart(quantityChanged);
   }
 }; // To put the information of the products into card items
 
@@ -242,7 +257,8 @@ const updateCart = filteredCart => {
   shoppingCart = JSON.parse(localStorage.getItem("SHOPPING_CART")); // Uses new array to form new template
 
   generateShoppingCart(shoppingCart);
-  updatePrice(shoppingCart); // Checks whether it should display or hide message due to the updated array
+  updatePrice(shoppingCart);
+  (0, _script.cartTotal)(shoppingCart); // Checks whether it should display or hide message due to the updated array
 
   cartMessage(shoppingCart);
 }; // Update the price of total
@@ -259,10 +275,11 @@ const updatePrice = shoppingCart => {
 
 const loadShoppingCart = () => {
   if (localStorage.getItem("SHOPPING_CART")) {
-    shoppingCart = JSON.parse(localStorage.getItem("SHOPPING_CART"));
-    console.log("SHOPPING CART:", shoppingCart);
+    shoppingCart = JSON.parse(localStorage.getItem("SHOPPING_CART")); // console.log("SHOPPING CART:", shoppingCart);
+
     generateShoppingCart(shoppingCart);
     updatePrice(shoppingCart);
+    (0, _script.cartTotal)(shoppingCart);
   }
 };
 
@@ -307,7 +324,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51018" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64529" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
