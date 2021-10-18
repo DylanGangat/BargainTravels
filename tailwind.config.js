@@ -34,6 +34,10 @@ module.exports = {
         maroon: "#25121A",
         sky: "#7DAAD8",
       },
+      borderColor: {
+        primary: "#343a40",
+        secondary: "#fa6467",
+      },
       gridTemplateColumns: {
         reviews: "repeat(auto-fit, minmax(17rem, 1fr))",
         destinations: "repeat(auto-fit, minmax(15.5rem, 1fr))",
@@ -43,11 +47,16 @@ module.exports = {
       spacing: {
         "fixed-sm": "4.5rem",
         "fixed-md": "5.5rem",
+
+      },
+      padding: {
+        carousel: "21.0625rem"
       },
       backgroundImage: {
-        "shop-hero": "url('/img/girl-in-florence.webp')",
-        "shop-hero1": "url('/img/girl-with-view.webp')",
         "shop-hero2": "url('/img/guy-in-flowers.webp')",
+      },
+      screens: {
+        xs: "400px",
       },
     },
   },

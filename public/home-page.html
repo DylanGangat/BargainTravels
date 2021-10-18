@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <meta name="description" content="Tailwindcss startup files for a new project">
+    <meta name="description" content="Welcome to BargainTravels! You can search for you next travel destination or checkout one of our many clothing items for sale.">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon-package/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-package/favicon-32x32.png">
@@ -35,7 +35,7 @@
                     </svg>
                 </div>
                 <a href="home-page.html" class="flex items-center"><img class="h-10 md:h-14"
-                        src="./img/logo/pig-xxl.png" alt="bargaintravels logo"><span
+                        src="./img/logo/pig-xxl.webp" alt="bargaintravels logo"><span
                         class="font-bold md:text-2xl">BargainTravels</span></a>
                 <div class="flex gap-6 items-center">
                     <ul class="flex hidden dropdown-menu" data-nav>
@@ -51,7 +51,7 @@
 
                         <li><a href="shop-page.html">Shop</a></li>
                     </ul>
-                    <div data-shoppingcart-icon>
+                    <div data-shoppingcart-icon class="flex">
                         <a class="inline-block relative" href="shopping-cart-page.html">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -67,6 +67,7 @@
         </div>
     </header>
     <main>
+
         <!-- Hero -->
         <section class="mt-fixed-sm md:mt-fixed-md">
             <div class="container hero">
@@ -93,12 +94,13 @@
             <div class="container">
                 <div class="grid-spacer grid-cols-reviews">
                     <div class="review-card border-2 border-blue-900">
-                        <img class="self-start" src="./img/icons/lonely-planet-icon.svg" alt="lonely planets logo">
+                        <img class="self-start" height="50" width="102" src="./img/icons/lonely-planet-icon.svg"
+                            alt="lonely planets logo">
                         <p class="mb-auto">This is one of the best places to find budget friendly options for your next
                             trip.</p>
                         <div class="flex items-center">
-                            <img class="h-12 w-12 object-cover rounded-full" src="./img/girl.webp"
-                                alt="a portrait of a lady">
+                            <img class="h-12 w-12 object-cover rounded-full" height="48" width="48"
+                                src="./img/girl.webp" alt="a portrait of a lady">
                             <div class="ml-2 text-sm">
                                 <p class="font-semibold">Maive Willey</p>
                                 <p class="text-gray-500">CEO, Lonely Planet</p>
@@ -107,11 +109,11 @@
                     </div>
 
                     <div class="review-card border-2 border-black">
-                        <img class="self-start" src="./img/icons/nytimes-icon.svg" alt="new york times logo">
+                        <img class="self-start" height="50" width="255" src="./img/icons/nytimes-icon.svg" alt="new york times logo">
                         <p>By far the best customer service I have ever received. My go to website for when I'm looking
                             to travel.</p>
                         <div class="flex items-center">
-                            <img class="h-12 w-12 object-cover rounded-full" src="./img/guy.webp"
+                            <img class="h-12 w-12 object-cover rounded-full" height="48" width="48" src="./img/guy.webp"
                                 alt="a portrait of a guy">
                             <div class="ml-2 text-sm">
                                 <p class="font-semibold">James Frank</p>
@@ -121,13 +123,14 @@
                     </div>
 
                     <div class="review-card border-2 border-red-500">
-                        <img class="self-start" src="./img/icons/google-icon.svg" alt="lonely planets logo">
+                        <img class="self-start" height="50" width="153" src="./img/icons/google-icon.svg"
+                            alt="google logo">
 
                         <p>The amount of cheap deals on this site is crazy! I sometimes spend more time looking for
                             deals than actually working.</p>
                         <div class="flex items-center">
-                            <img class="h-12 w-12 object-cover rounded-full" src="./img/guy2.webp"
-                                alt="a portrait of a guy">
+                            <img class="h-12 w-12 object-cover rounded-full" height="48" width="48"
+                                src="./img/guy2.webp" alt="a portrait of a guy">
                             <div class="ml-2 text-sm">
                                 <p class="font-semibold">Shuan Redding</p>
                                 <p class="text-gray-500">CEO, Google</p>
@@ -149,45 +152,33 @@
                 </div>
 
                 <div class="spacer">
-                    <!-- <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                        </svg>
-                    </button> -->
-
-
+                
                     <div class="grid-spacer grid-cols-destinations">
                         <div class="flow-content country-card">
-                            <img src="./img/croatia.webp" alt="City of Dubrovnik" loading="lazy">
+                            <img src="./img/croatia.webp" height="224" width="248" alt="City of Dubrovnik" loading="lazy">
                             <h3>Croatia</h3>
                             <div></div>
                         </div>
 
                         <div class="flow-content country-card">
-                            <img src="./img/brazil.webp" alt="Birds eye view of Rio de Janeiro" loading="lazy">
+                            <img src="./img/brazil.webp" height="224" width="248" alt="Birds eye view of Rio de Janeiro" loading="lazy">
                             <h3>Brazil</h3>
                             <div></div>
                         </div>
 
                         <div class="flow-content country-card">
-                            <img src="./img/egypt.webp" alt="A pyramid in Egypt" loading="lazy">
+                            <img src="./img/egypt.webp" height="224" width="248" alt="A pyramid in Egypt" loading="lazy">
                             <h3>Egypt</h3>
                             <div></div>
                         </div>
 
                         <div class="flow-content country-card">
-                            <img src="./img/japan.webp" alt="City center of Shibuya in Japan" loading="lazy">
+                            <img src="./img/japan.webp" height="224" width="248" alt="City center of Shibuya in Japan" loading="lazy">
                             <h3>Japan</h3>
                             <div></div>
                         </div>
                     </div>
-                    <!-- <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                    </button> -->
+                 
                 </div>
             </div>
         </section>
@@ -237,11 +228,12 @@
                     Products</a>
             </div>
         </section>
+
         <!-- Newsletter -->
         <section>
             <div class="container grid-spacer md:grid-cols-2 md:items-center">
                 <div class="">
-                    <h2 class="md:text-left text-4xl">Subscribe to our newsletter and get<span
+                    <h2 class="text-center md:text-left text-4xl">Subscribe to our newsletter and get<span
                             class="text-secondary-400"> 25%
                             off</span> our clothing collection
                     </h2>

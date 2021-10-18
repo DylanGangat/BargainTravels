@@ -141,7 +141,7 @@ const cartTotal = cart => {
   } else {
     cartItems.classList.add("visually-hidden");
   }
-}; // tTo hide items total when
+}; // To hide items total when
 
 
 exports.cartTotal = cartTotal;
@@ -178,13 +178,12 @@ const addToCart = document.querySelector(".btn"); // For changing image and acti
 const colorGroup = document.querySelector(".colours-group");
 const colors = document.querySelectorAll(".colour-block");
 const changingImages = document.querySelectorAll("[data-changing-image]");
-const savedCart = JSON.parse(localStorage.getItem("SHOPPING_CART"));
+const savedCart = JSON.parse(localStorage.getItem("SHOPPING_CART")); // Array where we put all add to cart items
+
 exports.savedCart = savedCart;
-console.log("savedCart:", savedCart); // Array where we put all add to cart items
+let shoppingCart = []; // To check if there is a cart with a length and then it would update the cart total icon
 
-let shoppingCart = [];
-
-if (savedCart) {
+if (savedCart && savedCart.length !== 0) {
   shoppingCart = savedCart;
   (0, _script.cartTotal)(shoppingCart);
 }
@@ -197,8 +196,6 @@ const getProductDetails = () => {
   const activeColor = colorGroup.querySelector(".active").textContent;
   const quantity = parseInt(parent.querySelector("[data-quantity]").value);
   const mockupImage = document.querySelector(".active").dataset.mockup;
-  console.log("mockupImage:", mockupImage);
-  console.log(name, price, size, activeColor, quantity, mockupImage, "TYPEOF:", typeof mockup);
   const randomNumber = Math.floor(Math.random() * 1000 + 1);
   const item = {};
   item.name = name;
@@ -215,7 +212,6 @@ const getProductDetails = () => {
   const cart = shoppingCart.slice().reverse().filter((item, index, array) => array.findIndex(t => t.size === item.size && t.name === item.name && t.color === item.color) === index).reverse();
   (0, _script.cartTotal)(cart);
   localStorage.setItem("SHOPPING_CART", JSON.stringify(cart));
-  console.log("Item:", item, "Shopping Cart:", shoppingCart, "Cart:", cart, cart.length);
 };
 
 addToCart.addEventListener("click", () => {
@@ -224,8 +220,7 @@ addToCart.addEventListener("click", () => {
 
 const updateMockupColor = e => {
   if (e.target.classList.contains("colour-block")) {
-    console.log(e.target); // To reset the color groups by removing all active states
-
+    // To reset the color groups by removing all active states
     colors.forEach(color => color.classList.remove("active")); // To add the active state to the onn you clicked
 
     const activeColor = e.target.classList.add("active"); // To get the id so i can use it to select the right image to display
@@ -273,7 +268,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58895" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60930" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

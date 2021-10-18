@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City info page</title>
-    <meta name="description" content="Tailwindcss startup files for a new project">
+    <meta name="description" content="Gives you all the attractions, restaurant and places to stay in the city you have searched for.">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.7faca7ad.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.eb8d41e2.png">
@@ -31,7 +31,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path>
                     </svg>
                 </div>
-                <a href="/home-page.html" class="flex items-center"><img class="h-10 md:h-14" src="/pig-xxl.dcd68c9a.png" alt="bargaintravels logo"><span class="font-bold md:text-2xl">BargainTravels</span></a>
+                <a href="/home-page.html" class="flex items-center"><img class="h-10 md:h-14" src="/pig-xxl.ae9ca845.webp" alt="bargaintravels logo"><span class="font-bold md:text-2xl">BargainTravels</span></a>
                 <div class="flex gap-6 items-center">
                     <ul class="flex hidden dropdown-menu" data-nav="">
                         <li><a class="flex gap-1" href="/trips-page.html">
@@ -44,7 +44,7 @@
 
                         <li><a href="/shop-page.html">Shop</a></li>
                     </ul>
-                    <div data-shoppingcart-icon="">
+                    <div data-shoppingcart-icon="" class="flex">
                         <a class="inline-block relative" href="/shopping-cart-page.html">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
@@ -60,283 +60,27 @@
     <main>
         <section class="mt-fixed-sm md:mt-fixed-md">
             <div class="container">
-                <h1 data-heading=""><span class="text-secondary-400 font-semibold">Explore</span> Cape Town</h1>
+                <h1 data-heading=""><span class="text-secondary-400 font-semibold">Explore</span></h1>
                 <div class="destination-hero" data-destination="">
-                    <img class="hero-image hero-image-1" src="/panaramic-table-mountain.804d2126.webp" alt="table mountain">
-                    <img class="hero-image hero-image-2" src="/table-mountain.6e474dad.webp" alt="table mountain">
-                    <img class="hero-image hero-image-3" src="/camps-bay-beach.c9799238.webp" alt="camps bay beach">
+                    <img class="h-full w-full object-cover rounded-lg col-span-full row-span-full" src="/loading.e810ebf9.webp" height="337" width="1000" alt="A loading bar half full">
                 </div>
                 <div class="flow-content spacer">
-                    <h2 class="h3" data-sub-heading="">About Cape Town</h2>
-                    <p class="text-lg max-w-prose" data-description="">Cape Town glistens at the southern toe of the
-                        African continent. Tourist brochure-views at Blaauwberg Beach and Kirstenbosch National
-                        Botanical Gardens are within easy driving distance of "The Mother City." The Cape of Good Hope
-                        Nature Reserve provides sweeping sea vistas, hiking trails and wildlife encounters. On a more
-                        somber note, travellers can visit Robben Island, the prison where Nelson Mandela was held for 27
-                        years.
+                    <h2 class="h3" data-sub-heading="">About</h2>
+                    <p class="text-lg max-w-prose" data-description="">
+                        <span class="inline-block pb-44"></span>
                     </p>
                 </div>
             </div>
         </section>
         <section class="destination-activities">
             <div class="container flex flex-col">
-                <h2 class="h3" data-activities-destination="">Essential Cape Town</h2>
+                <h2 class="h3" data-activities-destination="">Essential</h2>
                 <!-- do -->
                 <div class="spacer flow-content">
                     <h3 class="text-4xl">Do</h3>
                     <div class="relative">
-
-
                         <div class="carousel flex gap-8 overflow-auto pb-4" data-attraction-carousel="">
-                            <!-- <div class="absolute top-0 right-0 bottom-0 w-12 h-full bg-black z-10 opacity-75  "></div> -->
-                            <!-- Card 1 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/cable-car.ee574dd1.webp" alt="table mountain cable car" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3>
-                                        <a href="" target="_blank">Table Mountain Cable Car</a>
-                                    </h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">5</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(20000)</span>
-                                    </div>
-                                    <p>#1 of 189 things to do</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 2 -->
-
-                            <div class="carousel-card">
-                                <div class="image"><img src="/lions-head.0ba5382d.webp" alt="lions head" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Lion's Head</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">5</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(20000)</span>
-                                    </div>
-                                    <p>#2 of 189 things to do</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 3 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/bo-kaap.8b2ed23d.webp" alt="Bo-Kaap" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Bo-Kaap</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">5</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(20000)</span>
-                                    </div>
-                                    <p>#3 of 189 things to do</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 4 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/llandudno-beach.99d92bfb.webp" alt="Llandudno Beach" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Llandudno Beach</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">5</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(20000)</span>
-                                    </div>
-                                    <p>#4 of 189 things to do</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-
-                            <!-- Card 5 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/cape-point-south-africa.d8cda388.webp" alt="cape point beacon" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold" data-stars="5">Cape Point Nature Reserve</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">4</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(10000)</span>
-                                    </div>
-                                    <p>#5 of 189 things to do</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 6 -->
-
-                            <div class="carousel-card">
-                                <div class="image"><img src="/aquarium.cd87c2b8.webp" alt="waterfront aquarium" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Waterfronts Aquarium</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">4</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(10000)</span>
-                                    </div>
-                                    <p>#6 of 189 things to do</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 7 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/boulders-beach.e17b9ce1.webp" alt="boulders beach" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Boulders Beach</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">5</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(20000)</span>
-                                    </div>
-                                    <p>#7 of 189 things to do</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 8 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/kirstenbosch.f95a5db9.webp" alt="kirstenbosch gardens" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Kirstenbosch Gardens</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">4</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(10000)</span>
-                                    </div>
-                                    <p>#8 of 189 things to do</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-
-                            <!-- Card 9 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/muizenberg-colourful-house.3b123b6b.webp" alt="Muizenberg Beach" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Muizenberg Beach</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">4</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(10000)</span>
-                                    </div>
-                                    <p>#9 of 189 things to do</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-
-                            <!-- Card 10 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/mount-nelson.7b5c9bd3.webp" alt="Mount Nelson" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Mount Nelson</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">4</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(10000)</span>
-                                    </div>
-                                    <p>#10 of 189 things to do</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 11 -->
-
-                            <div class="carousel-card">
-                                <div class="image"><img src="/safari.3f9ea8f0.webp" alt="Elephants in the wild" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Safari</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">5</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(20000)</span>
-                                    </div>
-                                    <p>#11 of 189 things to do</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 12 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/hout-bay.ec9ec51e.webp" alt="Hout Bay" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Hout Bay</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">4</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(10000)</span>
-                                    </div>
-                                    <p>#12 of 189 things to do</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
+                            <div class="pb-carousel"></div>
                         </div>
                     </div>
                 </div>
@@ -345,173 +89,8 @@
                 <div class="spacer flow-content">
                     <h3 class="text-4xl">Eat</h3>
                     <div class="relative">
-
                         <div class="carousel flex gap-8 overflow-auto pb-4" data-restaurant-carousel="">
-                            <!-- Card 1 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/caption.649397c5.webp" alt="bowl of food" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Madam Taitou</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">5</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(20000)</span>
-                                    </div>
-                                    <p>African, Healthy, Ethiopian</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 2 -->
-
-                            <div class="carousel-card">
-                                <div class="image"><img src="/come-by-and-enjoy-our.52c0a1bf.webp" alt="people sitting at a restaurant" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Mzansi</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">5</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(20000)</span>
-                                    </div>
-                                    <p>African, Healthy, Vegetarian Friendly</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 3 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/courtyard.d305db84.webp" alt="a restaurant table" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Reverie Social Table</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">5</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(20000)</span>
-                                    </div>
-                                    <p>International, Vegetarian Friendly, Vegan Options</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 4 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/dash.e0dcae16.webp" alt="a restaurant setting" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Osteria Tarantino</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">5</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(20000)</span>
-                                    </div>
-                                    <p>ItalianNeapolitanCampania</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-
-                            <!-- Card 5 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/griller-fish-fresh-off.7a67e776.webp" alt="a seasfood platter" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Miller's Thumb
-                                    </h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">5</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(20000)</span>
-                                    </div>
-                                    <p>Cajun & Creole, Seafood, International</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 6 -->
-
-                            <div class="carousel-card">
-                                <div class="image"><img src="/meeting-room.ff86a04b.webp" alt="a restaurant table" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Mozambik V & A Waterfront
-                                    </h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">4</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(10000)</span>
-                                    </div>
-                                    <p>Bar, Pub, Portuguese</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 7 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/photo0jpg.6f78ff94.webp" alt="a restaurant seating area" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Iron Steak and Bar</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">4</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(10000)</span>
-                                    </div>
-                                    <p>Steakhouse, Bar, Grill</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 8 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/photo1jpg.6846d86c.webp" alt="a plate of food" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Chefs Warehouse</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">4</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(10000)</span>
-                                    </div>
-                                    <p>European, Healthy, Vegetarian Friendly</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
+                            <div class="pb-carousel"></div>
                         </div>
                     </div>
                 </div>
@@ -520,172 +99,8 @@
                 <div class="spacer flow-content">
                     <h3 class="text-4xl">Stay</h3>
                     <div class="relative">
-
                         <div class="carousel flex gap-8 overflow-auto pb-4" data-hotel-carousel="">
-
-                            <!-- Card 1 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/blackheath-lodge.ebb9d61e.webp" alt="a hotel" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Blackheath Lodge</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">5</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(20000)</span>
-                                    </div>
-                                    <p>#1 of 128 Hotels in Cape Town Central</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 2 -->
-
-                            <div class="carousel-card">
-                                <div class="image"><img src="/20.fe3b50dc.webp" alt="a hotel" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Derwent House Boutique Hotel</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">4</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(10000)</span>
-                                    </div>
-                                    <p>#2 of 128 Hotels in Cape Town Central</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 3 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/2inn1-kensington.f8da7201.webp" alt="a hotel" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">2Inn1 Kensington</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">5</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(20000)</span>
-                                    </div>
-                                    <p>#3 of 128 Hotels in Cape Town Central</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 4 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/lounge-veranda.b754b426.webp" alt="a hotel" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Kensington Place</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">5</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(20000)</span>
-                                    </div>
-                                    <p>#4 of 128 Hotels in Cape Town Central</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-
-                            <!-- Card 5 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/hotel-entrance-night.80932abb.webp" alt="a hotel" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Four Rosmead</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">4</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(10000)</span>
-                                    </div>
-                                    <p>#5 of 128 Hotels in Cape Town Central</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 6 -->
-
-                            <div class="carousel-card">
-                                <div class="image"><img src="/ce.dabae7d5.webp" alt="a hotel" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">The Tree House Boutique Hotel</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">5</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(20000)</span>
-                                    </div>
-                                    <p>#6 of 128 Hotels in Cape Town Central</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 7 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/cape-milner.b9478321.webp" alt="a hotel" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Dock House Boutique Hotel</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="3">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">3</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(5000)</span>
-                                    </div>
-                                    <p>#7 of 128 Hotels in Cape Town Central</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
-                            <!-- Card 8 -->
-                            <div class="carousel-card">
-                                <div class="image"><img src="/93.56ad8129.webp" alt="a hotel" loading="lazy">
-                                </div>
-                                <div class="mt-2">
-                                    <h3 class="text-lg font-semibold">Glen Boutique Hotel & Spa</h3>
-                                    <div class="flex gap-1 mt-2 items-center" data-stars="4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                        </svg><span class="font-bold text-secondary-400">4</span>
-                                        <span class="text-xs text-gray-400 ml-1" data-reviews="">(10000)</span>
-                                    </div>
-                                    <p>#8 of 128 Hotels in Cape Town Central</p>
-                                </div>
-                                <div class="heart">
-                                    <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg" alt="empty heart" data-heart="">
-                                    <img class="h-6 w-6 cursor-pointer heart-filled hidden" src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart="">
-                                </div>
-                            </div>
-
+                            <div class="pb-carousel"></div>
                         </div>
                     </div>
                 </div>

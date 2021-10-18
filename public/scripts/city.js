@@ -42,7 +42,7 @@ const destinationCoordinates = async destination => {
     const name = placeDetails.name;
     const locationId = placeDetails.location_id;
     const description = placeDetails.description;
-    
+
     destinationPhotos(locationId, name, description);
     destinationAttractions(locationId);
     destinationRestaurants(locationId);
@@ -81,6 +81,7 @@ const destinationPhotos = async (locationId, name, description) => {
     placeName.innerHTML = `<h1 data-heading><span class="text-secondary-400 font-semibold">Explore</span> ${name}</h1>`;
     aboutName.innerHTML = `About ${name}`;
     essentialName.innerHTML = `Essential ${name}`;
+    placeDescription.innerHTML = "";
     placeDescription.innerHTML = description;
 
     destinationInfoTemplate(photoGroup);

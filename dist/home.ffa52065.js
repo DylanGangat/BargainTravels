@@ -141,7 +141,7 @@ const cartTotal = cart => {
   } else {
     cartItems.classList.add("visually-hidden");
   }
-}; // tTo hide items total when
+}; // To hide items total when
 
 
 exports.cartTotal = cartTotal;
@@ -171,7 +171,6 @@ const searchForm = document.querySelector(".search");
 searchForm.addEventListener("submit", e => {
   const destination = searchForm.destination.value.trim();
   if (!destination.length) return;
-  console.log(destination);
   sessionStorage.setItem("DESTINATION", JSON.stringify(destination));
   searchForm.reset();
 });
@@ -203,7 +202,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58895" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60930" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

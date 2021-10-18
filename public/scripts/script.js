@@ -19,7 +19,7 @@ export const cartTotal = cart => {
   }
 };
 
-// tTo hide items total when
+// To hide items total when
 if (shoppingCart != null && shoppingCart.length !== 0) {
   cartTotal(shoppingCart);
 } else {

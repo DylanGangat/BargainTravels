@@ -255,7 +255,7 @@ header {
    =============*/
 
 .cart-item {
-  @apply grid gap-4 sm:gap-8 grid-cols-3 rounded-lg p-6 sm:p-8 shadow max-w-xl md:max-w-none;
+  @apply grid gap-6 sm:gap-8 grid-cols-3 rounded-lg p-6 sm:p-8 shadow max-w-xl md:max-w-none;
 }
 
 .cart-item img {
@@ -263,11 +263,11 @@ header {
 }
 
 .cart-item .more-info {
-  @apply flex flex-col justify-between items-start sm:flex-row sm:items-center mt-auto;
+  @apply flex flex-wrap items-center gap-2 xs:gap-1 justify-between mt-3 xs:mt-auto;
 }
 
 .cart-item .size {
-  @apply bg-white text-secondary-300 font-bold text-sm rounded-lg py-1 px-3 border-2 border-red-400 inline-block;
+  @apply bg-white  font-bold text-sm rounded-lg py-1 px-3 border-2  inline-block;
 }
 
 .cart-item label {

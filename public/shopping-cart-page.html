@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart Page</title>
     <link rel="preload" href="./img/clothing/hoodys/hoody-mockup.webp" as="image">
-    <meta name="description" content="Tailwindcss startup files for a new project">
+    <meta name="description" content="See all your goodies you have added to your cart in our shopping cart page.">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon-package/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-package/favicon-32x32.png">
@@ -35,7 +35,7 @@
                     </svg>
                 </div>
                 <a href="home-page.html" class="flex items-center"><img class="h-10 md:h-14"
-                        src="./img/logo/pig-xxl.png" alt="bargaintravels logo"><span
+                        src="./img/logo/pig-xxl.webp" alt="bargaintravels logo"><span
                         class="font-bold md:text-2xl">BargainTravels</span></a>
                 <div class="flex gap-6 items-center">
                     <ul class="flex hidden dropdown-menu" data-nav>
@@ -51,7 +51,7 @@
 
                         <li><a href="shop-page.html">Shop</a></li>
                     </ul>
-                    <div data-shoppingcart-icon>
+                    <div data-shoppingcart-icon class="flex">
                         <a class="inline-block relative" href="shopping-cart-page.html">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -77,111 +77,6 @@
                 </div>
                 <div class="spacer grid-spacer md:grid-cols-3 lg:gap-16">
                     <div class="md:col-span-2 grid-spacer" data-shopping-cart>
-
-
-                        <!-- <div class="cart-item">
-                            <div class="col-span-1">
-                                <img src="./img/clothing/hoodys/hoody-mockup.webp" alt="" loading="lazy">
-                            </div>
-                            <div class="col-span-2 flex flex-col">
-                                <div>
-                                    <h3 class="font-semibold text-lg md:text-2xl">Hoody</h3>
-                                    <p class="text-gray-500 font-medium mt-2">R450</p>
-                                </div>
-                                <div class="more-info">
-                                    <div class="flex gap-4 items-center">
-                                        <label for="number">Quantity:</label>
-                                        <input type="number" name="number" id="number" min="0" value="1" required>
-                                    </div>
-                                    <button>Remove</button>
-                                </div>
-                            </div>
-                        </div>
-
-                       
-                        <div class="cart-item">
-                            <div class="col-span-1">
-                                <img src="./img/clothing/longsleeves/long-sleeve-mockup.webp" alt="" loading="lazy">
-                            </div>
-                            <div class="col-span-2 flex flex-col">
-                                <div>
-                                    <h3 class="font-semibold text-lg md:text-2xl">Longsleeve</h3>
-                                    <p class="text-gray-500 font-medium mt-2">R450</p>
-                                </div>
-                                <div class="more-info">
-                                    <div class="flex gap-4 items-center">
-                                        <label for="number">Quantity:</label>
-                                        <input type="number" name="number" id="number" min="0" value="1" required>
-                                    </div>
-                                    <button>Remove</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        
-                        <div class="cart-item">
-                            <div class="col-span-1">
-                                <img src="./img/clothing/pullovers/pullover-mockup.webp" alt="" loading="lazy">
-                            </div>
-                            <div class="col-span-2 flex flex-col">
-                                <div>
-                                    <h3 class="font-semibold text-lg md:text-2xl">Pullover</h3>
-                                    <p class="text-gray-500 font-medium mt-2">R450</p>
-                                </div>
-                                <div class="more-info">
-                                    <div class="flex gap-4 items-center">
-                                        <label for="number">Quantity:</label>
-                                        <input type="number" name="number" id="number" min="0" value="1" required>
-                                    </div>
-                                    <button>Remove</button>
-                                </div>
-                            </div>
-                        </div>
-
-                       
-                        <div class="cart-item">
-                            <div class="col-span-1">
-                                <img src="./img/clothing/t-shirts/t-shirt-mockup.webp" alt="" loading="lazy">
-                            </div>
-                            <div class="col-span-2 flex flex-col">
-                                <div>
-                                    <h3 class="font-semibold text-lg md:text-2xl">T-shirt</h3>
-                                    <p class="text-gray-500 font-medium mt-2">R450</p>
-                                </div>
-                                <div class="more-info">
-                                    <div class="flex gap-4 items-center">
-                                        <label for="number">Quantity:</label>
-                                        <input type="number" name="number" id="number" min="0" value="1" required>
-                                    </div>
-                                    <button>Remove</button>
-                                </div>
-                            </div>
-                        </div>
-                        -->
-
-                        <div class="cart-item">
-                            <div class="col-span-1">
-                                <img src="./img/clothing/jackets/jacket-mockup.webp" alt="" loading="lazy">
-                            </div>
-                            <div class="col-span-2 flex flex-col">
-                                <div>
-                                    <div class="flex items-center justify-between">
-                                        <h3 class="font-semibold text-lg md:text-2xl">Jacket</h3>
-                                        <p class="size">M</p>
-                                    </div>
-                                    <p class="text-gray-500 font-medium mt-2">R450</p>
-                                </div>
-
-                                <div class="more-info">
-                                    <div class="flex gap-4 items-center">
-                                        <label for="number">Quantity:</label>
-                                        <input type="number" name="number" id="number" min="0" value="1" required>
-                                    </div>
-                                    <button>Remove</button>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                     <div class="md:col-span-1" data-order-summary>
                         <h2 class="h3">Order Summary</h2>
@@ -196,7 +91,7 @@
                             </div>
                             <div class="flex justify-between">
                                 <p>Order Total</p>
-                                <span class="text-gray-500" data-order-total>R0</span>
+                                <span class="text-secondary-400" data-order-total>R0</span>
                             </div>
                         </div>
                         <button class="spacer btn w-full">Checkout</button>

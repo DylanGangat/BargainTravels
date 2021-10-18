@@ -59,16 +59,16 @@ const templateCard = item => {
 
   const card = `
         <div class="cart-item" data-id="${id}">
-            <div class="col-span-1">
+            <div class="col-span-full xs:col-span-1">
                 <img class="mockup" src="${image}" alt="A mockup of our ${name}" loading="lazy">
             </div>
-            <div class="col-span-2 flex flex-col">
+            <div class="col-span-full xs:col-span-2 flex flex-col">
                 <div>
                 <div class="flex items-center justify-between">
                     <h3 class="font-semibold text-lg md:text-2xl">${name}</h3>
-                    <p class="size" data-size="${size}">${size}</p>
+                    <p class="size text-secondary-300 border-secondary" data-size="${size}">${size}</p>
                 </div>
-                <p class="text-gray-500 font-medium mt-2" data-price="${price}">R${price}</p>    
+                <p class="text-secondary-400 text-lg md:text-2xl font-semibold mt-1 md:mt-2" data-price="${price}">R${price}</p>          
                 </div>
                 <div class="more-info">
                     <div class="flex gap-4 items-center">
@@ -112,7 +112,6 @@ const updatePrice = shoppingCart => {
 const loadShoppingCart = () => {
   if (localStorage.getItem("SHOPPING_CART")) {
     shoppingCart = JSON.parse(localStorage.getItem("SHOPPING_CART"));
-    // console.log("SHOPPING CART:", shoppingCart);
     generateShoppingCart(shoppingCart);
     updatePrice(shoppingCart);
     cartTotal(shoppingCart);

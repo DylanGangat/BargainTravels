@@ -8,11 +8,12 @@ const colorGroup = document.querySelector(".colours-group");
 const colors = document.querySelectorAll(".colour-block");
 const changingImages = document.querySelectorAll("[data-changing-image]");
 export const savedCart = JSON.parse(localStorage.getItem("SHOPPING_CART"));
-console.log("savedCart:", savedCart);
+
 // Array where we put all add to cart items
 let shoppingCart = [];
 
-if (savedCart) {
+// To check if there is a cart with a length and then it would update the cart total icon
+if (savedCart && savedCart.length !== 0) {
   shoppingCart = savedCart;
   cartTotal(shoppingCart);
 }
@@ -25,17 +26,6 @@ const getProductDetails = () => {
   const activeColor = colorGroup.querySelector(".active").textContent;
   const quantity = parseInt(parent.querySelector("[data-quantity]").value);
   const mockupImage = document.querySelector(".active").dataset.mockup;
-  console.log("mockupImage:", mockupImage);
-  console.log(
-    name,
-    price,
-    size,
-    activeColor,
-    quantity,
-    mockupImage,
-    "TYPEOF:",
-    typeof mockup
-  );
   const randomNumber = Math.floor(Math.random() * 1000 + 1);
 
   const item = {};
@@ -70,16 +60,6 @@ const getProductDetails = () => {
   cartTotal(cart);
 
   localStorage.setItem("SHOPPING_CART", JSON.stringify(cart));
-
-  console.log(
-    "Item:",
-    item,
-    "Shopping Cart:",
-    shoppingCart,
-    "Cart:",
-    cart,
-    cart.length
-  );
 };
 
 addToCart.addEventListener("click", () => {
@@ -88,7 +68,6 @@ addToCart.addEventListener("click", () => {
 
 const updateMockupColor = e => {
   if (e.target.classList.contains("colour-block")) {
-    console.log(e.target);
     // To reset the color groups by removing all active states
     colors.forEach(color => color.classList.remove("active"));
     // To add the active state to the onn you clicked
