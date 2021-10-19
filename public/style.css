@@ -1164,6 +1164,11 @@ video {
   color: rgba(107, 114, 128, var(--tw-text-opacity));
 }
 
+.text-gray-600{
+  --tw-text-opacity: 1;
+  color: rgba(75, 85, 99, var(--tw-text-opacity));
+}
+
 .text-secondary-300{
   --tw-text-opacity: 1;
   color: rgba(250, 100, 103, var(--tw-text-opacity));
@@ -2007,7 +2012,7 @@ header {
   font-size: 1rem;
   line-height: 1.5rem;
   --tw-text-opacity: 1;
-  color: rgba(107, 114, 128, var(--tw-text-opacity));
+  color: rgba(75, 85, 99, var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px){
@@ -2055,9 +2060,8 @@ header {
   margin-top: 0.25rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  font-weight: 600;
   --tw-text-opacity: 1;
-  color: rgba(156, 163, 175, var(--tw-text-opacity));
+  color: rgba(75, 85, 99, var(--tw-text-opacity));
 }
 
 .profile img {

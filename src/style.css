@@ -295,7 +295,7 @@ header {
 }
 
 .about-item p {
-  @apply text-base lg:text-xl text-gray-500 mt-4 lg:mt-8;
+  @apply text-base lg:text-xl text-gray-600 mt-4 lg:mt-8;
 }
 
 /* Profile */
@@ -313,7 +313,7 @@ header {
 }
 
 .profile p {
-  @apply text-gray-400 text-sm font-semibold mt-1;
+  @apply text-gray-600 text-sm mt-1;
 }
 
 .profile img {
