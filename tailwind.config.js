@@ -1,5 +1,8 @@
 module.exports = {
-  purge: [],
+  purge: {
+    enabled: true,
+    content: ["./public/**/*.html", "./public/**/*.js"],
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -47,10 +50,9 @@ module.exports = {
       spacing: {
         "fixed-sm": "4.5rem",
         "fixed-md": "5.5rem",
-
       },
       padding: {
-        carousel: "21.0625rem"
+        carousel: "21.0625rem",
       },
       backgroundImage: {
         "shop-hero2": "url('/img/guy-in-flowers.webp')",
