@@ -196,6 +196,7 @@ header {
   @apply rounded-lg shadow hover:shadow-md;
 }
 
+.clothing-card h2,
 .clothing-card h3 {
   @apply font-semibold text-lg hover:text-secondary-400 cursor-pointer hover-default;
 }
@@ -279,7 +280,7 @@ header {
 }
 
 .cart-item button {
-  @apply text-secondary-400 text-sm border-b border-transparent hover:border-red-400 hover-default;
+  @apply text-secondary-400 text-sm md:text-base border-b border-transparent hover:border-red-400 hover-default;
 }
 
 /* =============

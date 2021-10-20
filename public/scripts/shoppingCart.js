@@ -72,8 +72,8 @@ const templateCard = item => {
                 </div>
                 <div class="more-info">
                     <div class="flex gap-4 items-center">
-                        <label for="number">Quantity:</label>
-                        <input type="number" name="number" id="number" min="1" value="${quantity}" required data-quantity>
+                        <label for="number${id}">Quantity:</label>
+                        <input type="number" name="number" id="number${id}" min="1" value="${quantity}" required data-quantity>
                     </div>
                     <button data-remove>Remove</button>
                 </div>

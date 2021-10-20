@@ -165,10 +165,10 @@ const attractionCard = item => {
       <p>${ranking}</p>
   </div>
   <div class="heart">
-      <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.a66c4ffe.svg"
+      <img class="h-6 w-6 cursor-pointer heart-empty" src="/heart-empty.314fd329.svg"
           alt="empty heart" data-heart>
       <img class="h-6 w-6 cursor-pointer heart-filled hidden"
-          src="/heart-filled.0ca63264.svg" alt="empty heart" data-heart>
+          src="/heart-filled.8244a76b.svg" alt="empty heart" data-heart>
   </div>
 </div>`;
   attractionsCarousel.innerHTML += card;

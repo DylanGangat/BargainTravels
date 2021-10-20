@@ -926,28 +926,14 @@ video {
   border-top-width: 2px;
 }
 
-.border-b{
-  border-bottom-width: 1px;
-}
-
 .border-black{
   --tw-border-opacity: 1;
   border-color: rgba(0, 0, 0, var(--tw-border-opacity));
 }
 
-.border-gray-100{
-  --tw-border-opacity: 1;
-  border-color: rgba(243, 244, 246, var(--tw-border-opacity));
-}
-
 .border-gray-200{
   --tw-border-opacity: 1;
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
-}
-
-.border-gray-400{
-  --tw-border-opacity: 1;
-  border-color: rgba(156, 163, 175, var(--tw-border-opacity));
 }
 
 .border-red-500{
@@ -1711,19 +1697,19 @@ header {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.clothing-card h3 {
+.clothing-card h2, .clothing-card h3{
   cursor: pointer;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
 }
 
-.clothing-card h3:hover{
+.clothing-card h2:hover, .clothing-card h3:hover{
   --tw-text-opacity: 1;
   color: rgba(249, 83, 86, var(--tw-text-opacity));
 }
 
-.clothing-card h3 {
+.clothing-card h2, .clothing-card h3 {
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1975,6 +1961,13 @@ header {
   transition-duration: 150ms;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 768px){
+  .cart-item button{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 /* =============
@@ -2366,6 +2359,11 @@ header {
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
