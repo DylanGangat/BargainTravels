@@ -7,9 +7,9 @@
     "start-project": "parcel public/home-page.html  public/about-page.html public/city-page.html public/shop-page.html public/products/hoody-info.hmtl public/products/jacket-info.hmtl public/products/longsleeve-info.hmtl public/products/pullover-info.hmtl public/products/sweatpants-info.hmtl public/products/t-shirt-info.hmtl public/shopping-cart-page.html public/trips-page.html -p 1212 --open",
     "clean": "rimraf dist/*",
     "start": "npm run clean && npm run start-project",
-    "build:parcel": "parcel build public/home-page.html public/about-page.html public/city-page.html public/shop-page.html public/products/hoody-info.hmtl public/products/jacket-info.hmtl public/products/longsleeve-info.hmtl public/products/pullover-info.hmtl public/products/sweatpants-info.hmtl public/products/t-shirt-info.hmtl public/shopping-cart-page.html public/trips-page.html",
+    "build": "parcel build public/home-page.html public/about-page.html public/city-page.html public/shop-page.html public/products/hoody-info.hmtl public/products/jacket-info.hmtl public/products/longsleeve-info.hmtl public/products/pullover-info.hmtl public/products/sweatpants-info.hmtl public/products/t-shirt-info.hmtl public/shopping-cart-page.html public/trips-page.html",
     "build-css": "tailwindcss build -i src/style.css -o public/style.css",
-    "build": "npm run clean && npm run build:parcel"
+    "build:clean": "npm run clean && npm run build:parcel"
   },
   "author": "Dylan Gangat",
   "license": "ISC",
