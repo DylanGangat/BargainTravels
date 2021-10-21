@@ -4,9 +4,11 @@
   "description": "Search for information on your next travelling destination and be able to purchase some of our merchandise",
   "main": "index.js",
   "scripts": {
-    "start": "parcel public/home-page.html",
-    "build": "parcel build public/home-page.html public/about-page.html public/city-page.html public/shop-page.html public/products/hoody-info.hmtl public/products/jacket-info.hmtl public/products/longsleeve-info.hmtl public/products/pullover-info.hmtl public/products/sweatpants-info.hmtl public/products/t-shirt-info.hmtl public/shopping-cart-page.html public/trips-page.html",
-    "build-css": "tailwindcss build -i src/style.css -o public/style.css"
+    "start": "parcel public/home.html",
+    "build": "parcel build public/home.html public/about-page.html public/city-page.html public/shop-page.html public/products/hoody-info.hmtl public/products/jacket-info.hmtl public/products/longsleeve-info.hmtl public/products/pullover-info.hmtl public/products/sweatpants-info.hmtl public/products/t-shirt-info.hmtl public/shopping-cart-page.html public/trips-page.html",
+    "build-css": "tailwindcss build -i src/style.css -o public/style.css",
+    "clean": "rimraf dist/*",
+    "build:clean": "npm run clean && npm run build"
   },
   "author": "Dylan Gangat",
   "license": "ISC",
