@@ -120,20 +120,41 @@ header {
   @apply py-4 fixed top-0 left-0 w-full z-50 bg-white shadow;
 }
 
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 .dropdown-menu {
-  @apply absolute z-40 top-full right-0 left-0 w-full py-8 gap-4 flex-col items-center bg-secondary-400 md:flex md:static md:flex-row md:top-auto md:w-auto md:py-0 md:bg-transparent;
+  @apply absolute z-40 top-full right-0 left-0 w-full py-8 gap-4 flex-col items-center bg-secondary-400  md:flex md:static md:flex-row md:top-auto  md:py-0 md:bg-transparent md:h-auto md:w-auto md:m-auto overflow-auto transform -translate-x-full md:-translate-x-0 transition duration-500 ease-in-out;
 }
 
 .dropdown-menu a {
   @apply font-bold p-1 hover:text-white md:hover:text-secondary-400 hover-default;
 }
 
+.dropdown-menu.active {
+  @apply translate-x-0;
+}
+
 .overlay {
-  @apply absolute z-10 top-full right-0 left-0 h-screen w-screen bg-gray-200 opacity-60 cursor-pointer;
+  @apply absolute z-10 top-full right-0 left-0 h-screen w-screen bg-gray-200 opacity-60 cursor-pointer transform -translate-x-full md:-translate-x-0 transition duration-300 ease-in-out;
+}
+
+.overlay.active {
+  @apply translate-x-0;
 }
 
 .shopping-cart-total {
-  @apply h-4 w-4 py-1.5 px-1.5 rounded-full bg-secondary-400 text-white text-xs  absolute -top-1.5 -right-1 flex items-center justify-center;
+  @apply h-4 w-4 py-1.5 px-1.5 rounded-full bg-secondary-400 text-white text-xs absolute flex items-center justify-center;
+  top: -0.075rem;
+  right: -0.1rem;
 }
 
 /* =============
@@ -325,7 +346,8 @@ header {
    City Page
    =============*/
 .destination-hero {
-  @apply sm:max-h-96 grid sm:grid-cols-5 sm:grid-rows-4 gap-4 mt-8 md:mt-16;
+  @apply sm:max-h-destination grid auto-rows-destination sm:grid-cols-5 sm:grid-rows-4 gap-4 mt-8 md:mt-16;
+  grid-auto-rows: 12.5rem;
 }
 
 .destination-hero .hero-image {

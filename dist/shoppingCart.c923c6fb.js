@@ -154,13 +154,17 @@ if (shoppingCart != null && shoppingCart.length !== 0) {
 
 navToggle.addEventListener("click", e => {
   if (!e.currentTarget.hasAttribute("data-nav-toggle")) return;
-  nav.classList.toggle("hidden");
-  overlay.classList.toggle("hidden");
+  nav.classList.toggle("visually-hidden");
+  nav.classList.toggle("active");
+  overlay.classList.toggle("visually-hidden");
+  overlay.classList.toggle("active");
 });
 overlay.addEventListener("click", e => {
   if (!e.target.hasAttribute("data-overlay")) return;
-  nav.classList.add("hidden");
-  overlay.classList.add("hidden");
+  nav.classList.add("visually-hidden");
+  nav.classList.toggle("active");
+  overlay.classList.add("visually-hidden");
+  overlay.classList.remove("active");
 });
 },{}],"scripts/shoppingCart.js":[function(require,module,exports) {
 "use strict";
@@ -177,8 +181,10 @@ cardParent.innerHTML = ""; // To watch for updates on cards in the shoppingCart
 
 cardParent.addEventListener("click", e => {
   // Remove a product item
-  removeItem(e); // Update total when changing quantity
-
+  removeItem(e);
+});
+cardParent.addEventListener('change', e => {
+  // Update total when changing quantity
   quantityUpdated(e);
 }); // For removing product item
 
@@ -195,6 +201,7 @@ const removeItem = e => {
 
 const quantityUpdated = e => {
   if (e.target.hasAttribute("data-quantity")) {
+    console.log('clicked');
     const parent = e.target.closest(".cart-item"); // Had to convert id from string to number
 
     const id = parseInt(parent.dataset.id);
@@ -323,7 +330,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61713" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53533" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

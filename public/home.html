@@ -25,7 +25,39 @@
 
 
 <body>
-    
+    <!-- Heart filled -->
+    <img class="h-6 w-6 cursor-pointer heart-empty" src="./img/icons/heart-filled.svg" alt="empty heart" data-heart>
+    <!-- Heart empty -->
+    <img class="h-6 w-6 cursor-pointer heart-empty" src="./img/icons/heart-empty.svg" alt="empty heart" data-heart>
+    <!-- Pullover -->
+
+    <img src="./img/clothing/pullovers/pullover-mockup-pink.webp" alt="bargaintravels pullover" loading="lazy">
+    <img src="./img/clothing/pullovers/pullover-mockup-black.webp" alt="bargaintravels pullover" loading="lazy">
+    <img src="./img/clothing/pullovers/pullover-mockup-blue.webp" alt="bargaintravels pullover" loading="lazy">
+
+    <!-- Hoody -->
+    <img src="./img/clothing/hoodys/hoody-mockup-black.webp" alt="bargaintravels pullover" loading="lazy">
+    <img src="./img/clothing/hoodys/hoody-mockup-lightblue.webp" alt="bargaintravels pullover" loading="lazy">
+    <img src="./img/clothing/hoodys/hoody-mockup-pink.webp" alt="bargaintravels pullover" loading="lazy">
+
+    <!-- Jackets -->
+    <img src="./img/clothing/jackets/jacket-mockup-black.webp" alt="bargaintravels pullover" loading="lazy">
+    <img src="./img/clothing/jackets/jacket-mockup-lightblue.webp" alt="bargaintravels pullover" loading="lazy">
+    <img src="./img/clothing/jackets/jacket-mockup-blue.webp" alt="bargaintravels pullover" loading="lazy">
+
+    <!-- Long sleeve -->
+    <img src="./img/clothing/longsleeves/long-sleeve-mockup-grey.webp" alt="bargaintravels pullover" loading="lazy">
+    <img src="./img/clothing/longsleeves/long-sleeve-mockup-black.webp" alt="bargaintravels pullover" loading="lazy">
+
+    <!-- Sweatpants -->
+    <img src="./img/clothing/sweatpants/sweatpants-mockup-black.webp" alt="bargaintravels pullover" loading="lazy">
+    <img src="./img/clothing/sweatpants/sweatpants-mockup-charcoal.webp" alt="bargaintravels pullover" loading="lazy">
+    <img src="./img/clothing/sweatpants/sweatpants-mockup-white.webp" alt="bargaintravels pullover" loading="lazy">
+
+    <!-- T-shirts -->
+    <img src="./img/clothing/t-shirts/t-shirt-mockup-black.webp" alt="bargaintravels pullover" loading="lazy">
+    <img src="./img/clothing/t-shirts/t-shirt-mockup-grey.webp" alt="bargaintravels pullover" loading="lazy">
+    <img src="./img/clothing/t-shirts/t-shirt-mockup-maroon.webp" alt="bargaintravels pullover" loading="lazy">
     <header>
         <div class="container">
             <nav class="flex items-center justify-between">
@@ -36,11 +68,10 @@
                             d="M4 6h16M4 12h16M4 18h7" />
                     </svg>
                 </div>
-                <a href="home.html" class="flex items-center"><img class="h-10 md:h-14"
-                        src="./img/logo/pig-xxl.webp" alt="bargaintravels logo"><span
-                        class="font-bold md:text-2xl">BargainTravels</span></a>
+                <a href="home.html" class="flex items-center"><img class="h-10 md:h-14" src="./img/logo/pig-xxl.webp"
+                        alt="bargaintravels logo"><span class="font-bold md:text-2xl">BargainTravels</span></a>
                 <div class="flex gap-6 items-center">
-                    <ul class="flex hidden dropdown-menu" data-nav>
+                    <ul class="flex visually-hidden dropdown-menu" data-nav>
                         <li><a class="flex gap-1" href="trips-page.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -54,7 +85,7 @@
                         <li><a href="shop-page.html">Shop</a></li>
                     </ul>
                     <div data-shoppingcart-icon class="flex">
-                        <a class="inline-block relative" href="shopping-cart-page.html">
+                        <a class="inline-block relative p-1" href="shopping-cart-page.html">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -64,12 +95,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="hidden overlay" data-overlay></div>
+                <div class="visually-hidden overlay" data-overlay></div>
             </nav>
         </div>
     </header>
     <main>
-
         <!-- Hero -->
         <section class="mt-fixed-sm md:mt-fixed-md">
             <div class="container hero">
@@ -86,7 +116,7 @@
                 </div>
 
                 <div class="md:w-5/12">
-                    <img class="w-full sm:max-h-96 md:h-auto" src="./img/hero-image-big.webp"
+                    <img class="w-full sm:max-h-destination md:max-h-full md:h-auto" src="./img/hero-image-big.webp"
                         alt="different city attractions">
                 </div>
             </div>
@@ -261,11 +291,11 @@
         <div class="container grid-spacer">
 
             <ul class="footer-row">
-                <li><a href="about-page.html" class="footer-links-transiton">About us</a></li>
-                <li><a href="#" class="footer-links-transiton">Work for us</a></li>
-                <li><a href="#" class="footer-links-transiton">Contact us</a></li>
-                <li><a href="#" class="footer-links-transiton">Terms & conditons</a></li>
-                <li><a href="#" class="footer-links-transiton">Privacy policy</a></li>
+                <li><a href="home.html" class="footer-links-transiton">Home</a></li>
+                <li><a href="about-page.html" class="footer-links-transiton">About</a></li>
+                <li><a href="trips-page.html" class="footer-links-transiton">Trips</a></li>
+                <li><a href="shop-page.html" class="footer-links-transiton">Shop</a></li>
+                <li><a href="shopping-cart-page.html" class="footer-links-transiton">Shopping Cart</a></li>
             </ul>
             <ul class="footer-row">
                 <li>

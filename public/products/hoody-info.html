@@ -38,7 +38,7 @@
                         src="../img/logo/pig-xxl.webp" alt="bargaintravels logo"><span
                         class="font-bold md:text-2xl">BargainTravels</span></a>
                 <div class="flex gap-6 items-center">
-                    <ul class="flex hidden dropdown-menu" data-nav>
+                    <ul class="flex visually-hidden dropdown-menu" data-nav>
                         <li><a class="flex gap-1" href="../trips-page.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -52,7 +52,7 @@
                         <li><a href="../shop-page.html">Shop</a></li>
                     </ul>
                     <div data-shoppingcart-icon class="flex">
-                        <a class="inline-block relative" href="../shopping-cart-page.html">
+                        <a class="inline-block relative p-1" href="../shopping-cart-page.html">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -62,7 +62,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="hidden overlay" data-overlay></div>
+                <div class="visually-hidden overlay" data-overlay></div>
             </nav>
         </div>
     </header>
@@ -92,7 +92,7 @@
 
                     </div>
                     <div data-product-info>
-                        <div class="flex justify-between items-end">
+                        <div class="flex justify-between items-end flex-wrap gap-4">
                             <h1 class="font-normal" data-name>Hoody</h1>
                             <p class="text-secondary-400 text-xl lg:text-2xl font-semibold" data-price="450">R450</p>
                         </div>
@@ -104,18 +104,7 @@
                             day shipping.
                         </p>
                         <div class="spacer">
-                            <div class="select-size grid gap-2">
-                                <label for="size-select" class="font-bold">Choose a size:</label>
-                                <select name="size" id="size-select" required data-size>
-                                    <option value="">Choose a size</option>
-                                    <option value="XS">XS</option>
-                                    <option value="S">S</option>
-                                    <option value="M">M</option>
-                                    <option value="L">L</option>
-                                    <option value="XL">XL</option>
-                                </select>
-                            </div>
-                            <div class="colours-group flex-wrap mt-5" data-color-group>
+                            <div class="colours-group flex-wrap" data-color-group>
                                 <div class="colour-block bg-black text-white" data-color="#black"
                                     data-mockup="/hoody-mockup-black.ab6c6b79.webp"><span>Black</span>
                                 </div>
@@ -126,6 +115,17 @@
                                 <div class="colour-block bg-pink-300" data-color="#pink"
                                     data-mockup="/hoody-mockup-pink.9cdccfe9.webp"><span>Pink</span></div>
 
+                            </div>
+                            <div class="select-size grid gap-2  mt-5">
+                                <label for="size-select" class="font-bold">Choose a size:</label>
+                                <select name="size" id="size-select" required data-size>
+                                    <option value="">Choose a size</option>
+                                    <option value="XS">XS</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
                             </div>
                             <div class="grid gap-2 mt-5">
                                 <label for="clothing" class="font-bold">Quantity:</label>
@@ -208,6 +208,14 @@
                 <li><a href="#" class="footer-links-transiton">Contact us</a></li>
                 <li><a href="#" class="footer-links-transiton">Terms & conditons</a></li>
                 <li><a href="#" class="footer-links-transiton">Privacy policy</a></li>
+            </ul>
+
+            <ul class="footer-row">
+                <li><a href="../home.html" class="footer-links-transiton">Home</a></li>
+                <li><a href="../about-page.html" class="footer-links-transiton">About</a></li>
+                <li><a href="../trips-page.html" class="footer-links-transiton">Trips</a></li>
+                <li><a href="../shop-page.html" class="footer-links-transiton">Shop</a></li>
+                <li><a href="../shopping-cart-page.html" class="footer-links-transiton">Shopping Cart</a></li>
             </ul>
             <ul class="footer-row">
                 <li>

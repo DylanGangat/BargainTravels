@@ -44,8 +44,15 @@ module.exports = {
       gridTemplateColumns: {
         reviews: "repeat(auto-fit, minmax(17rem, 1fr))",
         destinations: "repeat(auto-fit, minmax(15.5rem, 1fr))",
+        "destinations-small": "repeat(auto-fit, minmax(auto, 15.5rem))",
         shop: "repeat(auto-fit, minmax(16.875rem, 1fr))",
         profile: "max-content repeat(2, 1fr)",
+      },
+      gridAutoRows: {
+        destination: "minmax(auto, 13rem)",
+      },
+      maxHeight: {
+        destination: "28rem",
       },
       spacing: {
         "fixed-sm": "4.5rem",
@@ -55,7 +62,7 @@ module.exports = {
         carousel: "21.0625rem",
       },
       backgroundImage: {
-        "shop-hero2": "url('/img/guy-in-flowers.webp')",
+        "shop-hero2": "url('/img/man-in-flowers.webp')",
       },
       screens: {
         xs: "400px",

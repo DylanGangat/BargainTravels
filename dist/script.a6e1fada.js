@@ -154,13 +154,17 @@ if (shoppingCart != null && shoppingCart.length !== 0) {
 
 navToggle.addEventListener("click", e => {
   if (!e.currentTarget.hasAttribute("data-nav-toggle")) return;
-  nav.classList.toggle("hidden");
-  overlay.classList.toggle("hidden");
+  nav.classList.toggle("visually-hidden");
+  nav.classList.toggle("active");
+  overlay.classList.toggle("visually-hidden");
+  overlay.classList.toggle("active");
 });
 overlay.addEventListener("click", e => {
   if (!e.target.hasAttribute("data-overlay")) return;
-  nav.classList.add("hidden");
-  overlay.classList.add("hidden");
+  nav.classList.add("visually-hidden");
+  nav.classList.toggle("active");
+  overlay.classList.add("visually-hidden");
+  overlay.classList.remove("active");
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -190,7 +194,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61713" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53533" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

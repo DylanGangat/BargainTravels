@@ -28,12 +28,16 @@ if (shoppingCart != null && shoppingCart.length !== 0) {
 
 navToggle.addEventListener("click", e => {
   if (!e.currentTarget.hasAttribute("data-nav-toggle")) return;
-  nav.classList.toggle("hidden");
-  overlay.classList.toggle("hidden");
+  nav.classList.toggle("visually-hidden");
+  nav.classList.toggle("active");
+  overlay.classList.toggle("visually-hidden");
+  overlay.classList.toggle("active");
 });
 
 overlay.addEventListener("click", e => {
   if (!e.target.hasAttribute("data-overlay")) return;
-  nav.classList.add("hidden");
-  overlay.classList.add("hidden");
+  nav.classList.add("visually-hidden");
+  nav.classList.toggle("active");
+  overlay.classList.add("visually-hidden");
+  overlay.classList.remove("active");
 });
