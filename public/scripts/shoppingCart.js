@@ -8,6 +8,7 @@ const orderSummary = document.querySelector("[data-order-summary]");
 const cardParent = document.querySelector("[data-shopping-cart]");
 const subTotal = document.querySelector("[data-order-subtotal]");
 const orderTotal = document.querySelector("[data-order-total]");
+const checkoutBtn = document.querySelector("[data-btn-checkout]");
 cardParent.innerHTML = "";
 
 // To watch for updates on cards in the shoppingCart
@@ -16,10 +17,19 @@ cardParent.addEventListener("click", e => {
   removeItem(e);
 });
 
-cardParent.addEventListener('change', e =>  {
+cardParent.addEventListener("change", e => {
   // Update total when changing quantity
   quantityUpdated(e);
-})
+});
+
+// Remove all items and localStorage after clicking checkout button.
+
+checkoutBtn.addEventListener("click", e => {
+  if (localStorage.getItem("SHOPPING_CART")) {
+    shoppingCart = [];
+    updateCart(shoppingCart);
+  }
+});
 
 // For removing product item
 const removeItem = e => {
@@ -86,7 +96,7 @@ const templateCard = item => {
   cardParent.innerHTML += card;
 };
 
-// Update cart in loacal storage
+// Update cart in local storage
 const updateCart = filteredCart => {
   // Sets the local storage with new filtered array
   localStorage.setItem("SHOPPING_CART", JSON.stringify(filteredCart));
