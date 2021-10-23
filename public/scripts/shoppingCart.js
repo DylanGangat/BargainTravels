@@ -35,7 +35,6 @@ const removeItem = e => {
 // For Update total when changing quantity
 const quantityUpdated = e => {
   if (e.target.hasAttribute("data-quantity")) {
-    console.log('clicked')
     const parent = e.target.closest(".cart-item");
     // Had to convert id from string to number
     const id = parseInt(parent.dataset.id);

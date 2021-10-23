@@ -74,10 +74,8 @@ const updateMockupColor = e => {
     const activeColor = e.target.classList.add("active");
     // To get the id so i can use it to select the right image to display
     const imageId = e.target.dataset.color;
-    console.log("IMAGEID:", imageId);
     // To select the image that i want to display
     const image = document.querySelector(`${imageId}`);
-    console.log("IMAGE:", image);
     // To reset the images so they are all hidden
     changingImages.forEach(image => image.classList.add("visually-hidden"));
     // To remove the hidden on the image i want to display

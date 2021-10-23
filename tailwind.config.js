@@ -54,6 +54,9 @@ module.exports = {
       maxHeight: {
         destination: "28rem",
       },
+      minHeight: {
+        product: "19rem",
+      },
       spacing: {
         "fixed-sm": "4.5rem",
         "fixed-md": "5.5rem",
