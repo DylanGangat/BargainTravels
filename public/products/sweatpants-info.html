@@ -76,7 +76,7 @@
                     </svg> Back
                 </a>
                 <div class="grid-spacer md:gap-12 md:grid-cols-2">
-                    <div class="rounded-lg overflow-hidden min-h-product">
+                    <div class="rounded-lg overflow-hidden" id="product">
                         <img class="h-full object-cover" id="grey" src="../img/clothing/sweatpants/sweatpants-grey.webp"
                             alt="A model wearing our sweatpants" data-changing-image>
                         <img class="h-full object-cover visually-hidden" id="black"
@@ -105,15 +105,15 @@
                         <div class="spacer">
 
                             <div class="colours-group flex-wrap" data-color-group>
-                                <div class="colour-block bg-black text-white" data-color="#black"
+                                <a href="#product" class="colour-block bg-black text-white" data-color="#black"
                                     data-mockup="/sweatpants-mockup-black.a5e096d2.webp"><span>Black</span>
-                                </div>
-                                <div class="colour-block bg-white" data-color="#white"
-                                    data-mockup="/sweatpants-mockup-white.8c6346ac.webp"><span>White</span></div>
-                                <div class="colour-block bg-gray-300 active" data-color="#grey"
-                                    data-mockup="/sweatpants-mockup.9dcf4cbf.webp"><span>Grey</span></div>
-                                <div class="colour-block bg-gray-600" data-color="#charcoal"
-                                    data-mockup="/sweatpants-mockup-charcoal.76b6ca01.webp"><span>Charcoal</span></div>
+                                </a>
+                                <a href="#product" class="colour-block bg-white" data-color="#white"
+                                    data-mockup="/sweatpants-mockup-white.8c6346ac.webp"><span>White</span></a>
+                                <a href="#product" class="colour-block bg-gray-300 active" data-color="#grey"
+                                    data-mockup="/sweatpants-mockup.9dcf4cbf.webp"><span>Grey</span></a>
+                                <a href="#product" class="colour-block bg-gray-600" data-color="#charcoal"
+                                    data-mockup="/sweatpants-mockup-charcoal.76b6ca01.webp"><span>Charcoal</span></a>
                             </div>
                             <div class="select-size grid gap-2 mt-5">
                                 <label for="size-select" class="font-bold">Choose a size:</label>

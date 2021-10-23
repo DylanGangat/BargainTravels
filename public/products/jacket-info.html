@@ -77,7 +77,7 @@
                     </svg> Back
                 </a>
                 <div class="grid-spacer md:gap-12 md:grid-cols-2">
-                    <div class="rounded-lg overflow-hidden min-h-product">
+                    <div class="rounded-lg overflow-hidden" id="product">
                         <img class="h-full object-cover" id="grey" src="../img/clothing/jackets/jacket-grey.webp"
                             alt="A model wearing our jacket" data-changing-image>
                         <img class="h-full object-cover visually-hidden" id="black"
@@ -106,15 +106,15 @@
                         <div class="spacer">
                            
                             <div class="colours-group flex-wrap" data-color-group>
-                                <div class="colour-block bg-black text-white" data-color="#black"
+                                <a href="#product" class="colour-block bg-black text-white" data-color="#black"
                                     data-mockup="/jacket-mockup-black.de79f349.webp"><span>Black</span>
-                                </div>
-                                <div class="colour-block bg-accent" data-color="#navy"
-                                    data-mockup="/jacket-mockup-blue.db4ad020.webp"><span>Navy</span></div>
-                                <div class="colour-block bg-sky" data-color="#sky"
-                                    data-mockup="/jacket-mockup-lightblue.ccc97d80.webp"><span>Light Blue</span></div>
-                                <div class="colour-block bg-gray-300 active" data-color="#grey"
-                                    data-mockup="/jacket-mockup.7f887c15.webp"><span>Grey</span></div>
+                                </a>
+                                <a href="#product" class="colour-block bg-accent" data-color="#navy"
+                                    data-mockup="/jacket-mockup-blue.db4ad020.webp"><span>Navy</span></a>
+                                <a href="#product" class="colour-block bg-sky" data-color="#sky"
+                                    data-mockup="/jacket-mockup-lightblue.ccc97d80.webp"><span>Light Blue</span></a>
+                                <a href="#product" class="colour-block bg-gray-300 active" data-color="#grey"
+                                    data-mockup="/jacket-mockup.7f887c15.webp"><span>Grey</span></a>
                             </div>
                             <div class="select-size grid gap-2 mt-5">
                                 <label for="size-select" class="font-bold">Choose a size:</label>
