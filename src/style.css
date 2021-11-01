@@ -242,6 +242,10 @@ header {
    Product Info Page
    =============*/
 
+.product-image {
+  min-height: 19.25rem;
+}
+
 .colours-group {
   @apply flex gap-4 text-center;
 }

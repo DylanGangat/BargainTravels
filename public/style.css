@@ -1834,6 +1834,10 @@ header {
    Product Info Page
    =============*/
 
+.product-image {
+  min-height: 19.25rem;
+}
+
 .colours-group {
   display: flex;
   gap: 1rem;
